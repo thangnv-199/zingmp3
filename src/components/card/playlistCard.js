@@ -143,7 +143,7 @@ const Card = ({ name, id, playlist }) => {
                             className="fas fa-times icon-btn delete-button" 
                             title="Xóa playlist"
                         />
-                        <PlayIcon className="play-button" src="/images/icons/play.81e7696e.svg" alt="" />
+                        <PlayIcon className="play-button" src="/zingmp3/images/icons/play.81e7696e.svg" alt="" />
                         <i className="fas fa-ellipsis-h icon-btn"></i>
                     </div>
                 
@@ -155,7 +155,7 @@ const Card = ({ name, id, playlist }) => {
                         <img src={playlist.songs[random()].image} alt="" />
                         <img src={playlist.songs[random()].image} alt="" />
                     </ImageGroup>
-                    : <Image src="/images/album_default.png" alt="" />
+                    : <Image src="/zingmp3/images/album_default.png" alt="" />
                 }
             </ImageWrapper>
             <div>

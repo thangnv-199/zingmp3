@@ -275,7 +275,7 @@ const Controls = () => {
             <Nav>
                 <button title="Xem MV">
                     <label htmlFor="song-video-checkbox">
-                        <img className="icon-btn mv-icon" src="/images/icons/mv-icon.png" alt="" />
+                        <img className="icon-btn mv-icon" src="/zingmp3/images/icons/mv-icon.png" alt="" />
                     </label>
                 </button>
                 <button title="Xem lời bài hát">
@@ -290,12 +290,12 @@ const Controls = () => {
                         { isPlaying 
                             ? <img 
                                 className="gif-playing"
-                                src="/images/icons/music-note-icon-dribbble.gif" alt="" 
+                                src="/zingmp3/images/icons/music-note-icon-dribbble.gif" alt="" 
                             /> 
                             : <img 
                                 onClick={(e) => e.target.classList.toggle('--active')}
                                 className="icon-unplaying p-1"
-                                src="/images/icons/playlist-3749298-3125483.png" alt="" 
+                                src="/zingmp3/images/icons/playlist-3749298-3125483.png" alt="" 
                             />
                         }
                     </PlaylistIconWrapper>

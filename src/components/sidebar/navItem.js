@@ -34,7 +34,7 @@ const NavItem = ({ label, icon, image, to, badge }) => {
                 {icon && <IconStyle className={icon}></IconStyle>}
                 {image && <img src={image} alt=""></img>}
                 {label}
-                {badge && <img src="/images/icons/live-tag.e25dd240.svg" alt=""/>}
+                {badge && <img src="/zingmp3/images/icons/live-tag.e25dd240.svg" alt=""/>}
             </NavLink>
         </LiStyled>
     )

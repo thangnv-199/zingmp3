@@ -101,7 +101,7 @@ const CardRadio = ({ thumbnail, title, listening }) => {
             <div className="relative">
                 <ImageWrapper href="#!">
                     <div className="overlay">
-                        <PlayIcon src="/images/icons/play.81e7696e.svg" alt="" />
+                        <PlayIcon src="/zingmp3/images/icons/play.81e7696e.svg" alt="" />
                     </div>
                     <Image src={thumbnail} alt="" />
                 </ImageWrapper>

@@ -76,7 +76,7 @@ const PlaylistDetail = () => {
         <div>
             <header className="flex mb-8">
                 <ImageWrapper>
-                    <img src="/images/album_default.png" alt="" />
+                    <img src="/zingmp3/images/album_default.png" alt="" />
                 </ImageWrapper>
                 <div className="flex flex-col justify-between">
                     <div>
@@ -103,7 +103,7 @@ const PlaylistDetail = () => {
                 { currentPlaylist.songs.length 
                 ? renderSongs(currentPlaylist)
                 : <Empty>
-                    <img className="mb-5" src="/images/icons/dics-music-icon.3925fc01.svg" alt="" />
+                    <img className="mb-5" src="/zingmp3/images/icons/dics-music-icon.3925fc01.svg" alt="" />
                     <span>Không có bài hát trong playlist của bạn</span>
                 </Empty>
                 }

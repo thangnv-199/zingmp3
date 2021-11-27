@@ -20,7 +20,7 @@ const EmptyPage = () => {
 
     return (
         <Div>
-            <img className="mb-5" src="/images/icons/dics-music-icon.3925fc01.svg" alt="" />
+            <img className="mb-5" src="/zingmp3/images/icons/dics-music-icon.3925fc01.svg" alt="" />
             <span>Trang chưa có nội dung</span>
         </Div>
     )

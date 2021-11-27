@@ -159,7 +159,7 @@ const SongLyric = ({ currentSong }) => {
                             <div className="m-auto text-center">
                                 <img 
                                     className="h-30 w-30 m-auto" 
-                                    src="/images/icons/artist-icon.0b64fd14.svg" 
+                                    src="/zingmp3/images/icons/artist-icon.0b64fd14.svg" 
                                     alt="" 
                                 />
                                 <p>Lời bài hát đang được cập nhập</p>

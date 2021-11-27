@@ -52,15 +52,15 @@ const PlayButton = ({ songAudioRef, songImageRef }) => {
     return (
         <button className="text-4xl">
             { !isLoaded
-                ? <PlayIcon className="p-1" src="/images/icons/Youtube_loading_symbol_1_(wobbly).gif" alt="" />
+                ? <PlayIcon className="p-1" src="/zingmp3/images/icons/Youtube_loading_symbol_1_(wobbly).gif" alt="" />
                 : isPlaying 
                     ? <PlayIcon 
                         onClick={ handleToggleSong } 
-                        className="p-2" src="/images/icons/pause-1324760544677966292.png" alt="" 
+                        className="p-2" src="/zingmp3/images/icons/pause-1324760544677966292.png" alt="" 
                     />
                     : <PlayIcon 
                         onClick={ handleToggleSong } 
-                        src="/images/icons/play.81e7696e.svg" alt="" 
+                        src="/zingmp3/images/icons/play.81e7696e.svg" alt="" 
                     />
             }
         </button>

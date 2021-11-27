@@ -26,7 +26,7 @@ const Main = styled.div`
 function App() {
     return (
        <Fragment>
-            <BrowserRouter>
+            <BrowserRouter basename="/zingmp3">
                 <Sidebar />
                 <Header />
                 <Main className="scrollbar">

@@ -96,7 +96,7 @@ const Sidebar = () => {
             <NavContainer>
                 <nav>
                     <LogoWrapper className="flex items-center">
-                        <img className="my-auto w-30 h-10" src="/images/logo-dark.svg" alt="" />
+                        <img className="my-auto w-30 h-10" src="/zingmp3/images/logo-dark.svg" alt="" />
                     </LogoWrapper>
                     <ul className="mb-4">
                         <NavItem
@@ -157,22 +157,22 @@ const Sidebar = () => {
                         <NavItem
                             to={router.SONGS}
                             label="Bài hát"
-                            image="/images/icons/my-song.cf0cb0b4.svg"
+                            image="/zingmp3/images/icons/my-song.cf0cb0b4.svg"
                         />
                         <NavItem
                             to={router.PLAYLIST}
                             label="Playlist"
-                            image="/images/icons/my-playlist.7e92a5f0.svg"
+                            image="/zingmp3/images/icons/my-playlist.7e92a5f0.svg"
                         />
                         <NavItem
                             to={router.ALBUM}
                             label="Album"
-                            image="/images/icons/my-album.24e3332b.svg"
+                            image="/zingmp3/images/icons/my-album.24e3332b.svg"
                         />
                         <NavItem
                             to={router.UPLOAD}
                             label="Tải lên"
-                            image="/images/icons/my-history.374cb625.svg"
+                            image="/zingmp3/images/icons/my-history.374cb625.svg"
                         />
                     </ul>
                     <AddPlayListButton onClick={ handleOpenPlaylistModal }>

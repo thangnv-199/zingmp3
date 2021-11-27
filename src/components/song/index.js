@@ -220,7 +220,7 @@ const Song = ({ data, playlist, label, index }) => {
             </div>
             <Action className="song-action">
                 <div title="Xem MV" className="flex-shrink-0">
-                    <img className="icon-btn mv-icon" src="/images/icons/mv-icon.png" alt="" />
+                    <img className="icon-btn mv-icon" src="/zingmp3/images/icons/mv-icon.png" alt="" />
                 </div>
                 <div title="Xem lời bài hát">
                     <label htmlFor="song-lyric-checkbox" className="cursor-pointer">

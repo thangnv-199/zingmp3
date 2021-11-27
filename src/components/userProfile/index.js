@@ -39,7 +39,7 @@ const UserProfile = () => {
     return (
         <div className="flex relative mb-10">
             <div className="m-auto text-center">
-                <img className="rounded-full mb-3" src="/images/avatar.jpg" alt="" />
+                <img className="rounded-full mb-3" src="/zingmp3/images/avatar.jpg" alt="" />
                 <h2 className="text-4xl font-bold text-white">Thắng</h2>
             </div>
             <UserAction>

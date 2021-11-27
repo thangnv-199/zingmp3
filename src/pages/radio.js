@@ -39,7 +39,7 @@ const Radio = () => {
             </Carousel>
             <Carousel 
                 headerStyle={3} 
-                headerImage="/images/radio/0825d8cd559dee502625a25d540c636a.webp"
+                headerImage="/zingmp3/images/radio/0825d8cd559dee502625a25d540c636a.webp"
                 caption="nghe lại"
                 heading="XONE radio" 
                 col={5} col_lg={4} col_md={3}
@@ -48,7 +48,7 @@ const Radio = () => {
             </Carousel>
             <Carousel 
                 headerStyle={3} 
-                headerImage="/images/radio/dc5b49e6cb115ee1d3fa0bf749a2efd1.webp"
+                headerImage="/zingmp3/images/radio/dc5b49e6cb115ee1d3fa0bf749a2efd1.webp"
                 caption="Podcast"
                 heading="Vietcetera" 
                 col={5} col_lg={4} col_md={3}
@@ -58,7 +58,7 @@ const Radio = () => {
 
             <Carousel 
                 headerStyle={3} 
-                headerImage="/images/radio/854010f76bddeefd5f13305a1d6cc8be.webp"
+                headerImage="/zingmp3/images/radio/854010f76bddeefd5f13305a1d6cc8be.webp"
                 caption="nghe lại"
                 heading="on air" 
                 col={4} col_md={3}

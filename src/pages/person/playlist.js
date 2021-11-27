@@ -37,7 +37,7 @@ const PlaylistPage = () => {
     const renderPlaylist = (playlists) => (
         playlists.map((item, index) => (
             <PlaylistCard
-                imageSrc="/images/album_default.png"
+                imageSrc="/zingmp3/images/album_default.png"
                 name={item.name}
                 id={item.id}
                 playlist={item}

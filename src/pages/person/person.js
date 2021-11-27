@@ -50,7 +50,7 @@ const Person = () => {
     const renderPlaylist = (playlists) => (
         playlists.map((item, index) => (
             <PlaylistCard
-                imageSrc="/images/album_default.png"
+                imageSrc="/zingmp3/images/album_default.png"
                 name={item.name}
                 id={item.id}
                 playlist={ item }
@@ -75,7 +75,7 @@ const Person = () => {
                 </header>
                 <div className="flex">
                     <div>
-                        <img className="flex-shrink-0" src="/images/songs/7e6088a95d78a12eae1cf55d0b3cc3b9.webp" alt="" />
+                        <img className="flex-shrink-0" src="/zingmp3/images/songs/7e6088a95d78a12eae1cf55d0b3cc3b9.webp" alt="" />
                     </div>
                     <SongList className="scrollbar">
                         {renderSongs(zingChart)}

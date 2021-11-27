@@ -127,7 +127,7 @@ const SongVideo = ({ currentSong }) => {
                     <div className="m-auto text-center">
                         <img
                             className="h-40 w-40 m-auto"
-                            src="/images/icons/video-icon.09654360.svg"
+                            src="/zingmp3/images/icons/video-icon.09654360.svg"
                             alt=""
                         />
                         <p className="text-2xl font-bold">MV đang được cập nhật</p>

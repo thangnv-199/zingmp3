@@ -113,7 +113,7 @@ const Header = () => {
                     </svg>
                 </button>
                 <button>
-                    <img src="/images/avatar.jpg" alt="" />
+                    <img src="/zingmp3/images/avatar.jpg" alt="" />
                 </button>
             </HeaderNav>
         </HeaderStyled>

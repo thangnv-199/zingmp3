@@ -45,7 +45,7 @@ const ChartWeek = () => {
                 <span>Bảng xếp hạng tuần</span>
                 <img 
                     className="rounded-full bg-purple cursor-pointer hover:opacity-50 w-10 h-10 ml-2"
-                    src="/images/icons/play.81e7696e.svg" 
+                    src="/zingmp3/images/icons/play.81e7696e.svg" 
                     alt="" 
                 />
             </h1>

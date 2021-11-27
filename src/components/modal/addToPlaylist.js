@@ -125,7 +125,7 @@ const Index = () => {
             />
             <Modal>
                 <Header onClick={ () => dispatch(openPlaylistModal()) }>
-                    <img className="mr-2 h-8 w-8" src="/images/icons/thumb-add.2971eb21.svg" alt="" />
+                    <img className="mr-2 h-8 w-8" src="/zingmp3/images/icons/thumb-add.2971eb21.svg" alt="" />
                     <span>Tạo playlist mới</span>
                 </Header>
                 <List className="scrollbar">
