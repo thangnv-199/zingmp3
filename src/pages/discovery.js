@@ -1,0 +1,175 @@
+import styled from 'styled-components';
+
+import Carousel from '../components/carousel';
+import Card from '../components/card';
+import CardRadio from '../components/card/radioCard';
+// import * as data from '../data/discoveryPage';
+import * as router from '../constant/router';
+import * as data1 from '../data/discoveryPage/data1';
+import * as data2 from '../data/discoveryPage/data2';
+import * as data3 from '../data/discoveryPage/data3';
+import * as data4 from '../data/discoveryPage/data4';
+import * as data5 from '../data/discoveryPage/data5';
+
+const LogoList = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    & > * {
+        max-width: calc(100% / 8);
+        flex: 1 0 calc(100% / 8);
+        height: 50px;
+        border-radius: 8px;
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+`;
+
+const Discovery = () => {
+
+    const renderCard = (data) => {
+        return data.map((props, index) => (
+            <Card
+                {...props}
+                key={index}
+                overlay
+            />
+        ))
+    }
+
+    const renderCardRadio = (data) => {
+        return data.map((props, index) => (
+            <CardRadio
+                {...props}
+                key={index}
+                overlay
+            />
+        ))
+    }
+
+    return (
+        <div>
+
+            <Carousel 
+                headerStyle={1} 
+                title={data1.recent.title} 
+                col={6} col_lg={5}
+            >
+                {renderCard(data1.recent.items)}
+            </Carousel>
+
+            <Carousel 
+                headerStyle={1} 
+                title={data1.canYouListen.title} 
+                col={5} col_lg={4}
+            >
+                {renderCard(data1.canYouListen.items)}
+            </Carousel>
+
+            <Carousel 
+                headerStyle={1} 
+                title={data1.chooseToday.title} 
+                col={5} col_lg={4}
+            >
+                {renderCard(data1.chooseToday.items)}
+            </Carousel>
+
+            <Carousel 
+                headerStyle={1} 
+                title={data1.xoneCorner.title} 
+                col={5} col_lg={4}
+            >
+                {renderCard(data1.xoneCorner.items)}
+            </Carousel>
+
+            <Carousel
+                headerStyle={2}
+                to={router.RADIO}
+                title={data2.radio.title}
+                col={6} col_lg={5}
+            >
+                {renderCardRadio(data2.radio.items)}
+            </Carousel>
+            
+            <Carousel 
+                headerStyle={1} 
+                title={data2.mix.title} 
+                col={5} col_lg={4}
+            >
+                {renderCard(data2.mix.items)}
+            </Carousel>
+
+            <Carousel 
+                headerStyle={1} 
+                title={data2.becauseListened.title} 
+                col={5} col_lg={4}
+            >
+                {renderCard(data2.becauseListened.items)}
+            </Carousel>
+
+            <Carousel 
+                headerStyle={1} 
+                title={data2.newSongEveryDay.title} 
+                col={5} col_lg={4}
+            >
+                {renderCard(data2.newSongEveryDay.items)}
+            </Carousel>
+
+            <Carousel 
+                headerStyle={2} 
+                to={router.TOP_100}
+                title={data3.top100.title} 
+                col={5} col_lg={4}
+            >
+                {renderCard(data3.top100.items)}
+            </Carousel>
+
+            <Carousel 
+                headerStyle={1} 
+                title={data4.mixtape.title} 
+                col={5} col_lg={4}
+            >
+                {renderCard(data4.mixtape.items)}
+            </Carousel>
+            
+            <Carousel
+                headerStyle={3}
+                subTitle={data4.becauseYouCare.subTitle}
+                title={data4.becauseYouCare.title}
+                col={5} col_lg={4}
+                thumbnail={data4.becauseYouCare.thumbnail}
+            >
+                {renderCard(data4.becauseYouCare.items)}
+            </Carousel>
+
+            <Carousel
+                headerStyle={3}
+                subTitle={data4.topListened.subTitle}
+                title={data4.topListened.title}
+                col={5} col_lg={4}
+                thumbnail={data4.topListened.thumbnail}
+            >
+                {renderCard(data4.topListened.items)}
+            </Carousel>
+
+            <div>
+                <h3 className="text-secondary text-center text-xl uppercase mb-5">Đối tác âm nhạc</h3>
+                <LogoList>
+                   { data5.logos.map(({ imageSrc }, index) => (
+                        <a href="#!" className="bg-white p-1 hover:opacity-50" key={index}>
+                            <img src={imageSrc} alt="" />
+                        </a>
+                   )) }
+                </LogoList>
+            </div>
+
+        </div>
+    )
+}
+
+export default Discovery;

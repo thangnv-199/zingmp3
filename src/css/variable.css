@@ -1,0 +1,20 @@
+:root {
+    --alpha-bg: rgba(255,255,255,0.1);
+    --tab-active-bg: rgba(255,255,255,0.3);
+    --layout-bg: #1e1e1e;
+    --sidebar-bg: #292929;
+    --queue-player-bg: #2d2f32;
+    --player-bg: #181818;
+    --nav-text: #a0a0a0;
+    --text-primary: #fff;
+    --text-secondary: rgba(255,255,255,0.5);
+    --purple-primary: #7200a1;
+    --black: #32323d;
+    --yellow: #f8e71c;
+    --white: #fff;
+    --border-secondary: rgba(255,255,255,0.05);
+
+    --control-height: 90px;
+    --sidebar-width: 240px;
+    --player-queue-width: 320px;
+}

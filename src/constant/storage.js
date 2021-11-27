@@ -1,0 +1,11 @@
+export const DEFAULT_PLAYLIST = 'defaultPlaylist';
+export const PLAYLISTS = 'playlists';
+export const CURRENT_PLAYLIST = 'currentPlaylist';
+export const CURRENT_PLAYLIST_DEFAULT = 'currentPlaylistDefault';
+export const CURRENT_SONG = 'currentSong';
+export const HISTORY = 'history';
+export const MUTE = 'mute';
+export const RANDOM = 'random';
+export const REPEAT = 'repeat';
+export const VOLUME = 'volume';
+export const TEMP = 'temp';
