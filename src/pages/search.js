@@ -17,8 +17,6 @@ const LoadingContainer = styled.div`
 
 const SearchPage = () => {
 
-    console.log('Search page render !!');
-
     const query = useQuery();
     const keyword = query.get('p');
     const [isCheck, setIsCheck] = useState(0);

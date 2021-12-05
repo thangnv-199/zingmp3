@@ -119,7 +119,7 @@ const DivideStyled = styled.div`
 
 const Controls = () => {
 
-    console.log('Control render !!')
+    // console.log('Control render !!')
 
     const { toggleSong, nextSong, prevSong, addSongToHistory, songLoaded } = useDispatchs();
 

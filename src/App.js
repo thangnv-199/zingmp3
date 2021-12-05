@@ -48,9 +48,10 @@ const Main = styled.div`
 `;
 
 function App() {
-    console.log('App render !!');
+    // console.log('App render !!');
 
     useEffect(() => {
+       
         document.querySelector('html').setAttribute(
             'data-theme', storage.getTheme() || 'dark'
         )

@@ -82,7 +82,7 @@ const Index = () => {
             isCheck[index] = true;
             playlists[index].songs.push(song);
         }
-        console.log(isCheck)
+        
         e.target.classList.toggle('--active');
         storage.setplaylists(playlists)
     }

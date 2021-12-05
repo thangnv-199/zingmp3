@@ -1,4 +1,4 @@
-import { Route, Routes, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { chartWeek } from '../../data/zingChart';
 
 import EmptyPage from '../../pages/emptyPage';

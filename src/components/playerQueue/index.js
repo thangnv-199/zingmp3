@@ -124,7 +124,7 @@ const SongsListened = styled.div`
 `;
 
 const PlayerQueue = () => {
-    console.log('PlayQueue render !!')
+    // console.log('PlayQueue render !!')
 
     const [currentTab, setCurrentTab] = useState(0);
 
