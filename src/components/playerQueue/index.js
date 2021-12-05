@@ -1,48 +1,60 @@
 import { useState, memo } from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
-import {zingChart} from '../../data/zingChart';
 
-import { storage } from '../../utils';
-import * as storageKey from '../../constant/storage';
+
 import Song from '../song';
+import { zingChart } from '../../data/zingChart';
+import storage from '../../utils/storage';
 
 const Container = styled.div`
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 90px;
-    width: var(--player-queue-width);
-    background-color: var(--queue-player-bg);
-    transform: translateX(100%);
-    transition: transform 0.4s linear;
-    z-index: 99;
-
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);    
     .song {
         display: flex;
-        &-icon {
-            display: none;
-        }
-        &-action {
-            display: none;
-            margin-left: auto;
-        }
-
+        
         &-label {
             padding-left: 20px;
+        }
+
+        &-album {
+            display: none;
+        }
+
+        &-actions {
             margin-left: auto;
         }
         
         &:hover {
-            .song-action {
+            .song-hover-action {
                 display: flex;
             }
-            .song-label {
+            .song-action {
+                display: none;
+            }
+        }
+
+        .lyric-icon, .mv-icon {
+            display: none;
+        }
+
+        &.--active {
+            background-color: var(--purple-primary);
+            .heart-icon {
+                filter: brightness(2);
+            }
+        }
+        .music-icon {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        .song {
+            &-duration {
                 display: none;
             }
         }
     }
-    
 `;
 
 const Header = styled.div`
@@ -98,6 +110,7 @@ const Body = styled.div`
     right: 0;
     width: 100%;
     bottom: 0;
+    padding: 0 8px;
 `;
 
 const SongsListened = styled.div`
@@ -110,15 +123,14 @@ const SongsListened = styled.div`
     }
 `;
 
-const PlayerQueue = ({ currentSong }) => {
+const PlayerQueue = () => {
     console.log('PlayQueue render !!')
 
     const [currentTab, setCurrentTab] = useState(0);
 
     const currentPlaylist = useSelector(state => state.songs.playlist);
-    const songsHistory = storage.get(storageKey.HISTORY);
-    // const songsHistory = useSelector(state => state.songs.history);
-    // const topSongListened = storage.get(storageKey.DEFAULT_PLAYLIST);
+    const currentSong = useSelector(state => state.songs.current);
+    const songsHistory = storage.getHistory();
     const currentSongIndex = currentPlaylist.songs.findIndex(song => song.id === currentSong.id);
 
     const renderSongsNotListen = (playlist) => {
@@ -127,7 +139,6 @@ const PlayerQueue = ({ currentSong }) => {
                 playlist={playlist}
                 data={song}
                 key={index}
-                label="duration"
             />
         ))
     }
@@ -138,93 +149,74 @@ const PlayerQueue = ({ currentSong }) => {
                 playlist={playlist}
                 data={song}
                 key={index}
-                label="duration"
             />
         ))
     }
-    
+
     const renderSongsHistory = (songsHistory) => {
-        const playlists = storage.get(storageKey.PLAYLISTS) || [];
+        const playlists = storage.getplaylists();
         return songsHistory.map((song, index) => {
-            const playlist = playlists.find(item => item.id === song.playlistId) ||  zingChart
+            const playlist = playlists.find(item => item.id === song.playlistId) || zingChart
             return (
                 <Song
                     playlist={playlist}
                     data={song}
                     key={index}
-                    label="duration"
                 />
             )
         })
     }
 
-    // const renderTopSongsListened = () => {
-    //     topSongListened.songs.sort((a, b) => b.listened - a.listened)
-    //     return topSongListened.songs.map((song, index) => (
-    //         <Song
-    //             playlist={zingChart}
-    //             data={song}
-    //             key={index}
-    //             label="duration"
-    //         />
-    //     ))
-    // }
-
-    const handleOpenTab = (tabIndex) => {
-        setCurrentTab(tabIndex)
-    }
-
     return (
+
         <Container>
             <Header>
                 <ButtonGroup>
-                    <Button 
-                        onClick={() => handleOpenTab(0) } 
+                    <Button
+                        onClick={() => setCurrentTab(0)}
                         className={currentTab === 0 ? '--active' : ''}
                     >
                         Danh sách phát
                     </Button>
-                    <Button 
-                        onClick={() => handleOpenTab(1) } 
+                    <Button
+                        onClick={() => setCurrentTab(1)}
                         className={currentTab === 1 ? '--active' : ''}
                     >
                         Nghe gần đây
                     </Button>
-                    <Button 
-                        onClick={() => handleOpenTab(2) } 
+                    <Button
+                        onClick={() => setCurrentTab(2)}
                         className={currentTab === 2 ? '--active' : ''}
                     >
                         Nghe nhiều
                     </Button>
                 </ButtonGroup>
-                {/* <i className="far fa-clock icon-btn m-auto"></i>
-                <i className="fas fa-ellipsis-h icon-btn m-auto"></i> */}
             </Header>
             <Body className="scrollbar">
-                { currentTab === 0  && <div>
-                        <SongsListened>
-                            {renderSongsListened(currentPlaylist)}
-                        </SongsListened>
-                        <div className="text-left px-3 py-2"> 
-                            <p className="font-bold">Tiếp theo</p>
-                            <p>
-                                <span className="text-secondary inline-block mr-1">Từ playlist</span>
-                                <span className="text-purple-light">{currentPlaylist.name}</span> 
-                            </p>
-                        </div>
-                        <div>
-                            {renderSongsNotListen(currentPlaylist)}
-                        </div>
+                {currentTab === 0 && <div>
+                    <SongsListened>
+                        {renderSongsListened(currentPlaylist)}
+                    </SongsListened>
+                    <div className="text-left px-3 py-2">
+                        <p className="font-bold">Tiếp theo</p>
+                        <p>
+                            <span className="text-secondary inline-block mr-1">Từ playlist</span>
+                            <span className="text-purple font-semibold">{currentPlaylist.name}</span>
+                        </p>
                     </div>
+                    <div>
+                        {renderSongsNotListen(currentPlaylist)}
+                    </div>
+                </div>
                 }
-                { currentTab === 1 && <div>
-                        {renderSongsHistory(songsHistory)}
-                    </div>
+                {currentTab === 1 && <div>
+                    {renderSongsHistory(songsHistory)}
+                </div>
                 }
-                {/* { currentTab === 2 && <div className="text-xl text-white">
-                        {renderTopSongsListened()}
-                    </div>
-                } */}
+                {currentTab === 2 && <div className="text-xl text-white">
+                    <p className="p-5">Tính năng đang cập nhật</p>
+                </div>
+                }
             </Body>
         </Container>
     )

@@ -32,7 +32,7 @@ const ImageWrapper = styled.a`
 
 const Title = styled.a`
     font-size: ${props => props.size + 'px' || '16px'};
-    color: #fff;
+    color:var(--text-primary);
     font-weight: bold;
     display:-webkit-box;
     -webkit-line-clamp: 1;
@@ -44,7 +44,7 @@ const Title = styled.a`
     margin-bottom: 5px;
 
     &:hover {
-        color: var(--purple-primary);
+        color: var(--link-text-hover);
     }
 `;
 
@@ -60,7 +60,7 @@ const Text = styled.div`
     span {
         &:hover {
             text-decoration: underline;
-            color: var(--purple-primary);
+            color: var(--link-text-hover);
         }
     }
 `;
@@ -78,7 +78,7 @@ const LiveLogo = styled.span`
     letter-spacing: 2px;
     text-transform: uppercase;
     border-radius: 3px;
-    color: #fff;
+    color: var(--text-primary);
     z-index: 11;
 }
 `;
@@ -90,12 +90,18 @@ const PlayIcon = styled.img`
     border: 1px solid var(--white);
 `;
 
-const Image = styled.img`
-    width: 100%;
-    object-fit: cover;
-`;
+const Thumbnail = styled.img`
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    z-index: 11;
+`
 
-const CardRadio = ({ thumbnail, title, listening }) => {
+
+const CardRadio = ({ thumbnail, title, activeUsers, thumbnail2 }) => {
     return (
         <Container>
             <div className="relative">
@@ -103,13 +109,16 @@ const CardRadio = ({ thumbnail, title, listening }) => {
                     <div className="overlay">
                         <PlayIcon src="/zingmp3/images/icons/play.81e7696e.svg" alt="" />
                     </div>
-                    <Image src={thumbnail} alt="" />
+                    <img className="object-cover w-full" src={thumbnail} alt="" />
                 </ImageWrapper>
+                <a href="#!">
+                    <Thumbnail src={thumbnail2} alt="" />
+                </a>
                 <LiveLogo>LIVE</LiveLogo>
             </div>
             <div>
                 <Title href="#!" size="16" title={title}>{title}</Title>
-                <Text size="12" title={listening}>{listening} đang nghe</Text>
+                <Text size="12">{activeUsers} đang nghe</Text>
             </div>
         </Container>
     )

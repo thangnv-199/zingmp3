@@ -1,28 +1,40 @@
 import styled from "styled-components";
-import { useNavigate  } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { useRef } from 'react';
+import useDispatchs from '../../hooks/useDispatchs';
+import * as router from '../../constant/router';
 
-const HeaderStyled = styled.header`
+const ContainerStyled = styled.header`
     position: fixed;
     top: 0;
     right: 0;
-    left: 240px;
+    left: var(--sidebar-width);
     display: flex;
     align-items: center;
     height: 70px;
     background-color: var(--layout-bg);
     padding: 0 30px;
-    color: #7c6769;
     z-index: 90;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
     .back-button, .next-button {
         padding: 10px;
+        opacity: 0.4;
         &:hover {
-            color: #fff;
+            opacity: 1;
         }
+    }
+
+    @media (max-width: 1023px) {
+        left: var(--sidebar-width--tablet);
+    }
+    @media (max-width: 767px) {
+        left: 0;
+        padding: 0 12px;
     }
 `;
 
-const HeaderSearch = styled.div`
+const SearchStyled = styled.form`
     display: flex;
     align-items: center;
     gap: 10px;
@@ -32,17 +44,24 @@ const HeaderSearch = styled.div`
     flex: 1;
     padding: 8px;
 
+    svg {
+        color: var(--text-placeholder);
+    }
+
     input {
         background-color: transparent;
         width: 100%;
         display: block;
+        border: none;
+        outline: none;
+        color: var(--text-primary);
         &::placeholder {
-            color: inherit;
+            color: var(--text-placeholder);
         }
     }
 `;
 
-const HeaderNav = styled.div`
+const NavStyled = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
@@ -62,16 +81,33 @@ const HeaderNav = styled.div`
             opacity: 0.6;
         }
     }
+    @media (max-width: 767px) {
+        display: none;
+    }
 `;
-
 
 const Header = () => {
 
     const navigate = useNavigate();
+    const { toggleThemeModal } = useDispatchs();
+    const inputRef = useRef();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const keyword = inputRef.current.value;
+        if (keyword) {
+            navigate(router.SEARCH + `?p=${keyword}`);
+        }
+    }
 
     return (
-        <HeaderStyled className="flex gap-3">
-            <div className="flex">
+        <ContainerStyled className="flex gap-3">
+            <div className="block md:hidden">
+                <label htmlFor="sidebar-checkbox">
+                    <i className="fas fa-bars text-2xl p-2 cursor-pointer"></i>
+                </label>
+            </div>
+            <div className="hidden md:flex">
                 <div 
                     onClick={ () => { navigate(-1) } }
                     className="back-button cursor-pointer"
@@ -89,16 +125,20 @@ const Header = () => {
                     </svg>
                 </div>
             </div>
-            <HeaderSearch>
+            <SearchStyled onSubmit={handleSubmit}>
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </button>
-                <input placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV ..." type="text" />
-            </HeaderSearch>
-            <HeaderNav>
-                <button>
+                <input 
+                    ref={inputRef}
+                    placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV ..." 
+                    type="text" 
+                />
+            </SearchStyled>
+            <NavStyled>
+                <button onClick={ toggleThemeModal } title="Chủ đề">
                     <svg width={20} height={20} viewBox="0 0 20 20"><defs><linearGradient id="j32lhg93hd" x1="62.206%" x2="18.689%" y1="70.45%" y2="39.245%"><stop offset="0%" stopColor="#F81212" /><stop offset="100%" stopColor="red" /></linearGradient><linearGradient id="hjoavsus6g" x1="50%" x2="11.419%" y1="23.598%" y2="71.417%"><stop offset="0%" stopColor="#00F" /><stop offset="100%" stopColor="#0031FF" /></linearGradient><linearGradient id="la1y5u3dvi" x1="65.655%" x2="25.873%" y1="18.825%" y2="56.944%"><stop offset="0%" stopColor="#FFA600" /><stop offset="100%" stopColor="orange" /></linearGradient><linearGradient id="2dsmrlvdik" x1="24.964%" x2="63.407%" y1="8.849%" y2="55.625%"><stop offset="0%" stopColor="#13EFEC" /><stop offset="100%" stopColor="#00E8DF" /></linearGradient><filter id="4a7imk8mze" width="230%" height="230%" x="-65%" y="-65%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9" /></filter><filter id="301mo6jeah" width="312.7%" height="312.7%" x="-106.4%" y="-106.4%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9" /></filter><filter id="b2zvzgq7fj" width="295%" height="295%" x="-97.5%" y="-97.5%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9" /></filter><filter id="a1wq161tvl" width="256%" height="256%" x="-78%" y="-78%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9" /></filter><path id="qtpqrj1oda" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z" /><path id="jggzvnjgfc" d="M0 0H20V20H0z" /><path id="2eiwxjmc7m" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z" /></defs><g fill="none" fillRule="evenodd" transform="translate(2 3)"><mask id="tinejqaasb" fill="#fff"><use xlinkHref="#qtpqrj1oda" /></mask><use fill="#FFF" fillOpacity={0} xlinkHref="#qtpqrj1oda" /><g mask="url(#tinejqaasb)"><g transform="translate(-2 -3)"><mask id="uf3ckvfvpf" fill="#fff"><use xlinkHref="#jggzvnjgfc" /></mask><use fill="#D8D8D8" xlinkHref="#jggzvnjgfc" /><circle cx="8.9" cy="6.8" r={9} fill="url(#j32lhg93hd)" filter="url(#4a7imk8mze)" mask="url(#uf3ckvfvpf)" /><circle cx="9.3" cy="13.7" r="5.5" fill="url(#hjoavsus6g)" filter="url(#301mo6jeah)" mask="url(#uf3ckvfvpf)" /><circle cx="15.9" cy="6.9" r={6} fill="url(#la1y5u3dvi)" filter="url(#b2zvzgq7fj)" mask="url(#uf3ckvfvpf)" /><circle cx="16.4" cy="17.7" r="7.5" fill="url(#2dsmrlvdik)" filter="url(#a1wq161tvl)" mask="url(#uf3ckvfvpf)" /></g></g><use fill="#FFF" fillOpacity="0.05" xlinkHref="#2eiwxjmc7m" /></g></svg>
                 </button>
                 <button>
@@ -113,10 +153,10 @@ const Header = () => {
                     </svg>
                 </button>
                 <button>
-                    <img src="/zingmp3/images/avatar.jpg" alt="" />
+                    <img src="/zingmp3/images/icon_zing_mp3_60.f6b51045.svg" alt="" />
                 </button>
-            </HeaderNav>
-        </HeaderStyled>
+            </NavStyled>
+        </ContainerStyled>
     )
 }
 

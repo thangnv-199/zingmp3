@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useState } from 'react';
 
-import { closePlaylistModal, addPlaylist, updatePlaylist } from '../../redux/actions';
-import { storage, convertTime } from '../../utils';
-import * as storageKey from '../../constant/storage';
+import useDispatchs from '../../hooks/useDispatchs';
+import { convertTime } from '../../utils';
+import storage from '../../utils/storage';
 
 const Container = styled.div`
     position: fixed;
@@ -14,18 +14,18 @@ const Container = styled.div`
     right: 0;
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 100;
+    z-index: 1000;
 `;
 
 const Modal = styled.div`
     min-width: 300px;
     margin: auto;
     background-color: var(--layout-bg);
-    color: var(--white);
+    color: var(--text-primary);
     padding: 20px;
     position: relative;
     border-radius: 8px;
-`;  
+`;
 
 const Input = styled.input`
     height: 40px;
@@ -35,6 +35,9 @@ const Input = styled.input`
     background-color: var(--alpha-bg);
     padding: 0 15px;
     font-size: 14px;
+    &::placeholder {
+        color: var(--text-placeholder);
+    }
 `;
 
 const CloseIcon = styled.i`
@@ -42,7 +45,7 @@ const CloseIcon = styled.i`
     right: 0;
     top: 0;
     padding: 12px;
-    color: var(--white); 
+    color: var(--text-primary); 
     cursor: pointer;
     font-size: 20px;
 `;
@@ -50,6 +53,8 @@ const CloseIcon = styled.i`
 const ModalButton = styled.button`
     width: 100%;
     margin-top: 20px;
+    padding: 8px;
+    letter-spacing: 1px;
 
     &.--disabled {
         pointer-events: none;
@@ -60,7 +65,7 @@ const ModalButton = styled.button`
 
 const Index = () => {
 
-    const dispatch = useDispatch();
+    const { closeCreatePlaylistModal, addPlaylist, updatePlaylist } = useDispatchs();
 
     const playlistEditing = useSelector(state => state.playlist.editing);
     const [value, setValue] = useState(playlistEditing ? playlistEditing.name : '');
@@ -70,7 +75,7 @@ const Index = () => {
     }
 
     const handleSubmit = () => {
-        const playlist = storage.get(storageKey.PLAYLISTS) || [];
+        const playlist = storage.getplaylists();
         const id = new Date().getTime().toString(16);
         const newPlaylist = {
             name: value,
@@ -78,47 +83,45 @@ const Index = () => {
             createdAt: convertTime(new Date()),
             songs: [],
         };
-        dispatch(addPlaylist(newPlaylist));
-        storage.set(storageKey.PLAYLISTS, [...playlist, newPlaylist])
+        closeCreatePlaylistModal();
+        addPlaylist(newPlaylist);
+        storage.setplaylists([...playlist, newPlaylist])
     };
 
     const handleUpdate = (value) => {
-        dispatch(updatePlaylist({
+        closeCreatePlaylistModal()
+        updatePlaylist({
             ...playlistEditing,
             name: value,
-        }));
-    }
-
-    const handleCloseModal = () => {
-        dispatch(closePlaylistModal());
+        });
     }
 
     return (
         <Container>
             <Modal>
-                <CloseIcon 
+                <CloseIcon
                     className="fas fa-times"
-                    onClick={handleCloseModal}
+                    onClick={closeCreatePlaylistModal}
                 />
                 <h3 className="text-center text-lg font-semibold mb-4">
-                    { playlistEditing ? 'Chỉnh sửa Playlist' : 'Tạo playlist mới' } 
+                    {playlistEditing ? 'Chỉnh sửa Playlist' : 'Tạo playlist mới'}
                 </h3>
-                <Input 
-                    onChange={ handleChange }
-                    value={value} 
-                    type="text" 
+                <Input
+                    onChange={handleChange}
+                    value={value}
+                    type="text"
                     placeholder="Nhập tên Playlist"
                 />
 
-                { playlistEditing
-                    ? <ModalButton 
-                            onClick={() => handleUpdate(value) }
-                            className={`button --purple ${value ? '' : '--disabled'}`}
-                        >Lưu lại</ModalButton>
-                    : <ModalButton 
-                            onClick={ handleSubmit }
-                            className={`button --purple ${value ? '' : '--disabled'}`}
-                        >Tạo mới</ModalButton>
+                {playlistEditing
+                    ? <ModalButton
+                        onClick={() => handleUpdate(value)}
+                        className={`button --purple ${value ? '' : '--disabled'}`}
+                    >Lưu lại</ModalButton>
+                    : <ModalButton
+                        onClick={handleSubmit}
+                        className={`button --purple ${value ? '' : '--disabled'}`}
+                    >Tạo mới</ModalButton>
                 }
             </Modal>
         </Container>

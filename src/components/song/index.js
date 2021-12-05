@@ -1,18 +1,20 @@
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useRef, useEffect, useCallback } from 'react';
-import { 
-    toggleSong, 
-    changeSong, 
-    openAddToPlaylistModal 
-} from '../../redux/actions';
-import { storage, convertDuration } from '../../utils';
-import BarAnimation from '../barAnimatiton';
-import * as storageKey from '../../constant/storage';
 
-const Container = styled.div`
+import BarAnimation from '../barAnimatiton';
+import MvButton from '../iconsButton/mv';
+import LyricButton from '../iconsButton/lyric';
+import HeartButton from '../iconsButton/heart';
+import MoreButton from '../iconsButton/more';
+import { convertDuration } from '../../utils';
+import useDispatchs from '../../hooks/useDispatchs';
+
+const ContainerStyled = styled.div`
     display: grid;
-    grid-template-columns: 5fr 2fr 3fr;
+    grid-template-columns: 3fr 2fr 1fr;
+    gap: 10px;
+    align-items: center;
     cursor: pointer;
     color: var(--text-secondary);
     font-size: 14px;
@@ -22,45 +24,51 @@ const Container = styled.div`
     border-radius: 4px;
     border-bottom: 1px solid var(--border-secondary);
 
-    .song-label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 12px;
+    .song {
+        &-actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        &-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+    }
+    
+    .lyric-icon, .mv-icon, .more-icon {
+        display: none;
     }
 
     &:hover, &.--active {
-        .song-image-overlay {
+        background-color: var(--alpha-bg);
+        .song-image-overlayStyled {
             display: flex;
         }
     }
 
-    &.--active {
-        background-color: var(--purple-primary);
-        .playlist-name {
-            color: var(--text-primary);
+    &:hover {
+        .song-duration {
+            display: none;
+        }
+        .lyric-icon, .mv-icon, .more-icon {
+            display: block;
         }
     }
 
-    &:hover {
-        background-color: var(--alpha-bg);
-    }
-
-`;
-
-const Action = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    .mv-icon {
-        filter: invert(0.6);
-        padding: 6px;
-        border-radius: unset;
+    @media (max-width: 1023px) {
+        .lyric-icon, .mv-icon {
+            display: none !important;
+        }
+        .more-icon {
+            display: block;
+        }
     }
 `;
 
-const Overlay = styled.div`
+const OverlayStyled = styled.div`
     position: absolute;
     top: 0;
     left: 0;
@@ -70,7 +78,7 @@ const Overlay = styled.div`
     display: none;
     i {
         margin: auto;
-        color: #fff;
+        color: var(--white);
     }
 
     &:hover {
@@ -80,7 +88,7 @@ const Overlay = styled.div`
     }
 `;
 
-const Name = styled.div`
+const NameStyled = styled.div`
     font-size: 14px;
     color: var(--text-primary);
     display:-webkit-box;
@@ -93,16 +101,21 @@ const Name = styled.div`
     font-weight: 500;
 `;
 
-const Artists = styled.a`
+const ArtistsStyled = styled.div`
     display:-webkit-box;
     -webkit-line-clamp:1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-word;
+
+    a:hover {
+        color: var(--link-text-hover);
+        text-decoration: underline;
+    }
 `;
 
-const TopLabel = styled.span`
+const TopLabelStyled = styled.span`
     font-size: 32px;
     font-weight: 900;
     line-height: 1;
@@ -116,123 +129,87 @@ const TopLabel = styled.span`
     justify-content: center;
     align-items: center;
     color: rgba(74,144,226,0);
-    -webkit-text-stroke: 1px ${
-        props => props.color > 3 
-            ? 'var(--text-primary)'
-            : props.color === 1 
-                ? '#4a90e2'
-                : props.color === 2
-                    ? '#50e3c2' 
-                    : '#e35050' 
+    -webkit-text-stroke: 1px ${props => props.color > 3
+        ? 'var(--text-primary)'
+        : props.color === 1
+            ? '#4a90e2'
+            : props.color === 2
+                ? '#50e3c2'
+                : '#e35050'
     };
 `;
 
-const Song = ({ data, playlist, label, index }) => {
-    const dispatch = useDispatch();
+const Song = ({ data, playlist, index }) => {
+    const { toggleSong, changeSong } = useDispatchs();
 
     const songRef = useRef();
     const currentPlaylist = useSelector(state => state.songs.playlist);
     const currentSong = useSelector(state => state.songs.current);
     const isPlaying = useSelector(state => state.songs.isPlaying);
-    const { image, name, singer, id, duration } = data;
-    
+    const { image, name, artist, id, duration, album } = data;
+
     const checkSongPlaying = useCallback(() => {
         return currentSong.id === id && playlist.id === currentPlaylist.id;
     }, [currentSong.id, id, playlist.id, currentPlaylist.id])
 
-    const handleClick = (e) => {
-        const _this = e.target;
-        if (_this.closest('.add-to-playlist')){
-            dispatch(openAddToPlaylistModal());
-            storage.set(storageKey.TEMP, data);
-        }
-        else if (_this.closest('.remove-in-playlist')){
-            
-        }
-        else if (_this.closest('.view-lyric')) {
-            
-        }
-        else {
-            if (checkSongPlaying()) {
-                dispatch(toggleSong())
-            } else {
-                dispatch(changeSong(data, playlist))
-            }
-        }
+    const handleClick = () => {
+        checkSongPlaying()
+        ? toggleSong()
+        : changeSong(data, playlist)
     }
 
-    useEffect(() =>{
+    useEffect(() => {
         checkSongPlaying() && songRef.current.scrollIntoView({
-            behavior: "smooth", 
-            block: "center", 
+            behavior: "smooth",
+            block: "center",
             inline: "nearest"
         })
     }, [checkSongPlaying])
 
     return (
-        <Container 
-            onClick={ handleClick }
-            className={ checkSongPlaying() ? '--active song' : 'song' }
-            ref={ songRef }
+        <ContainerStyled ref={songRef}
+            onClick={handleClick}
+            className={checkSongPlaying() ? '--active song' : 'song'}
         >
             <div className="flex items-center">
-                { ++index
-                    ? <TopLabel color={index}>{index}</TopLabel>
-                    : <i className="fas fa-music icon-btn song-icon"></i>
+                {++index
+                    ? <TopLabelStyled color={index}>{index}</TopLabelStyled>
+                    : <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 p-1 music-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                    </svg>
                 }
-                
+
                 <div className="mr-3 relative flex-shrink-0">
-                    <Overlay className="song-image-overlay">
-                        { isPlaying && checkSongPlaying()
+                    <OverlayStyled className="song-image-overlayStyled">
+                        {isPlaying && checkSongPlaying()
                             ? <BarAnimation />
                             : <i className="fas fa-play"></i>
                         }
-                    </Overlay>
-                    <img className="w-10 h-10" src={ image } alt="" />
+                    </OverlayStyled>
+                    <img className="w-10 h-10" src={image} alt="" />
                 </div>
                 <div className="text-left">
-                    <Name>{ name }</Name>
-                   <Artists>
-                   {singer.split(',').map((singer, index) => (
-                        <a className="capitalize hover:text-purple text-secondary" key={index} href="#!">
-                            { index === 0 ? '' : ',' } {singer} 
-                        </a>
-                    ))}
-                   </Artists>
+                    <NameStyled title={name}>{name}</NameStyled>
+                    <ArtistsStyled>
+                        {artist.split(',').map((item, index) => (
+                            <a className="capitalize text-secondary" key={index} href="#!">
+                                {index === 0 ? '' : ','} {item}
+                            </a>
+                        ))}
+                    </ArtistsStyled>
                 </div>
             </div>
-            <div className="song-label">
-                { label === 'duration' ? convertDuration(duration) : ''}
-                { label === 'playlist'
-                    ? <p className="text-center">
-                        <span className="text-primary text-xs block">Playlist</span>
-                        <span className="text-purple-light playlist-name block">{playlist.name}</span>
-                     </p>
-                    : ''
-                }
-                { label === 'listened'
-                    ? <p className="text-center">
-                        <span className="text-primary text-xs block whitespace-nowrap">Đã nghe</span>
-                        <span className="text-purple-light playlist-name block text-base">{data.listened}</span>
-                     </p>
-                    : ''
-                }
+            <div className="song-album text-xs">
+                <p className="text-truncate"> {album || ''} </p>
             </div>
-            <Action className="song-action">
-                <div title="Xem MV" className="flex-shrink-0">
-                    <img className="icon-btn mv-icon" src="/zingmp3/images/icons/mv-icon.png" alt="" />
-                </div>
-                <div title="Xem lời bài hát">
-                    <label htmlFor="song-lyric-checkbox" className="cursor-pointer">
-                        <i className="far fa-list-alt icon-btn view-lyric"></i>
-                    </label>
-                </div>
-                <div title="Thêm vào playlist">
-                    <i className="fas fa-plus icon-btn add-to-playlist"></i>
-                </div>
-            </Action>
-            
-        </Container>
+            <div className="song-actions">
+                <MvButton song={data} />
+                <LyricButton song={data} />
+                <HeartButton data={data} />
+                <div className="w-10 song-duration">{convertDuration(duration)}</div>
+                <MoreButton song={data} playlist={playlist} />
+            </div>
+        </ContainerStyled>
     )
 
 }

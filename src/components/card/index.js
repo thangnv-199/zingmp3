@@ -11,7 +11,7 @@ const ImageWrapper = styled.a`
     position: relative;
     margin-bottom: 10px;
     border-radius:${props => props.circle ? '100%' : '5px'};
-    color: var(--white);
+    color: var(--text-primary);
     
     .overlay {
         display: flex;
@@ -32,7 +32,7 @@ const ImageWrapper = styled.a`
 `;
 
 const Title = styled.a`
-    color: #fff;
+    color: var(--text-primary);
     font-weight: bold;
     display:-webkit-box;
     -webkit-line-clamp: 1;
@@ -45,7 +45,7 @@ const Title = styled.a`
     margin-bottom: 5px;
 
     &:hover {
-        color: var(--purple-primary);
+        color: var(--link-text-hover);
     }
 `;
 
@@ -61,7 +61,7 @@ const Text = styled.div`
     span {
         &:hover {
             text-decoration: underline;
-            color: var(--purple-primary);
+            color: var(--link-text-hover);
         }
     }
 `;
@@ -96,8 +96,8 @@ const Card = ({ thumbnail, title, artists, description, circle, center, overlay 
             </ImageWrapper>
             <div>
                 <Title href="#!" title={title}>{title}</Title>
-                {artists && <Text size="14">{artists.map((singer, index) => (
-                        <a className="hover:text-purple text-capitalize" href="#!" key={index}>{singer}{index < artists.length - 1 ? ', ' : ''}</a>
+                {artists && <Text size="14">{artists.map((artist, index) => (
+                        <a className="hover:text-link-hover text-capitalize" href="#!" key={index}>{artist}{index < artists.length - 1 ? ', ' : ''}</a>
                     ))}
                 </Text>}
                 {description && <Text size="14" title={description}>{description}</Text>}

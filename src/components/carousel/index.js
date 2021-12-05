@@ -8,6 +8,7 @@ const Body = styled.div`
     overflow-x: auto;
     padding-bottom: 10px;
     margin: 0 -15px 30px; 
+    flex-wrap: ${props => props.wrap ? 'wrap' : 'no-wrap'};
 
     & > * {
         padding: 0 15px;
@@ -24,7 +25,7 @@ const Body = styled.div`
             flex: 0 0 ${props => 100 / (props.col_md || props.col_lg)}%;
         }
     
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             width: ${props => 100 / (props.col_sm || props.col_md)}%;
             flex: 0 0 ${props => 100 / (props.col_sm || props.col_md)}%;
         }
@@ -57,13 +58,13 @@ const HeaderStyle3 = styled.div`
         font-weight: bold;
         text-transform: capitalize;
         &:hover {
-            color: var(--purple-primary);
+            color: var(--link-text-hover);
         }
     }
 `;
 
 const Carousel = ({ children, to, title, subTitle,
-    col, col_sm, col_md, col_lg,
+    col, col_sm, col_md, col_lg, wrap,
     headerStyle, thumbnail 
 }) => {
     const sliderRef = useRef();
@@ -109,11 +110,11 @@ const Carousel = ({ children, to, title, subTitle,
         <div>
             <div>
                 { headerStyle === 1 
-                    ? <h2 className="text-xl font-bold mb-4 text-white">{ title }</h2>
+                    ? <h2 className="text-xl font-bold mb-4 text-white capitalize">{ title }</h2>
                     : ''  
                 }
                 { headerStyle === 2 
-                    ? <div className="flex mb-4 items-center hover:text-purple text-white">
+                    ? <div className="flex mb-4 items-center hover:text-link-hover text-white">
                         <NavLink to={to} className="text-xl font-bold mr-1" >{title}</NavLink>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -135,6 +136,7 @@ const Carousel = ({ children, to, title, subTitle,
                 }
             </div>
             <Body 
+                wrap={wrap ? 'true' : ''}
                 ref={ sliderRef }
                 className="scrollbar" 
                 col={col} col_sm={col_sm} col_md={col_md} col_lg={col_lg}

@@ -11,7 +11,7 @@ const Div = styled.div`
             height: 3px;
             background-color: var(--alpha-bg);
             cursor: pointer;
-            border-radius: 20px;
+            border-radius: 4;
                 
             &:hover {
                 height: 6px;
@@ -27,7 +27,7 @@ const Div = styled.div`
             left: 0;
             height: 100%;
             width: 0%;
-            background-color: #fff;
+            background-color:var(--text-primary);
             border-radius: 20px;
             
             &::after {
@@ -38,7 +38,7 @@ const Div = styled.div`
                 right: 0;
                 bottom: 4px;
                 transform: translate(50%, 50%);
-                background-color: #fff;
+                background-color:var(--text-primary);
                 border-radius: 100%;
                 opacity: 0;
                 visibility: hidden;
@@ -59,11 +59,18 @@ const Slider = ({ onHandleMouseUp }, ref) => {
     }), [])
 
     useEffect(() => {
-        const slider = sliderBarElm.current;
-        const offsetLeft = slider.getBoundingClientRect().x;
-        const offsetWidth = slider.offsetWidth;
+        let slider = sliderBarElm.current;
+        let offsetLeft = slider.getBoundingClientRect().x;
+        let offsetWidth = slider.offsetWidth;
         let isDown = false;
         let width;
+
+
+        const handleWindowSizeChange = () => {
+            offsetLeft = slider.getBoundingClientRect().x;
+            offsetWidth = slider.offsetWidth;
+        }
+        
 
         const handleMouseDown = (e) => {
             width = Math.round((e.pageX - offsetLeft) * 100 / offsetWidth);
@@ -88,12 +95,14 @@ const Slider = ({ onHandleMouseUp }, ref) => {
             onHandleMouseUp(width);
         }
 
+        window.addEventListener('resize', handleWindowSizeChange);
         slider.addEventListener('mousedown', handleMouseDown);
         slider.addEventListener('mousemove', handleMouseMove);
         slider.addEventListener('mouseup', handleMouseUp);
         slider.addEventListener('mouseleave', handleMouseLeave);
 
         return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
             slider.removeEventListener('mouseleave', handleMouseLeave);
             slider.removeEventListener('mouseup', handleMouseUp);
             slider.removeEventListener('mousedown', handleMouseDown);

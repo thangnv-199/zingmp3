@@ -1,8 +1,9 @@
+import Swal from 'sweetalert2';
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
-import { deletePlaylist } from '../../redux/actions';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { changeSong, toggleSong } from '../../redux/actions';
+
+import useDispatchs from '../../hooks/useDispatchs';
 import BarAnimation from '../barAnimatiton';
 
 const ImageWrapper = styled.div`
@@ -11,7 +12,7 @@ const ImageWrapper = styled.div`
     position: relative;
     margin-bottom: 10px;
     border-radius:5px;
-    color: var(--white);
+    color: var(--text-primary);
     cursor: pointer;
     user-select: none;
 
@@ -33,7 +34,7 @@ const ImageWrapper = styled.div`
 `;
 
 const Title = styled.a`
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
     display:-webkit-box;
     -webkit-line-clamp: 1;
@@ -46,7 +47,7 @@ const Title = styled.a`
     margin-bottom: 5px;
 
     &:hover {
-        color: var(--purple-primary);
+        color: var(--link-text-hover);
     }
 `;
 
@@ -83,43 +84,46 @@ const ImageGroup = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     & > * {
-        max-width: 50%;
+        width: 50%;
     }
 `;
 
 const Card = ({ name, id, playlist }) => {
 
-    const dispatch = useDispatch();
     const navigate = useNavigate();
+    const { toggleSong, openPlaylist, deletePlaylist } = useDispatchs();
     const isPlaying = useSelector(state => state.songs.isPlaying);
     const currentPlaylist = useSelector(state => state.songs.playlist);
-    
-    const handleClick = (e) => {
-        const _this = e.target;
-        if (_this.closest('.delete-button')) {
-            const isDelete = window.confirm(`Bạn chắc chắn muốn xóa Playlist này ?`)
-            if (isDelete) {
-                dispatch(deletePlaylist(id));
+
+    const handleDelete = (e) => {
+        e.stopPropagation();
+        Swal.fire({
+            position: 'top',
+            icon: 'warning',
+            text: 'Bạn chắc chắn muốn xóa Playlist này ?',
+            confirmButtonColor: 'var(--purple-primary)',
+            confirmButtonText: 'Xác nhận',
+        })
+        .then(result => {
+            if (result.isConfirmed) {
+                deletePlaylist(id);
+                Swal.fire({
+                    position: 'top',
+                    icon: 'success',
+                    timer: 1000,
+                })
             }
-        }
+        })
+    }
 
-        else if (_this.closest('.play-button')) {
-            if (!checkSongs()) {
-                alert('Chưa có bài hát nào trong playlist này!!!');
-                return;
-            };
-            dispatch(changeSong(playlist.songs[0], playlist));
-        }
-
-        else if (_this.closest('.bar-animation')) {
-            dispatch(toggleSong())
-        }
-
-        else {
-            navigate(`/playlist/${id}`);
-        }
+    const handlePlay = (e) => {
+        e.stopPropagation();
+        if (!checkSongs()) {
+            alert('Chưa có bài hát nào trong playlist này!!!');
+            return;
+        };
+        openPlaylist(playlist);
     }
 
     const checkSongs = () => {
@@ -131,19 +135,25 @@ const Card = ({ name, id, playlist }) => {
 
     return (
         <div>
-            <ImageWrapper onClick={ handleClick }>
+            <ImageWrapper onClick={ () => navigate(`/playlist/${id}`) }>
                 { isPlaying && currentPlaylist.id === id
                     ? <div className="overlay --show">
-                        <BarWrapper className="bar-animation">
+                        <BarWrapper onClick={ (e) => {
+                            e.stopPropagation();
+                            toggleSong()
+                        } }>
                             <BarAnimation/>
                         </BarWrapper>
                     </div>
                     : <div className="overlay">
-                        <i 
+                        <i onClick={ handleDelete }
                             className="fas fa-times icon-btn delete-button" 
                             title="Xóa playlist"
                         />
-                        <PlayIcon className="play-button" src="/zingmp3/images/icons/play.81e7696e.svg" alt="" />
+                        <PlayIcon onClick={ handlePlay }
+                            className="play-button" 
+                            src="/zingmp3/images/icons/play.81e7696e.svg" alt="" 
+                        />
                         <i className="fas fa-ellipsis-h icon-btn"></i>
                     </div>
                 

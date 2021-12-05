@@ -1,22 +1,35 @@
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
-
+import useDispatchs from '../../hooks/useDispatchs';
 import PlaylistCard from '../../components/card/playlistCard';
-import { openPlaylistModal } from '../../redux/actions';
 
 const Playlist = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 -10px;
+    align-items: center;
+
+    & > * {
+        padding: 0 10px;
+    }
+    @media (max-width: 1023px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 `;
 
-const AddPlaylistButton = styled.div`
+const AddPlaylistButtonContainer = styled.div`
+    height: 100%;
     min-height: 200px;
+`
+
+const AddPlaylistButton = styled.div`
+    height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--white);
     flex-direction: column;
     gap: 20px;
     background: linear-gradient(
@@ -30,7 +43,7 @@ const AddPlaylistButton = styled.div`
 
 const PlaylistPage = () => {
 
-    const dispatch = useDispatch();
+    const { openCreatePlaylistModal } = useDispatchs();
 
     const playlists = useSelector(state => state.playlist.list);
 
@@ -50,10 +63,14 @@ const PlaylistPage = () => {
         <div>
             <h3 className="font-bold text-xl text-white mb-5">Playlist</h3>
             <Playlist>
-                <AddPlaylistButton onClick={() => dispatch(openPlaylistModal())}>
-                    <i className="fas fa-plus"></i>
-                    <span>Tạo playlist mới</span>
-                </AddPlaylistButton>
+                <AddPlaylistButtonContainer>
+                    <AddPlaylistButton onClick={ openCreatePlaylistModal }>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                        </svg>
+                        <span>Tạo playlist mới</span>
+                    </AddPlaylistButton>
+                </AddPlaylistButtonContainer>
                 {renderPlaylist(playlists)}
             </Playlist>
         </div>

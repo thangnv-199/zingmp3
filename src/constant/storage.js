@@ -8,4 +8,6 @@ export const MUTE = 'mute';
 export const RANDOM = 'random';
 export const REPEAT = 'repeat';
 export const VOLUME = 'volume';
-export const TEMP = 'temp';
+export const LIBRARY = 'library';
+export const USERNAME = 'username';
+export const THEME = 'theme';

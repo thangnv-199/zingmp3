@@ -7,10 +7,11 @@ module.exports = {
                 '30': '120px',
             },
             colors: {
-                purple: '#7200a1',
-                ['purple-light']: '#b607ff',
-                primary: '#fff',
-                secondary: 'rgba(255,255,255,0.5)',
+                primary: 'var(--text-primary)',
+                secondary: 'var(--text-secondary)',
+                purple: 'var(--purple-primary)',
+                'link-hover': 'var(--link-text-hover)',
+                'bd-primary': 'rgba(255,255,255,0.1)',
             }
         },
     },

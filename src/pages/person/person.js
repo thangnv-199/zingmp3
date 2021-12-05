@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
+import EmptyBox from '../../components/emptyBox';
 import Song from '../../components/song';
 import PlaylistButton from '../../components/button/playListButton';
 import PlaylistCard from '../../components/card/playlistCard';
-import {zingChart} from '../../data/zingChart';
-import { openPlaylistModal } from '../../redux/actions';
+import storage from '../../utils/storage';
+import useDispatchs from '../../hooks/useDispatchs';
 
 const SongList = styled.div`
     flex: 1;
@@ -15,8 +16,14 @@ const SongList = styled.div`
 
 const Playlist = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 -10px;
+    & > * {
+        padding: 0 10px;
+    }
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 `;
 
 const AddPlaylistButton = styled.div`
@@ -24,7 +31,7 @@ const AddPlaylistButton = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--white);
     flex-direction: column;
     gap: 20px;
     background: linear-gradient(
@@ -38,12 +45,18 @@ const AddPlaylistButton = styled.div`
 
 const Person = () => {
 
-    const dispatch = useDispatch();
+    const { openCreatePlaylistModal } = useDispatchs();
     const playlists = useSelector(state => state.playlist.list);
+    const playlist = storage.getLibrary();
 
-    const renderSongs = (zingChart) => {
-        return zingChart.songs.map((song, index) => (
-            <Song key={index} data={song} playlist={ zingChart } />
+
+    const renderSongs = (playlist) => {
+        return playlist.songs.map((song, index) => (
+            <Song
+                key={index}
+                data={song}
+                playlist={playlist}
+            />
         ))
     };
 
@@ -53,12 +66,12 @@ const Person = () => {
                 imageSrc="/zingmp3/images/album_default.png"
                 name={item.name}
                 id={item.id}
-                playlist={ item }
+                playlist={item}
                 key={index}
             />
         ))
     );
-    
+
     return (
         <div>
             <div className="mb-8">
@@ -67,28 +80,36 @@ const Person = () => {
                     <h3 className="font-bold text-xl">Bài hát</h3>
                     <div className="flex items-center">
                         <a href="#!" className="button mr-3">
-                            <i className="fas fa-upload"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" /></svg>
                             Tải lên
                         </a>
-                        <PlaylistButton playlist={ zingChart } />
+                        <PlaylistButton playlist={playlist} />
                     </div>
                 </header>
-                <div className="flex">
-                    <div>
-                        <img className="flex-shrink-0" src="/zingmp3/images/songs/7e6088a95d78a12eae1cf55d0b3cc3b9.webp" alt="" />
+                {playlist.songs.length === 0
+                    ? <EmptyBox
+                        label="Không có bài hát nào thư viện nhạc của bạn"
+                        imageSrc="/zingmp3/images/icons/dics-music-icon.3925fc01.svg"
+                    />
+                    : <div className="flex">
+                        <img className="w-60 h-60" src="/zingmp3/images/album_default.png" alt="" />
+                        <SongList className="scrollbar pb-0">
+                            {renderSongs(playlist)}
+                        </SongList>
                     </div>
-                    <SongList className="scrollbar">
-                        {renderSongs(zingChart)}
-                    </SongList>
-                </div>
+                }
             </div>
             <div>
                 <h3 className="font-bold text-xl text-white mb-5">Playlist</h3>
                 <Playlist>
-                    <AddPlaylistButton onClick={() => dispatch(openPlaylistModal())}>
-                        <i className="fas fa-plus"></i>
-                        <span>Tạo playlist mới</span>
-                    </AddPlaylistButton>
+                    <div>
+                        <AddPlaylistButton onClick={ openCreatePlaylistModal }>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                            </svg>
+                            <span>Tạo playlist mới</span>
+                        </AddPlaylistButton>
+                    </div>
                     {renderPlaylist(playlists)}
                 </Playlist>
             </div>

@@ -48,7 +48,7 @@ const BarStyle = styled.div`
         width: 3px;
         height: 1px;
         overflow: hidden;
-        background-color: #fff;
+        background-color: var(--white);
         color: transparent;
         animation-name: ${pulse};
         animation-duration: 1s;

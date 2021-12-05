@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
+import EmptyBox from '../../components/emptyBox';
 import Song from '../../components/song';
 import PlaylistButton from '../../components/button/playListButton';
-import {zingChart} from '../../data/zingChart';
+import storage from '../../utils/storage';
 
 const SongList = styled.div`
     flex: 1;
@@ -10,13 +11,14 @@ const SongList = styled.div`
 
 const Songs = () => {
 
-    const renderSongs = (zingChart) => {
-        return zingChart.songs.map((song, index) => (
+    const playlist = storage.getLibrary();
+
+    const renderSongs = (playlist) => {
+        return playlist.songs.map((song, index) => (
             <Song 
                 key={index} 
                 data={song} 
-                playlist={zingChart} 
-                label="duration"
+                playlist={playlist} 
             />
         ))
     }
@@ -31,12 +33,18 @@ const Songs = () => {
                         <i className="fas fa-upload"></i>
                         Tải lên
                     </a>
-                    <PlaylistButton playlist={ zingChart } />
+                    <PlaylistButton playlist={ playlist } />
                 </div>
             </header>
-            <SongList className="scrollbar">
-                {renderSongs(zingChart)}
-            </SongList>
+            { playlist.songs.length === 0
+                ? <EmptyBox 
+                        label="Không có bài hát nào thư viện nhạc của bạn"
+                        imageSrc="/zingmp3/images/icons/dics-music-icon.3925fc01.svg"
+                    />
+                :  <SongList className="scrollbar">
+                    {renderSongs(playlist)}
+                </SongList>
+            }
         </div>
     )
 }
