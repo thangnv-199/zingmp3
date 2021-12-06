@@ -1238,7 +1238,7 @@ export const radio = {
         link: item.link,
         thumbnail: item.program.thumbnail,
         thumbnail2: item.host.thumbnail,
-        listening: item.activeUsers
+        activeUsers: item.activeUsers
         }
     ))
 }
