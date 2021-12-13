@@ -25,7 +25,7 @@ const welcome = () => {
     })
     .then(() => {
         return Swal.fire({
-            html: 'Website hiện tại <span class="font-bold text-red-500">chưa được hỗ trợ cho điện thoại</span>, để trải nghiệm tốt nhất vui lòng truy cập bằng<span class="font-bold text-red-500"> Window - Chrome</span>, các trình duyệt khác có thể xảy ra các lỗi không mong muốn',
+            html: 'Để có trải nghiệm tốt nhất vui lòng truy cập bằng<span class="font-bold text-red-500"> Window - Chrome</span>, các trình duyệt khác có thể xảy ra các lỗi không mong muốn',
             confirmButtonText: 'Tiếp tục',
         })
     })

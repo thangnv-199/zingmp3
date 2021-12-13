@@ -66,6 +66,15 @@ const ContainerStyled = styled.div`
             display: block;
         }
     }
+    @media (max-width: 767px) {
+        display: flex;
+        .song-album {
+            display: none;
+        }
+        .song-actions {
+            margin-left: auto;
+        }
+    }
 `;
 
 const OverlayStyled = styled.div`
@@ -115,17 +124,12 @@ const ArtistsStyled = styled.div`
     }
 `;
 
-const TopLabelStyled = styled.span`
+const TopLabelStyled = styled.div`
     font-size: 32px;
-    font-weight: 900;
-    line-height: 1;
-    margin-right: 5px;
-    min-width: 38px;
+    font-weight: bold;
     width: 60px;
-    opacity: 1;
     white-space: nowrap;
     display: flex;
-    align-self: center;
     justify-content: center;
     align-items: center;
     color: rgba(74,144,226,0);
@@ -137,6 +141,11 @@ const TopLabelStyled = styled.span`
                 ? '#50e3c2'
                 : '#e35050'
     };
+
+    @media (max-width: 767px) {
+        width: 40px;
+        margin-right: 5px;
+    }
 `;
 
 const Song = ({ data, playlist, index }) => {

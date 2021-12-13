@@ -27,12 +27,16 @@ const ContainerStyled = styled.div`
     grid-template-columns: 3fr 4fr 3fr;
     padding: 0 20px;
     color: var(--text-primary);
-    z-index: 100;
+    z-index: 999;
     user-select: none;
 
     @media (max-width: 767px) {
         display: flex;
         padding: 0 10px;
+        height: 80px;
+        .mv-icon, .lyric-icon, .heart-icon{
+            display: none;
+        }
     }
 `;
 
@@ -41,11 +45,6 @@ const SongInfoStyled = styled.div`
     align-items: center;
     gap: 10px;
     height: 100%;
-
-    @media (max-width: 767px) {
-        flex-direction: column;
-        justify-content: center;
-    }
 `;
 
 const ActionStyled = styled.div`
@@ -91,7 +90,9 @@ const NameStyled = styled.div`
     text-transform: capitalize;
     color: var(--text-primary);
     font-size: 14px;
-
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
 `;
 
 const ArtistStyled = styled.div`
@@ -118,8 +119,6 @@ const DivideStyled = styled.div`
 `;
 
 const Controls = () => {
-
-    // console.log('Control render !!')
 
     const { toggleSong, nextSong, prevSong, addSongToHistory, songLoaded } = useDispatchs();
 
@@ -196,14 +195,14 @@ const Controls = () => {
                 onTimeUpdate={handleTimeUpdate}
             />
             <SongInfoStyled>
-                <img className="w-16 h-16 rounded-full"
+                <img className="md:w-16 md:h-16 h-10 w-10 rounded-full"
                     src={currentSong.image}
                     ref={songImageElm} 
                     alt=""
                 />
-                <div className="hidden md:block">
-                    <NameStyled>{currentSong.name}</NameStyled>
-                    <ArtistStyled>{currentSong.artist}</ArtistStyled>
+                <div className="">
+                    <NameStyled title={currentSong.name}>{currentSong.name}</NameStyled>
+                    <ArtistStyled title={currentSong.artist}>{currentSong.artist}</ArtistStyled>
                 </div>
                 <HeartButton data={currentSong}/>
             </SongInfoStyled>

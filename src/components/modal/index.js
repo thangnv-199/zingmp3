@@ -8,14 +8,14 @@ import SongTooltipModal from "./songTooltip";
 import PlayerQueue from '../playerQueue';
 import { slideInBottom, slideOutBottom, slideOutToRight, slideInToRight } from '../../utils/keyframes';
 
-const PlayerQueueWrapper = styled.div`
+const Wrapper = styled.div`
     position: fixed;
     top: 0;
     right: 0;
     bottom: var(--control-height);
     width: var(--player-queue-width);
     background-color: var(--player-queue-bg);
-    z-index: 99;
+    z-index: 100;
     transform: translateX(100%);
     animation: ${props => props.isOpen ? slideInToRight : slideOutToRight} 0.5s ease-out forwards;
 `;
@@ -30,6 +30,7 @@ const ModalContainer = styled.div`
     transition: all 0.4s linear;
     overflow: hidden;
     top: 0;
+    z-index: ${props => props.zIndex};
     tranform: translateY(100%);
     opacity: ${props => props.isOpen ? '1' : '0'};
     visibility: ${props => props.isOpen ? 'visible' : 'hidden'};;
@@ -44,18 +45,18 @@ const Modal = () => {
     const isOpenThemeModal = useSelector(state => state.modal.isOpenThemeModal);
     const isOpenSongTooltipModal = useSelector(state => state.modal.isOpenSongTooltipModal);
     const isOpenPlayerQueue = useSelector(state => state.modal.isOpenPlayerQueue);
-   
+
     return (
         <div>
-            <PlayerQueueWrapper isOpen={isOpenPlayerQueue}>
+            <Wrapper isOpen={isOpenPlayerQueue}>
                 {isOpenPlayerQueue && <PlayerQueue />}
-            </PlayerQueueWrapper>
+            </Wrapper>
 
             <ModalContainer isOpen={isOpenMvModal} zIndex={1000}>
                 {isOpenMvModal && <MvModal />}
             </ModalContainer>
 
-            <ModalContainer isOpen={isOpenLyricModal} zIndex={99}>
+            <ModalContainer isOpen={isOpenLyricModal} zIndex={100}>
                 {isOpenLyricModal && <LyricModal/>}
             </ModalContainer>
 

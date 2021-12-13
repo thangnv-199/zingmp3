@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { useRef, memo, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
+import HeartIcon from "../iconsButton/heart";
 import useDispatchs from '../../hooks/useDispatchs';
 import CORSwarning from '../warning/cors';
 import * as api from '../../apis';
 
-const Header = styled.div`
+const HeaderStyled = styled.div`
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -15,7 +16,7 @@ const Header = styled.div`
     padding: 0 20px;
 `;
 
-const Action = styled.div`
+const ActionStyled = styled.div`
     display: flex;
     align-items: center;
 
@@ -38,28 +39,26 @@ const Action = styled.div`
     }
 `;
 
-const Body = styled.div`
+const BodyStyled = styled.div`
     height: calc(100% - 80px);
-    padding: 20px;
+    padding-bottom: 20px;
 `;
 
-const Button = styled.button`
+const ButtonStyled = styled.button`
     border-radius: 100%;
     background-color: var(--alpha-bg);
-    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 40px;
+    width: 40px;
     
     &:hover {
         opacity: 0.8;
-        color: var(--purple-primary);
     }
 `;
 
 const SongVideo = () => {
-    console.log('Song video render !!');
-
     const { closeMvModal } = useDispatchs();
     const data = useSelector(state => state.modal.songVideo);
     const [isCheck, setIsCheck] = useState(0);
@@ -91,15 +90,16 @@ const SongVideo = () => {
                         setIsCheck(1)
                     }
                 })
-                .catch(() => {
+                .catch((err) => {
+                    console.log(err.text);
                     setIsCheck(2);
                 })
         }
     }, [data])
 
     return (
-        <div className="h-full">
-            <Header>
+        <div className="h-full flex flex-col container">
+            <HeaderStyled>
                 <div className="flex items-center">
                     <img className="h-10 w-10 rounded-full" src={data?.image} alt="" />
                     <div className="mx-3">
@@ -111,19 +111,27 @@ const SongVideo = () => {
                         ))}
                     </div>
                     <div className="flex items-center">
-                        <Button title="Thêm vào thư viện">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <ButtonStyled>
+                            <HeartIcon data={data}/>
+                        </ButtonStyled>
+                        {/* <ButtonStyled title="Thêm vào thư viện">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                className="h-6 w-6" 
+                                fill={ checkInLibrary ? 'var(--purple-primary)' : 'none' }
+                                stroke={ checkInLibrary ? 'var(--purple-primary)' : 'currentColor' }
+                                viewBox="0 0 24 24" 
+                            >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
-                        </Button>
-                        <Button className="ml-3" title="Nghe audio">
+                        </ButtonStyled> */}
+                        <ButtonStyled className="ml-3" title="Nghe audio">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                             </svg>
-                        </Button>
+                        </ButtonStyled>
                     </div>
                 </div>
-                <Action>
+                <ActionStyled>
                     <button className="mr-5">
                         <i
                             onClick={handleExitFullscreen}
@@ -145,17 +153,17 @@ const SongVideo = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
-                </Action>
-            </Header>
-            <Body>
+                </ActionStyled>
+            </HeaderStyled>
+            <BodyStyled className="flex-1">
                 {isCheck === 0
-                    ? <div className="bg-black">
+                    ? <div className="bg-black h-full flex">
                         <video
                             ref={videoRef}
                             preload="metadata"
                             controls
                             autoPlay
-                            className="h-full w-full m-auto"
+                            className="w-full m-auto"
                             src="">
                         </video>
                     </div>
@@ -172,7 +180,7 @@ const SongVideo = () => {
                         </div>
                         : <CORSwarning />
                 }
-            </Body>
+            </BodyStyled>
         </div>
     )
 }

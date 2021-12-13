@@ -28,7 +28,7 @@ const SearchPage = () => {
         .then(res => {
             setPlaylist({
                 id: null,
-                name: `Tìm kiếm : ${keyword.toUpperCase()}`,
+                name: null,
                 songs: res.data[0].song.map(item => ({
                     id: item.id,
                     artist: item.artist,

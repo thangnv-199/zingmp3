@@ -101,8 +101,6 @@ const Body = styled.div`
 `
 const PlaylistDetail = () => {
 
-    console.log('Playlist Detail render !!')
-
     const { openCreatePlaylistModal, toggleSong, editPlaylist } = useDispatchs();
     const params = useParams();
 
@@ -206,7 +204,8 @@ const PlaylistDetail = () => {
                     </button>
                 </div>
                 {renderSongs({
-                    ...zingChart,
+                    id: null,
+                    name: null,
                     songs: suggestionsSongs
                 })}
             </Body>

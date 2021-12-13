@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Fragment } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 
 import useDispatchs from '../../hooks/useDispatchs';
@@ -12,7 +11,7 @@ const ContainerStyled = styled.aside`
     top: 0;
     width: var(--sidebar-width);
     background-color: var(--sidebar-bg);
-    z-index: 10;
+    z-index: 100;
     height: 100%;
     transition: all 0.4s linear;
 
@@ -26,6 +25,7 @@ const ContainerStyled = styled.aside`
     @media (max-width: 767px) {
         top: var(--header-height);
         transform: translateX(-100%);
+
     }
 `;
 
@@ -41,6 +41,7 @@ const LogoWrapperStyled = styled.div`
 
     @media (min-width: 768px) and (max-width: 1023px) {
         padding: 0 10px;
+        width: var(--sidebar-width--tablet);
     }
 `;
 
@@ -154,18 +155,19 @@ const LiStyled = styled.li`
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             i {
                 font-size: 24px;
             }
             span {
-                display: none;
+                font-size: 10px;
             }
         }
     }
 `;
 
 const Sidebar = () => {
-
+    
     const { openCreatePlaylistModal } = useDispatchs();
     const { pathname } = useLocation();
 
@@ -174,7 +176,7 @@ const Sidebar = () => {
     }
 
     return (
-        <Fragment>
+        <>
             <SidebarCheckboxStyled hidden type="checkbox" id="sidebar-checkbox" />
             <ContainerStyled>
                 <LogoWrapperStyled>
@@ -311,7 +313,7 @@ const Sidebar = () => {
                     </CreatePlayListButtonStyled>
                 </NavStyled>
             </ContainerStyled>
-        </Fragment>
+        </>
     )
 }
 

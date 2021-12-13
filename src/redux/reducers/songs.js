@@ -3,14 +3,11 @@ import { zingChart } from '../../data/zingChart';
 import * as types from '../../constant/types';
 import storage from '../../utils/storage';
 
-const playlistData = storage.getCurrentPlaylist();
-const playlistDefaultData = storage.getCurrentPlaylistDefault()
-const currentSongIndex = storage.getCurrentSong();
+const playlistData = storage.getCurrentPlaylist() || zingChart;
+const playlistDefaultData = storage.getCurrentPlaylistDefault() || zingChart;
+const currentSongIndex = storage.getCurrentSong() || 0;
 const history = storage.getHistory();
 
-playlistData || storage.setCurrentPlaylist(zingChart);
-playlistDefaultData || storage.setCurrentPlaylistDefault(zingChart);
-currentSongIndex || storage.setCurrentSong(0);
 const initialState = {
     isPlaying: false,
     isLoaded: false,

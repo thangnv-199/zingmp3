@@ -22,7 +22,6 @@ import ScrollToTop from './components/scrollToTop';
 import Modal from './components/modal';
 
 import welcome from './utils/welcome';
-import isMobile from './utils/isMobile';
 import * as router from './constant/router';
 import storage from './utils/storage';
 
@@ -48,10 +47,8 @@ const Main = styled.div`
 `;
 
 function App() {
-    // console.log('App render !!');
-
     useEffect(() => {
-       
+
         document.querySelector('html').setAttribute(
             'data-theme', storage.getTheme() || 'dark'
         )
@@ -63,34 +60,32 @@ function App() {
     }, [])
 
     return (
-        isMobile.any() && window.innerWidth < 768
-            ? <h1 className="text-3xl p-10">Website chưa được tối ưu cho mobile, vui lòng truy cập bằng tablet hoặc pc</h1>
-            : <Fragment>
-                <BrowserRouter basename="/zingmp3">
-                    <Sidebar />
-                    <Main className="scrollbar">
-                        <ScrollToTop />
-                        <Header />
-                        <Routes >
-                            <Route path="/" exact element={<DiscoveryPage />} />
-                            <Route path={router.PERSON + '/*'} element={<PersonPage />} />
-                            <Route path={router.PLAYLIST_DETAIL} element={<PlaylistPage />} />
-                            <Route path={router.ZING_CHART} element={<ZingChartPage />} />
-                            <Route path={router.CHART_WEEK + '/*'} element={<ChartWeekPage />} />
-                            <Route path={router.RADIO} element={<RadioPage />} />
-                            <Route path={router.FOLLOW + '/*'} element={<FollowPage />} />
-                            <Route path={router.NEW_RELEASE} element={<NewReleasePage />} />
-                            <Route path={router.HUB} element={<HubPage />} />
-                            <Route path={router.TOP_100} element={<Top100Page />} />
-                            <Route path={router.MV2 + '/*'} element={<MVPage />} />
-                            <Route path={router.SEARCH} element={<SeaechPage />} />
-                            <Route path="/*" element={<EmptyPage />} />
-                        </Routes >
-                    </Main>
-                    <Controls />
-                    <Modal />
-                </BrowserRouter>
-            </Fragment>
+        <Fragment>
+            <BrowserRouter basename="/zingmp3">
+                <Sidebar />
+                <Main className="scrollbar">
+                    <ScrollToTop />
+                    <Header />
+                    <Routes >
+                        <Route path="/" exact element={<DiscoveryPage />} />
+                        <Route path={router.PERSON + '/*'} element={<PersonPage />} />
+                        <Route path={router.PLAYLIST_DETAIL} element={<PlaylistPage />} />
+                        <Route path={router.ZING_CHART} element={<ZingChartPage />} />
+                        <Route path={router.CHART_WEEK + '/*'} element={<ChartWeekPage />} />
+                        <Route path={router.RADIO} element={<RadioPage />} />
+                        <Route path={router.FOLLOW + '/*'} element={<FollowPage />} />
+                        <Route path={router.NEW_RELEASE} element={<NewReleasePage />} />
+                        <Route path={router.HUB} element={<HubPage />} />
+                        <Route path={router.TOP_100} element={<Top100Page />} />
+                        <Route path={router.MV2 + '/*'} element={<MVPage />} />
+                        <Route path={router.SEARCH} element={<SeaechPage />} />
+                        <Route path="/*" element={<EmptyPage />} />
+                    </Routes >
+                </Main>
+                <Controls />
+                <Modal />
+            </BrowserRouter>
+        </Fragment>
     );
 }
 

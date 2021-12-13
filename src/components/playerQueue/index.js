@@ -2,7 +2,6 @@ import { useState, memo } from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
-
 import Song from '../song';
 import { zingChart } from '../../data/zingChart';
 import storage from '../../utils/storage';
@@ -124,7 +123,6 @@ const SongsListened = styled.div`
 `;
 
 const PlayerQueue = () => {
-    // console.log('PlayQueue render !!')
 
     const [currentTab, setCurrentTab] = useState(0);
 
@@ -132,6 +130,7 @@ const PlayerQueue = () => {
     const currentSong = useSelector(state => state.songs.current);
     const songsHistory = storage.getHistory();
     const currentSongIndex = currentPlaylist.songs.findIndex(song => song.id === currentSong.id);
+    
 
     const renderSongsNotListen = (playlist) => {
         return currentPlaylist.songs.slice(currentSongIndex + 1).map((song, index) => (
@@ -168,7 +167,6 @@ const PlayerQueue = () => {
     }
 
     return (
-
         <Container>
             <Header>
                 <ButtonGroup>
@@ -199,10 +197,12 @@ const PlayerQueue = () => {
                     </SongsListened>
                     <div className="text-left px-3 py-2">
                         <p className="font-bold">Tiếp theo</p>
-                        <p>
+                        {currentPlaylist.name && <p>
                             <span className="text-secondary inline-block mr-1">Từ playlist</span>
-                            <span className="text-purple font-semibold">{currentPlaylist.name}</span>
+                            <span className="text-purple filter brightness-200 font-semibold">{currentPlaylist.name}</span>
                         </p>
+                        }
+
                     </div>
                     <div>
                         {renderSongsNotListen(currentPlaylist)}
