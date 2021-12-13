@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/zingmp3/static/css/main.1cf76411.chunk.css",
-    "main.js": "/zingmp3/static/js/main.250730bd.chunk.js",
-    "main.js.map": "/zingmp3/static/js/main.250730bd.chunk.js.map",
+    "main.css": "/zingmp3/static/css/main.5b840281.chunk.css",
+    "main.js": "/zingmp3/static/js/main.6d35113d.chunk.js",
+    "main.js.map": "/zingmp3/static/js/main.6d35113d.chunk.js.map",
     "runtime-main.js": "/zingmp3/static/js/runtime-main.3639899f.js",
     "runtime-main.js.map": "/zingmp3/static/js/runtime-main.3639899f.js.map",
     "static/js/2.79fcbc74.chunk.js": "/zingmp3/static/js/2.79fcbc74.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.40ee4a03.chunk.js": "/zingmp3/static/js/3.40ee4a03.chunk.js",
     "static/js/3.40ee4a03.chunk.js.map": "/zingmp3/static/js/3.40ee4a03.chunk.js.map",
     "index.html": "/zingmp3/index.html",
-    "static/css/main.1cf76411.chunk.css.map": "/zingmp3/static/css/main.1cf76411.chunk.css.map",
+    "static/css/main.5b840281.chunk.css.map": "/zingmp3/static/css/main.5b840281.chunk.css.map",
     "static/js/2.79fcbc74.chunk.js.LICENSE.txt": "/zingmp3/static/js/2.79fcbc74.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3639899f.js",
     "static/js/2.79fcbc74.chunk.js",
-    "static/css/main.1cf76411.chunk.css",
-    "static/js/main.250730bd.chunk.js"
+    "static/css/main.5b840281.chunk.css",
+    "static/js/main.6d35113d.chunk.js"
   ]
 }
