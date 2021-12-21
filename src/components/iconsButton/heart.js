@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import storage from '../../utils/storage';
+import useDispatchs from '../../hooks/useDispatchs';
+import { useSelector } from 'react-redux';
 
 const Icon = styled.i`
     color: var(--text-secondary);
@@ -11,14 +13,16 @@ const Icon = styled.i`
 
 const HeartIcon = ({ data }) => {
 
-    const library = storage.getLibrary();
+    const { addToLibrary } = useDispatchs();
+
+    const library = useSelector(state => state.playlist.library);
     let isInLibrary = library.songs.findIndex(song => song.id === data.id) !== -1;
     let title = isInLibrary ? 'Xóa khỏi thư viện' : 'Thêm vào thư viện';
     const [dkm, setDkm] = useState(isInLibrary);
 
     const handleClick = (e) => {
         e.stopPropagation();
-        isInLibrary ? handleRemove(e) : handleAdd(e);
+        isInLibrary ? handleRemove() : handleAdd();
         e.target.classList.toggle('--active');
         isInLibrary = !isInLibrary;
         setDkm(!dkm);
@@ -29,12 +33,14 @@ const HeartIcon = ({ data }) => {
         library.songs.splice(position, 1);
         storage.setLibrary(library);
     }
+
     const handleAdd = () => {
-        const library = storage.getLibrary();
         storage.setLibrary({
             ...library,
             songs: [...library.songs, data]
         });
+
+        addToLibrary(data);
     }
 
     return (

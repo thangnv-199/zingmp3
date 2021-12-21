@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Container = styled.div`
     ${props => props.center ? 'text-align: center' : ''}
     user-select: none;
+    padding: 0 10px;
 `;
 
 const ImageWrapper = styled.a`

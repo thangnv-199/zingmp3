@@ -1,0 +1,76 @@
+.nvt {
+  position: relative;
+}
+
+.nvt-track {
+  overflow-x: auto;
+}
+
+.nvt-track::-webkit-scrollbar {
+  display: none;
+}
+
+.nvt-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
+.nvt-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.nvt-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nvt-dot {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: currentColor;
+  opacity: 0.3;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.nvt-dot.--active {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+.nvt-arrow {
+  display: inline-block;
+  color: currentColor;
+  cursor: pointer;
+}
+
+.nvt-arrow.--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+/*# sourceMappingURL=slider.css.map */

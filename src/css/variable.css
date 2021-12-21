@@ -31,6 +31,7 @@
     --control-height: 90px;
     --sidebar-width: 240px;
     --sidebar-width--tablet: 70px;
+    --sidebar-width--mobile: 40px;
     --player-queue-width: 320px;
     --header-height: 70px;
 }

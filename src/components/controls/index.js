@@ -33,7 +33,6 @@ const ContainerStyled = styled.div`
     @media (max-width: 767px) {
         display: flex;
         padding: 0 10px;
-        height: 80px;
         .mv-icon, .lyric-icon, .heart-icon{
             display: none;
         }

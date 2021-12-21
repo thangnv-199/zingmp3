@@ -114,6 +114,7 @@ const Discovery = () => {
 
             <Carousel
                 headerStyle={2}
+                arrowStyle={2}
                 to={router.RADIO}
                 title={data2.radio.title}
                 col={6} col_lg={5} col_md={4} col_sm={3}

@@ -5,6 +5,7 @@ const initialState = {
     list: storage.getplaylists(),
     current: {},
     editing: null,
+    library: storage.getLibrary() || [],
 }
 
 const reducer = (state = initialState, actions) => {
@@ -46,6 +47,17 @@ const reducer = (state = initialState, actions) => {
                 ...state,
                 list: [...state.list],
                 editing: null,
+            }
+        }
+
+        case types.ADD_TO_LIBRARY : {
+            const { data } = actions.payload;
+            return {
+                ...state,
+                library: {
+                    ...state.library,
+                    songs: [...state.library.songs, data],
+                }
             }
         }
 

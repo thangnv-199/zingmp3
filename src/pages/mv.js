@@ -29,6 +29,10 @@ const Body = styled.div`
         padding: 0 10px;
         margin-bottom: 30px;
     }
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
 `
 
 const MVPage = () => {

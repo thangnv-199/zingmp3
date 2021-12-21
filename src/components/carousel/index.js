@@ -2,44 +2,8 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { useRef, useEffect } from "react";
 
-const SliderStyled = styled.div`
-    overflow: hidden;
-    user-select: none;
-`;
-
-const SliderTrackStyled = styled.div`
-    overflow-x: auto;
-    &::-webkit-scrollbar {
-        display: none;
-    }
-`;
-
-const SliderListStyled = styled.div`
-    display:flex;
-    margin: 0 0 30px; 
-    transition: all 0.4s linear;
-    & > * {
-        padding: 0 15px;
-        width: ${props => 100 / props.col}%;
-        flex: 0 0 ${props => 100 / props.col}%;
-
-        @media (max-width: 1200px) {
-            width: ${props => 100 / (props.col_lg || props.col)}%;
-            flex: 0 0 ${props => 100 / (props.col_lg || props.col)}%;
-        }
-
-        @media (max-width: 1023px) {
-            width: ${props => 100 / (props.col_md || props.col_lg)}%;
-            flex: 0 0 ${props => 100 / (props.col_md || props.col_lg)}%;
-        }
-
-        @media (max-width: 767px) {
-            padding: 0 10px;
-            width: ${props => 100 / (props.col_sm || props.col_md)}%;
-            flex: 0 0 ${props => 100 / (props.col_sm || props.col_md)}%;
-        }
-    }
-`;
+import createSlider from "../../utils/slider";
+import '../../css/slider.css';
 
 const HeaderStyle3Styled = styled.div`
     display: flex;
@@ -74,10 +38,12 @@ const HeaderStyle3Styled = styled.div`
 
 const ButtonGroupStyled = styled.div`
     display: flex;
+    align-items: center;
 
-    & > * {
+    .nvt-arrow {
         cursor: pointer;
-        padding: 4px;
+        padding: 8px;
+        
         &.--disabled {
             opacity 0.5;
             pointer-events: none;
@@ -86,142 +52,76 @@ const ButtonGroupStyled = styled.div`
             opacity: 0.8;
         }
     }
+    ${props => props.style === 2 ? `
+    .nvt-arrow {
+        position: absolute;
+        z-index: 100;
+        background-color: #fff;
+        color: #ccc;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        bottom: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    }
+    .arrow-prev {
+        left: 0;
+        transform: translateX(-33%);
+    }
+    .arrow-next {
+        right: 0;
+        transform: translateX(33%);
+    }` : ''}
 `;
 
 const Carousel = ({ children, to, title, subTitle,
     col, col_sm, col_md, col_lg,
-    headerStyle, thumbnail
+    headerStyle, thumbnail, arrowStyle = 1,
 }) => {
 
     const sliderRef = useRef();
-    const prevBtnRef = useRef();
-    const nextBtnRef = useRef();
-    let sliderLength = useRef();
-    let currentIndex = 0;
-
-    switch (true) {
-        case window.innerWidth < 767:
-            sliderLength.current = col_sm;
-            break;
-
-        case window.innerWidth < 1023:
-            sliderLength.current = col_md;
-            break;
-
-        case window.innerWidth < 1200:
-            sliderLength.current = col_lg;
-            break;
-
-        default:
-            sliderLength.current = col;
-    }
+    const arrowsRef = useRef();
 
     useEffect(() => {
-        children.length > sliderLength.current && draggbleAxisX(sliderRef.current);
-    }, [])
-
-    useEffect(() => {
-        const setSliderLeng = () => {
-            switch (true) {
-                case window.innerWidth < 767:
-                    sliderLength.current = col_sm;
-                    break;
-        
-                case window.innerWidth < 1023:
-                    sliderLength.current = col_md;
-                    break;
-        
-                case window.innerWidth < 1200:
-                    sliderLength.current = col_lg;
-                    break;
-        
-                default:
-                    sliderLength.current = col;
-            }
-        }
-        window.addEventListener('resize', setSliderLeng)
-
-        return () => {
-            window.removeEventListener('resize', setSliderLeng)
-        }
-    }, [col, col_sm, col_md, col_lg])
-
-    const handlePrev = () => {
-        currentIndex -= sliderLength.current
-        scrollX(currentIndex);
-    }
-
-    const handleNext = () => {
-        currentIndex += sliderLength.current
-        scrollX(currentIndex);
-    }
-
-    const scrollX = (index) => {
-        const x = sliderRef.current.offsetWidth / sliderLength.current * index;
-        sliderRef.current.scroll({
-            left: x,
-            behavior: 'smooth'
+        createSlider(sliderRef.current, {
+            infinite: false,
+            slidesToShow: col,
+            slidesToScroll: col,
+            appendArrows: arrowsRef.current,
+            prevArrow: ` <i class="fas fa-chevron-left"></i>`,
+            nextArrow: `<i class="fas fa-chevron-right"></i>`,
+            arrows: col < children.length,
+            draggable: false,
+            responsive: [{
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: col_lg || col,
+                    slidesToScroll: col_lg || col,
+                    arrows: col_lg || col < children.length,
+                }
+            },{
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: col_md || col_lg || col,
+                    slidesToScroll: col_md || col_lg || col,
+                    arrows: col_md || col_lg || col < children.length,
+                }
+            },{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: col_sm || col_md || col_lg || col,
+                    slidesToScroll: col_sm || col_md || col_lg || col,
+                    arrows: col_sm || col_md || col_lg || col < children.length,
+                }
+            },]
         })
-        checkIndex(index);
-    }
-
-    const checkIndex = (index) => {
-        switch (true) {
-            case index <= 0 :
-                index = 0;
-                prevBtnRef.current.classList.add('--disabled');
-                nextBtnRef.current.classList.remove('--disabled');
-                break;
-            case index >= children.length - sliderLength.current :
-                index = children.length - sliderLength.current;
-                prevBtnRef.current.classList.remove('--disabled');
-                nextBtnRef.current.classList.add('--disabled');
-                break;
-            default :
-                prevBtnRef.current.classList.remove('--disabled');
-                nextBtnRef.current.classList.remove('--disabled');
-        }
-    }
-
-    const draggbleAxisX = (element) => {
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-        let move;
-
-        element.addEventListener('mousedown', (e) => {
-            e.preventDefault();
-            isDown = true;
-            startX = e.pageX - element.offsetLeft;
-            scrollLeft = element.scrollLeft;
-        });
-
-        element.addEventListener('mouseleave', () => {
-            isDown = false;
-            // setTimeout(() => isSliderDraggable = false, 200)
-        });
-
-        element.addEventListener('mouseup', () => {
-            isDown = false;
-            // setTimeout(() => isSliderDraggable = false, 200);
-            const dkm = 100 / sliderLength.current;
-            const dcm = -1 * move * 100 / sliderRef.current.offsetWidth;
-            currentIndex += Math.round(dcm / dkm);
-            scrollX(currentIndex)
-        });
-
-        element.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - element.offsetLeft;
-            move = x - startX;
-            // if (move > 10 || move < -10) isSliderDraggable = true;
-            element.scrollLeft = scrollLeft - move;
-        });
-    }
+    })
 
     return (
-        <div>
+        <div className="relative">
             <div className="flex justify-between align-center mb-3">
                 <div>
                     {headerStyle === 1
@@ -250,29 +150,14 @@ const Carousel = ({ children, to, title, subTitle,
                         : ''
                     }
                 </div>
-                {children.length > sliderLength.current && <ButtonGroupStyled className="flex">
-                    <div onClick={handlePrev} ref={prevBtnRef} className="--disabled">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </div>
-                    <div onClick={handleNext} ref={nextBtnRef}>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                    </div>
+                <ButtonGroupStyled ref={arrowsRef} style={arrowStyle}>
+
                 </ButtonGroupStyled>
-                }
             </div>
-            <SliderStyled>
-                <SliderTrackStyled ref={sliderRef}>
-                    <SliderListStyled
-                        col={col} col_sm={col_sm} col_md={col_md} col_lg={col_lg}
-                    >
-                        {children}
-                    </SliderListStyled>
-                </SliderTrackStyled>
-            </SliderStyled>
+            <div ref={sliderRef}>
+                {children}
+            </div>
+            
         </div>
     )
 }

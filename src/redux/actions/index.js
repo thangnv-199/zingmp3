@@ -120,3 +120,8 @@ export const openPlaylist = (playlist) => ({
     type: types.OPEN_PLAYLIST,
     payload: {playlist}
 })
+
+export const addToLibrary = (data) =>({
+    type: types.ADD_TO_LIBRARY,
+    payload: { data },
+})

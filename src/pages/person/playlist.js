@@ -7,14 +7,15 @@ import PlaylistCard from '../../components/card/playlistCard';
 const Playlist = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin: 0 -10px;
+    gap: 20px;
     align-items: center;
 
-    & > * {
-        padding: 0 10px;
-    }
     @media (max-width: 1023px) {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 `;
 

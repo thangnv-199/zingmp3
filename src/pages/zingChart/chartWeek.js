@@ -40,7 +40,7 @@ const ChartWeek = () => {
 
     return (
         <div>
-            <h1 className="flex items-center text-5xl font-bold py-10">
+            <h1 className="flex items-center text-3xl md:text-5xl font-bold py-10">
                 <span>Bảng xếp hạng tuần</span>
                 <img 
                     onClick={() => currentPlaylist && openPlaylist(currentPlaylist) }
@@ -49,7 +49,7 @@ const ChartWeek = () => {
                     alt="" 
                 />
             </h1>
-            <NavStyle2 data={navData} size={24} />
+            <NavStyle2 data={navData} size={16} />
             <div className="mt-10">
                 { currentPlaylist
                     ? <ul>{ renderSongs(currentPlaylist) }</ul>

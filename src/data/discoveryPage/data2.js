@@ -15,8 +15,8 @@ const data = {
               "title": "Xone FM - Radio Just Got Better",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/a/6/9/5/a6955b69642f464dbbe4e42443c456bb.jpg",
               "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/a/6/9/5/a6955b69642f464dbbe4e42443c456bb.jpg",
-              "thumbnailV": "https://photo-resize-zmp3.zadn.vn/w350_r35x62_jpeg/cover/2/a/0/e/2a0ec7a7438c6b8632330c9290926ca0.jpg",
-              "thumbnailH": "https://photo-zmp3.zadn.vn/cover/f/a/7/8/fa786602798349f23f584621a39389ef.jpg",
+              "thumbnailV": "https://photo-resize-zmp3.zadn.vn/w350_r35x62_jpeg/cover/a/e/b/8/aeb812084c327f6dff043355ee5ec3bc.jpg",
+              "thumbnailH": "https://photo-zmp3.zadn.vn/cover/f/0/0/3/f00359cffbb174b58041677c069d302f.jpg",
               "description": "Nắm bắt xu hướng thật nhanh, cập nhật tin tức mới mẻ cùng những bài hát cực chất, XONE RADIO mang đến những chương trình hấp dẫn mỗi ngày cho giới trẻ thành thị. XONE RADIO phát sóng hàng ngày trên FM 89 MHz, app XONE và app Zing MP3.",
               "status": 2,
               "type": "livestream",
@@ -28,14 +28,14 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/0/8/2/5/0825d8cd559dee502625a25d540c636a.jpg",
                 "link": "/xonefm"
               },
-              "activeUsers": 560,
+              "activeUsers": 626,
               "program": {
-                "encodeId": "IWZ9A778",
-                "title": "THROWBACK 2000S",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/d/2/4/8/d248e026d3ab96127d0230bd2f5d3bd7.jpg",
-                "description": "Tận hưởng các ca khúc nhạc throwback Dance Pop thịnh hành nhất",
-                "startTime": 1638619200,
-                "endTime": 1638622800
+                "encodeId": "IWZ9A8F7",
+                "title": "WORKTIME LOUNGE",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/8/5/c/e85cd54f851f926cb014e594f9ca3c83.jpg",
+                "description": "Bài hát XONE chọn để bạn làm việc và học tập hiệu quả hơn",
+                "startTime": 1639980000,
+                "endTime": 1639990800
               }
             },
             {
@@ -43,8 +43,8 @@ const data = {
               "title": "Zing MP3 On Air",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/6/9/b/4/69b45afc9247c747299998860918edf0.jpg",
               "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/6/9/b/4/69b45afc9247c747299998860918edf0.jpg",
-              "thumbnailV": "https://photo-resize-zmp3.zadn.vn/w350_r35x62_jpeg/cover_rect/f/6/f/f/f6ffc628b20f5ee3d7c61d38b03cbf4b.jpg",
-              "thumbnailH": "https://photo-zmp3.zadn.vn/cover_rect/1/2/2/6/1226f165d52c3a3b8822272f1314d3f4.jpg",
+              "thumbnailV": "https://photo-resize-zmp3.zadn.vn/w350_r35x62_jpeg/cover_rect/3/5/9/f/359faac18966fbb876936dc40d2a6641.jpg",
+              "thumbnailH": "https://photo-zmp3.zadn.vn/cover_rect/3/1/2/0/312008c06b2c8b58e935dd72a877f885.jpg",
               "description": "Kênh âm nhạc dành cho giới trẻ của Zing MP3, với âm nhạc đến từ khắp nơi trên thế giới.",
               "status": 2,
               "type": "livestream",
@@ -56,14 +56,14 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/8/5/4/0/854010f76bddeefd5f13305a1d6cc8be.jpg",
                 "link": "/zmp3-on-air"
               },
-              "activeUsers": 83,
+              "activeUsers": 122,
               "program": {
-                "encodeId": "IWZ9A7EU",
-                "title": "Nhạc Mới Mỗi Ngày",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/f/c/e/5/fce50273687b82b5230d2fa2a701c1c0.jpg",
-                "description": "Cập nhật ngay các bài hát mới cùng Z On Air.",
-                "startTime": 1638619200,
-                "endTime": 1638622800
+                "encodeId": "IWZ9A96B",
+                "title": "Z Pick",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/6/6/5/7/6657cad8bbe51d4c4be8cb993ca4dc0b.jpg",
+                "description": "Chọn ngay một ca khúc Pop, R&B US-UK bạn thích và chia sẻ nhé!",
+                "startTime": 1639983600,
+                "endTime": 1639994400
               }
             },
             {
@@ -84,14 +84,14 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/7/8/d/778d152062edfbe0e4c4abf151858bf0.jpg",
                 "link": "/Cham-Series"
               },
-              "activeUsers": 326,
+              "activeUsers": 413,
               "program": {
-                "encodeId": "IWZ9A7B7",
-                "title": "Phút thư giãn cùng Chạm",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/c/8/5/b/c85b1ed67eeff74065acade8929ad4e1.jpg",
+                "encodeId": "IWZ9A97Z",
+                "title": "Vui cùng Chạm",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/3/1/2/3/3123d400469e45eac4c8aec9a66ead19.jpg",
                 "description": "",
-                "startTime": 1638615600,
-                "endTime": 1638637200
+                "startTime": 1639976400,
+                "endTime": 1639998000
               }
             },
             {
@@ -112,14 +112,14 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/4/6/b/146b49d11cc9b3bc591823bfedb8bce2.jpg",
                 "link": "/vpoproom"
               },
-              "activeUsers": 557,
+              "activeUsers": 641,
               "program": {
-                "encodeId": "IWZ9A7WU",
+                "encodeId": "IWZ9A98I",
                 "title": "Nhạc Việt theo yêu cầu",
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/f/d/7/9/fd79808d2180de9a421afa6aff38953e.jpg",
                 "description": "Cùng chia sẻ những bài hát mà bạn yêu thích với mọi người thông qua chương trình \"Bài Hát Theo Yêu Cầu\" bạn nhé!",
-                "startTime": 1638014400,
-                "endTime": 1639238400
+                "startTime": 1639972800,
+                "endTime": 1639998000
               }
             },
             {
@@ -140,7 +140,7 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/3/0/5/1305cd954d22d89fef4354301613fd68.jpg",
                 "link": "/phongnhacbolero"
               },
-              "activeUsers": 149,
+              "activeUsers": 236,
               "program": {
                 "encodeId": "IWZ99DB9",
                 "title": "Bolero theo yêu cầu",
@@ -168,7 +168,7 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/0/d/a/b0da7c8ecd6521337682f3a86fa0170f.jpg",
                 "link": "/radio-usuk"
               },
-              "activeUsers": 173,
+              "activeUsers": 221,
               "program": {
                 "encodeId": "IWZ990O9",
                 "title": "US-UK theo yêu cầu",
@@ -196,7 +196,7 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/c/f/2/4/cf2428f7e56a8c2a52d84cb106891de2.jpg",
                 "link": "/kpoproom"
               },
-              "activeUsers": 44,
+              "activeUsers": 59,
               "program": {
                 "encodeId": "IWZ9AOEC",
                 "title": "K-POP theo yêu cầu",
@@ -224,7 +224,7 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/0/9/9/3/0993b3110c60ba6518fceeba9913d20d.jpg",
                 "link": "/phong-nhac-acoustic"
               },
-              "activeUsers": 47,
+              "activeUsers": 95,
               "program": {
                 "encodeId": "IWZ9909O",
                 "title": "Phòng nhạc Acoustic",
@@ -252,7 +252,7 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/f/3/b/bf3bf87a788a5d0b8719c6feee774a2e.jpg",
                 "link": "/phong-nhac-rap-viet"
               },
-              "activeUsers": 56,
+              "activeUsers": 50,
               "program": {
                 "encodeId": "IWZ98FZF",
                 "title": "Những bài Rap Việt hay nhất",
@@ -280,7 +280,7 @@ const data = {
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/c/5/3/1/c531d15ce3006ab3c7467a2c0315f1b7.jpg",
                 "link": "/the-one-radio"
               },
-              "activeUsers": 41,
+              "activeUsers": 44,
               "program": {
                 "encodeId": "IWZ98EEC",
                 "title": "The One Radio",
@@ -302,7 +302,7 @@ const data = {
             {
               "encodeId": "ZFZ0EZAC",
               "title": "4U - VPOP",
-              "thumbnail": "https://photo-playlist-zmp3.zadn.vn/dailymix?src=HavwqN7EvKCI1oYSFOdq0r1DFfm_YQ83KWOwWMdTfGLKKc_JFuxnKGS3PzGxsQrLLbOsXZ_Sg5H8NNQ3CvhwNmCVFzjuphC8JbDuocINjLLUKtY6PTdcL5q2VDSqYk5GM0H-rcJMvLKD12Y1OTooKWWEGzDbtDzI3mT8q6N2Z11R2mw2RedEMGH0Mii-n88U5G0RWId4Wnv001hBBzkCGnS95vTvsjWM4bGNmthStqOMKq6KVDkC5qS93CrkXO1H5G97ZoVRomLSKmh3OCgBHXOH2f9WpeiN2K4HdZIIt1TTJKJ3DPIC5buTGyLYnOuJ21qMasJ5sGrNNX2VVG&cv=1&size=thumb/240_240",
+              "thumbnail": "https://photo-playlist-zmp3.zadn.vn/dailymix?src=HavwqN7EvKCI1oYSFOdq0r5DQfniYV03058wXs3Th5G01ZRIFTog1045PjKxY_i615DcW6sD-r4Q32M6OSkfMb5ERDugd-0D708hppR6i51Q0YlLOjlWLWXHUu9btkDJ2mKhrcFQiLS207pLOuwp1bXLGeSrYzuFMLL6Y3AGWaWCMG3QETl00LCIL9Dfben6Gb8LsNwMZKONKXIJU8c26q1R6SykYDPEHGOPcosEqHv10K_CAuc2Jn1R0fKvruu9Gb19rt29nLqB0GIRDvY57K571Cytd8L9MXKRpZVEXnrSH4YOCP-44553I95ga8GLLnaPb3l7rWe8N1-OVG&cv=1&size=thumb/240_240",
               "isoffical": false,
               "link": "/playlist/VPOP/ZFZ0EZAC.html",
               "isIndie": false,
@@ -312,15 +312,26 @@ const data = {
               "PR": false,
               "artists": [
                 {
-                  "id": "IWZ98609",
-                  "name": "Mr. Siro",
-                  "link": "/Mr-Siro",
-                  "spotlight": true,
-                  "alias": "Mr-Siro",
-                  "playlistId": "Z6BUID88",
-                  "cover": "https://photo-zmp3.zadn.vn/cover_artist/a/6/2/1/a62188a5db16a4ce31c80fd5420edb92.jpg",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/1/1/2/e1120261421cfec7513423222b0ca94c.jpg",
-                  "totalFollow": 752808
+                  "id": "IW6WCI7U",
+                  "name": "Jack",
+                  "link": "/nghe-si/Trinh-Tran-Phuong-Tuan",
+                  "spotlight": false,
+                  "alias": "Trinh-Tran-Phuong-Tuan",
+                  "playlistId": "Z6BOFZEC",
+                  "cover": "https://photo-zmp3.zadn.vn/cover_artist/2/c/0/0/2c007482930d267b813e0d29879a10f4.jpg",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/c/7/e/9/c7e9586f5e9720d1a38bd187409117a3.jpg",
+                  "totalFollow": 2343566
+                },
+                {
+                  "id": "IW6ZU0DF",
+                  "name": "Liam",
+                  "link": "/Liam-Vpop",
+                  "spotlight": false,
+                  "alias": "Liam-Vpop",
+                  "playlistId": "Z6BU0W8C",
+                  "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/d/6/1/2d61bee65506ef6d7239848edb3679ec.jpg",
+                  "totalFollow": 102357
                 },
                 {
                   "id": "IWZ9A7ZD",
@@ -331,7 +342,7 @@ const data = {
                   "playlistId": "Z6BUII00",
                   "cover": "https://photo-zmp3.zadn.vn/cover_rect/b/d/6/1/bd6153560a22d131fc08ec5c0441e4b2.jpg",
                   "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/f/e/f/5/fef5e117967b0bf6de6810c46aa58784.jpg",
-                  "totalFollow": 155095
+                  "totalFollow": 158449
                 },
                 {
                   "id": "IW6ZUZI8",
@@ -342,25 +353,14 @@ const data = {
                   "playlistId": "Z6BOECF8",
                   "cover": "https://photo-zmp3.zadn.vn/cover_rect/d/7/b/9/d7b97da462eb9c12a2af8ef04c315b29.jpg",
                   "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/3/d/9/13d91c5df0cc3c5ff6536b611cd00b83.jpg",
-                  "totalFollow": 360716
-                },
-                {
-                  "id": "IWZ9ZED8",
-                  "name": "OnlyC",
-                  "link": "/nghe-si/OnlyC",
-                  "spotlight": true,
-                  "alias": "OnlyC",
-                  "playlistId": "Z6BOEOB6",
-                  "cover": "https://photo-zmp3.zadn.vn/cover_artist/7/0/f/b/70fbc83564745cdea6f27515f750fe19.jpg",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "totalFollow": 167552
+                  "totalFollow": 367347
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
               "playItemMode": 1,
               "subType": 5,
               "uid": 1,
-              "thumbnailM": "https://photo-playlist-zmp3.zadn.vn/dailymix?src=HavwqN7EvKCI1oYSFOdq0r1DFfm_YQ83KWOwWMdTfGLKKc_JFuxnKGS3PzGxsQrLLbOsXZ_Sg5H8NNQ3CvhwNmCVFzjuphC8JbDuocINjLLUKtY6PTdcL5q2VDSqYk5GM0H-rcJMvLKD12Y1OTooKWWEGzDbtDzI3mT8q6N2Z11R2mw2RedEMGH0Mii-n88U5G0RWId4Wnv001hBBzkCGnS95vTvsjWM4bGNmthStqOMKq6KVDkC5qS93CrkXO1H5G97ZoVRomLSKmh3OCgBHXOH2f9WpeiN2K4HdZIIt1TTJKJ3DPIC5buTGyLYnOuJ21qMasJ5sGrNNX2VVG&cv=1&size=thumb/240_240",
+              "thumbnailM": "https://photo-playlist-zmp3.zadn.vn/dailymix?src=HavwqN7EvKCI1oYSFOdq0r5DQfniYV03058wXs3Th5G01ZRIFTog1045PjKxY_i615DcW6sD-r4Q32M6OSkfMb5ERDugd-0D708hppR6i51Q0YlLOjlWLWXHUu9btkDJ2mKhrcFQiLS207pLOuwp1bXLGeSrYzuFMLL6Y3AGWaWCMG3QETl00LCIL9Dfben6Gb8LsNwMZKONKXIJU8c26q1R6SykYDPEHGOPcosEqHv10K_CAuc2Jn1R0fKvruu9Gb19rt29nLqB0GIRDvY57K571Cytd8L9MXKRpZVEXnrSH4YOCP-44553I95ga8GLLnaPb3l7rWe8N1-OVG&cv=1&size=thumb/240_240",
               "isShuffle": true,
               "isPrivate": true,
               "userName": "Zing MP3",
@@ -389,7 +389,7 @@ const data = {
                   "playlistId": "Z6BU0799",
                   "cover": "https://photo-zmp3.zadn.vn/cover_artist/4/a/e/5/4ae573e7bea3878a82abcf5a17b596d3.jpg",
                   "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/4/6/f/146feb71407a3345d4a0055888e51a2c.jpg",
-                  "totalFollow": 342853
+                  "totalFollow": 348083
                 },
                 {
                   "id": "IWZ9A7ZD",
@@ -400,7 +400,7 @@ const data = {
                   "playlistId": "Z6BUII00",
                   "cover": "https://photo-zmp3.zadn.vn/cover_rect/b/d/6/1/bd6153560a22d131fc08ec5c0441e4b2.jpg",
                   "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/f/e/f/5/fef5e117967b0bf6de6810c46aa58784.jpg",
-                  "totalFollow": 155095
+                  "totalFollow": 158449
                 },
                 {
                   "id": "IW6UI066",
@@ -411,7 +411,7 @@ const data = {
                   "playlistId": "Z6BOF7I9",
                   "cover": "https://photo-zmp3.zadn.vn/cover_artist/e/f/b/9/efb9934957162b2faa792ba626c2f5fc.jpg",
                   "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/f/2/3/3/f23328b5cebb79f8fdc4ba4d33cacb37.jpg",
-                  "totalFollow": 297819
+                  "totalFollow": 306050
                 },
                 {
                   "id": "IW6ZUZI8",
@@ -422,7 +422,7 @@ const data = {
                   "playlistId": "Z6BOECF8",
                   "cover": "https://photo-zmp3.zadn.vn/cover_rect/d/7/b/9/d7b97da462eb9c12a2af8ef04c315b29.jpg",
                   "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/3/d/9/13d91c5df0cc3c5ff6536b611cd00b83.jpg",
-                  "totalFollow": 360716
+                  "totalFollow": 367347
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
@@ -440,7 +440,7 @@ const data = {
             {
               "encodeId": "ZFZOBF9O",
               "title": "4U - Favorites",
-              "thumbnail": "https://photo-playlist-zmp3.zadn.vn/favorite?src=HavosMQ7vait8dq&size=thumb/240_240&",
+              "thumbnail": "https://photo-playlist-zmp3.zadn.vn/favorite?src=HavosMQ7vaio8dq&size=thumb/240_240&",
               "isoffical": false,
               "link": "/playlist/default/ZFZOBF9O.html",
               "isIndie": false,
@@ -450,26 +450,37 @@ const data = {
               "PR": false,
               "artists": [
                 {
-                  "id": "IWZ9ZB7D",
-                  "name": "Khang Việt",
-                  "link": "/Khang-Viet",
+                  "id": "IW6WCI7U",
+                  "name": "Jack",
+                  "link": "/nghe-si/Trinh-Tran-Phuong-Tuan",
                   "spotlight": false,
-                  "alias": "Khang-Viet",
-                  "playlistId": "Z6BUIAFU",
-                  "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/7/a/f/77af7df3537177703cab72e92350aca6.jpg",
-                  "totalFollow": 45045
+                  "alias": "Trinh-Tran-Phuong-Tuan",
+                  "playlistId": "Z6BOFZEC",
+                  "cover": "https://photo-zmp3.zadn.vn/cover_artist/2/c/0/0/2c007482930d267b813e0d29879a10f4.jpg",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/c/7/e/9/c7e9586f5e9720d1a38bd187409117a3.jpg",
+                  "totalFollow": 2343566
                 },
                 {
-                  "id": "IWZ9A7ZD",
-                  "name": "Thanh Hưng",
-                  "link": "/thanhhung",
+                  "id": "IW6ZU0DF",
+                  "name": "Liam",
+                  "link": "/Liam-Vpop",
                   "spotlight": false,
-                  "alias": "thanhhung",
-                  "playlistId": "Z6BUII00",
-                  "cover": "https://photo-zmp3.zadn.vn/cover_rect/b/d/6/1/bd6153560a22d131fc08ec5c0441e4b2.jpg",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/f/e/f/5/fef5e117967b0bf6de6810c46aa58784.jpg",
-                  "totalFollow": 155095
+                  "alias": "Liam-Vpop",
+                  "playlistId": "Z6BU0W8C",
+                  "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/d/6/1/2d61bee65506ef6d7239848edb3679ec.jpg",
+                  "totalFollow": 102357
+                },
+                {
+                  "id": "IWZ98609",
+                  "name": "Mr. Siro",
+                  "link": "/Mr-Siro",
+                  "spotlight": true,
+                  "alias": "Mr-Siro",
+                  "playlistId": "Z6BUID88",
+                  "cover": "https://photo-zmp3.zadn.vn/cover_artist/a/6/2/1/a62188a5db16a4ce31c80fd5420edb92.jpg",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/1/3/0/2130334d4358f2727fbd721274791421.jpg",
+                  "totalFollow": 756871
                 },
                 {
                   "id": "IW6ZUZI8",
@@ -480,25 +491,14 @@ const data = {
                   "playlistId": "Z6BOECF8",
                   "cover": "https://photo-zmp3.zadn.vn/cover_rect/d/7/b/9/d7b97da462eb9c12a2af8ef04c315b29.jpg",
                   "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/3/d/9/13d91c5df0cc3c5ff6536b611cd00b83.jpg",
-                  "totalFollow": 360716
-                },
-                {
-                  "id": "IWZ98609",
-                  "name": "Mr. Siro",
-                  "link": "/Mr-Siro",
-                  "spotlight": true,
-                  "alias": "Mr-Siro",
-                  "playlistId": "Z6BUID88",
-                  "cover": "https://photo-zmp3.zadn.vn/cover_artist/a/6/2/1/a62188a5db16a4ce31c80fd5420edb92.jpg",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/1/1/2/e1120261421cfec7513423222b0ca94c.jpg",
-                  "totalFollow": 752808
+                  "totalFollow": 367347
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
               "playItemMode": 1,
               "subType": 18,
               "uid": 1,
-              "thumbnailM": "https://photo-playlist-zmp3.zadn.vn/favorite?src=HavosMQ7vait8dq&size=thumb/240_240&",
+              "thumbnailM": "https://photo-playlist-zmp3.zadn.vn/favorite?src=HavosMQ7vaio8dq&size=thumb/240_240&",
               "isShuffle": true,
               "isPrivate": true,
               "userName": "Zing MP3",
@@ -509,7 +509,7 @@ const data = {
             {
               "encodeId": "ZZ0AWED7",
               "title": "4U - Rewind",
-              "thumbnail": "https://photo-playlist-zmp3.zadn.vn/rewind?src=HavXtNhExLS14Nl5VG&size=thumb/240_240&",
+              "thumbnail": "https://photo-playlist-zmp3.zadn.vn/rewind?src=HavXtNhExLS147B5VG&size=thumb/240_240&",
               "isoffical": false,
               "link": "/playlist/default/ZZ0AWED7.html",
               "isIndie": false,
@@ -521,7 +521,7 @@ const data = {
               "playItemMode": 1,
               "subType": 13,
               "uid": 1,
-              "thumbnailM": "https://photo-playlist-zmp3.zadn.vn/rewind?src=HavXtNhExLS14Nl5VG&size=thumb/240_240&",
+              "thumbnailM": "https://photo-playlist-zmp3.zadn.vn/rewind?src=HavXtNhExLS147B5VG&size=thumb/240_240&",
               "isShuffle": true,
               "isPrivate": true,
               "userName": "Zing MP3",
@@ -533,7 +533,7 @@ const data = {
             {
               "encodeId": "ZFZ8066W",
               "title": "4U - Discover",
-              "thumbnail": "https://photo-playlist-zmp3.zadn.vn/discover?src=HavXtNhExLS14Nl5VG&size=thumb/240_240&",
+              "thumbnail": "https://photo-playlist-zmp3.zadn.vn/discover?src=HavXtNhExLS147B5VG&size=thumb/240_240&",
               "isoffical": false,
               "link": "/playlist/default/ZFZ8066W.html",
               "isIndie": false,
@@ -545,7 +545,7 @@ const data = {
               "playItemMode": 1,
               "subType": 17,
               "uid": 1,
-              "thumbnailM": "https://photo-playlist-zmp3.zadn.vn/discover?src=HavXtNhExLS14Nl5VG&size=thumb/240_240&",
+              "thumbnailM": "https://photo-playlist-zmp3.zadn.vn/discover?src=HavXtNhExLS147B5VG&size=thumb/240_240&",
               "isShuffle": true,
               "isPrivate": true,
               "userName": "Zing MP3",
@@ -566,34 +566,34 @@ const data = {
           "sectionId": "hBasedOnRecent",
           "items": [
             {
-              "encodeId": "ZWZ9EW6D",
-              "title": "Những Bài Hát Hay Nhất Của OnlyC",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/4/1/d/3/41d3a965e3161b3fef1f380de0b4c16a.jpg",
+              "encodeId": "ZWZBIBB0",
+              "title": "Những Bài Hát Hay Nhất Của Bảo Anh",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/6/9/a/f/69afba6e8bee7b4e5ec4ea1ca606968d.jpg",
               "isoffical": true,
-              "link": "/album/Nhung-Bai-Hat-Hay-Nhat-Cua-OnlyC-OnlyC/ZWZ9EW6D.html",
+              "link": "/album/Nhung-Bai-Hat-Hay-Nhat-Cua-Bao-Anh-Bao-Anh/ZWZBIBB0.html",
               "isIndie": false,
-              "releaseDate": "2017",
-              "sortDescription": "Tuyển Tập Các Bài Hát Hay Nhất Của OnlyC",
+              "releaseDate": "",
+              "sortDescription": "Tuyển tập các bài hát hay nhất của Bảo Anh",
               "PR": false,
               "artists": [
                 {
-                  "id": "IWZ9ZED8",
-                  "name": "OnlyC",
-                  "link": "/nghe-si/OnlyC",
-                  "spotlight": true,
-                  "alias": "OnlyC",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "isOA": false,
+                  "id": "IWZ99B00",
+                  "name": "Bảo Anh",
+                  "link": "/nghe-si/Bao-Anh",
+                  "spotlight": false,
+                  "alias": "Bao-Anh",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 167552
+                  "totalFollow": 288836
                 }
               ],
-              "artistsNames": "OnlyC",
+              "artistsNames": "Bảo Anh",
               "playItemMode": 0,
               "subType": 20,
               "uid": 0,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/4/1/d/3/41d3a965e3161b3fef1f380de0b4c16a.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/6/9/a/f/69afba6e8bee7b4e5ec4ea1ca606968d.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -602,46 +602,34 @@ const data = {
               "isSingle": false
             },
             {
-              "encodeId": "ZWZBWB6W",
-              "title": "Ta Là Cho Nhau",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/covers/5/f/5f732a84bfba6ba0230e11ef4e49ba38_1392263307.jpg",
+              "encodeId": "68D70WFB",
+              "title": "Moodshow - Tập 1.2",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/c/8/f/1/c8f1c2c6ad12027066b5ebe2ecb6d300.jpg",
               "isoffical": true,
-              "link": "/album/Ta-La-Cho-Nhau-Miu-Le-OnlyC/ZWZBWB6W.html",
+              "link": "/album/Moodshow-Tap-1-2-Bao-Anh/68D70WFB.html",
               "isIndie": false,
-              "releaseDate": "2014",
-              "sortDescription": "Valentine năm nay công ty AVATAR đã cho ra mắt Album song ca Miu Lê và OnlyC với các sáng tác mới nhất của Lic - Jong Kay - Melody V, OnlyC và Nguyễn Văn Chung.\r\n\r\nHi vọng các ca khúc trong album sẽ là món quà tặng ý nghĩa dành tặng cho các đôi đang yêu nhau trong mùa Valentine này. ",
+              "releaseDate": "28/07/2021",
+              "sortDescription": "",
               "PR": false,
               "artists": [
                 {
-                  "id": "IWZ96IAC",
-                  "name": "Miu Lê",
-                  "link": "/nghe-si/Miu-Le",
+                  "id": "IWZ99B00",
+                  "name": "Bảo Anh",
+                  "link": "/nghe-si/Bao-Anh",
                   "spotlight": false,
-                  "alias": "Miu-Le",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/c/1/9/7c19dda89039d45ef2619ea64f238a9a.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/7/c/1/9/7c19dda89039d45ef2619ea64f238a9a.jpg",
+                  "alias": "Bao-Anh",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 126728
-                },
-                {
-                  "id": "IWZ9ZED8",
-                  "name": "OnlyC",
-                  "link": "/nghe-si/OnlyC",
-                  "spotlight": true,
-                  "alias": "OnlyC",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 167552
+                  "totalFollow": 288836
                 }
               ],
-              "artistsNames": "Miu Lê,OnlyC",
-              "playItemMode": 2,
+              "artistsNames": "Bảo Anh",
+              "playItemMode": 0,
               "subType": 1,
-              "uid": 0,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/covers/5/f/5f732a84bfba6ba0230e11ef4e49ba38_1392263307.jpg",
+              "uid": 456,
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/c/8/f/1/c8f1c2c6ad12027066b5ebe2ecb6d300.jpg",
               "isShuffle": false,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -650,142 +638,34 @@ const data = {
               "isSingle": false
             },
             {
-              "encodeId": "ZWZB7B0W",
-              "title": "Đắng Lòng Thanh Niên",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/covers/7/7/77386d7daaf0b4931baa171083a44144_1408193173.jpg",
+              "encodeId": "ZWZCWIU0",
+              "title": "Lần Đầu ",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/covers/d/2/d2cb26e345420bc65edf47a9bd9f182a_1450262970.jpg",
               "isoffical": true,
-              "link": "/album/Dang-Long-Thanh-Nien-OnlyC-Avatar-Boys/ZWZB7B0W.html",
-              "isIndie": false,
-              "releaseDate": "2014",
-              "sortDescription": "Sau một thời gian dài với các ca khúc HOT như Em Của Ngày Hôm Kia, Đắng Lòng Thanh Niên, Avatar Boys Band chính thức gửi đến các bạn yêu nhạc album đầu tiên của nhóm mang chính tên của nhóm \"Avatar Boys\".",
-              "PR": false,
-              "artists": [
-                {
-                  "id": "IWZ9ZED8",
-                  "name": "OnlyC",
-                  "link": "/nghe-si/OnlyC",
-                  "spotlight": true,
-                  "alias": "OnlyC",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 167552
-                },
-                {
-                  "id": "IWZAID9O",
-                  "name": "Avatar Boys",
-                  "link": "/nghe-si/Avatar-Boys",
-                  "spotlight": false,
-                  "alias": "Avatar-Boys",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/9/e/9e12205c8ff0e6caf047db390daeb1aa_1479788985.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/9/e/9e12205c8ff0e6caf047db390daeb1aa_1479788985.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 316
-                }
-              ],
-              "artistsNames": "OnlyC,Avatar Boys",
-              "playItemMode": 2,
-              "subType": 1,
-              "uid": 0,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/covers/7/7/77386d7daaf0b4931baa171083a44144_1408193173.jpg",
-              "isShuffle": false,
-              "isPrivate": false,
-              "userName": "Zing MP3",
-              "isAlbum": true,
-              "textType": "Album",
-              "isSingle": false
-            },
-            {
-              "encodeId": "ZWZCUO0U",
-              "title": "Đếm Ngày Xa Em",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/covers/0/0/0037fa44fb1ffa4a5ec148a4c14dccdf_1463244937.jpg",
-              "isoffical": true,
-              "link": "/album/Dem-Ngay-Xa-Em-Lou-Hoang-OnlyC/ZWZCUO0U.html",
-              "isIndie": false,
-              "releaseDate": "2016",
-              "sortDescription": "Sau khi giành được sự quan tâm đặc biệt với ca khúc Đếm ngày xa em, OnlyC cùng Lou Hoàng đã cho ra mắt ca khúc tiếp theo nằm trong các sáng tác của Nguyên Jenda (3 chú bộ đội) đang nổi lên từ mạng xã hội. Hi vọng các ban tiếp tục ủng hộ cho sản phẩm mới này của thầy trò OnlyC và Lou Hoàng nhé.",
-              "PR": false,
-              "artists": [
-                {
-                  "id": "IWZAZUU7",
-                  "name": "Lou Hoàng",
-                  "link": "/nghe-si/Lou-Hoang",
-                  "spotlight": true,
-                  "alias": "Lou-Hoang",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/3/1/d/0/31d0f0e35548bd22f2f0e962eabf3c48.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/3/1/d/0/31d0f0e35548bd22f2f0e962eabf3c48.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 141564
-                },
-                {
-                  "id": "IWZ9ZED8",
-                  "name": "OnlyC",
-                  "link": "/nghe-si/OnlyC",
-                  "spotlight": true,
-                  "alias": "OnlyC",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 167552
-                }
-              ],
-              "artistsNames": "Lou Hoàng,OnlyC",
-              "playItemMode": 2,
-              "subType": 1,
-              "uid": 0,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/covers/0/0/0037fa44fb1ffa4a5ec148a4c14dccdf_1463244937.jpg",
-              "isShuffle": false,
-              "isPrivate": false,
-              "userName": "Zing MP3",
-              "isAlbum": true,
-              "textType": "Album",
-              "isSingle": false
-            },
-            {
-              "encodeId": "ZWZCIC09",
-              "title": "Hãy Đợi Đấy",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/covers/b/6/b6802ebfdba3a9ee7d72fa3dd649549e_1448008185.jpg",
-              "isoffical": true,
-              "link": "/album/Hay-Doi-Day-OnlyC-Lou-Hoang/ZWZCIC09.html",
+              "link": "/album/Lan-Dau-Bao-Anh/ZWZCWIU0.html",
               "isIndie": false,
               "releaseDate": "2015",
-              "sortDescription": "Hãy Đợi Đấy là sản phẩm âm nhạc chính thức của OnlyC vừa ra mắt, song ca cùng với Lou Hoàng. Dựa trên một đoạn nhạc nên quen thuộc của tác phẩm hoạt hình Nga nổi tiếng Nupakachi, OnlyC đã sáng tác nên ca khúc này hi vọng sẽ được các bạn đón nhận và ủng hộ.",
+              "sortDescription": "Nối tiếp thành công của album “Ballad Vol.1”, ngày 16/12, ca sĩ Bảo Anh chính thức ra mắt single “Lần đầu” sau 2 tháng ấp ủ thực hiện.\r\n \r\nSingle “Lần đầu” là dự án đánh dấu sự hợp tác của Bảo Anh với những nghệ sĩ tài năng, được nhiều khán giả yêu mến. Ca khúc chủ đề là sáng tác mới nhất của nhạc sĩ Mew Amazing  (tác giả của loạt hit đình đám như: Thật bất ngờ, Ừ thì..) dành riêng cho giọng hát của Bảo Anh.\r\n \r\nCùng với Mew Amazing, rapper điển trai, nổi tiếng trong cộng đồng Underground Hà Nội - Mr.A cũng kết hợp với Bảo Anh để truyền tải giai điệu, lời ca của “Lần đầu” đến với khán giả nghe nhạc.\r\n \r\nVới nội dung nói về những cảm xúc, rung động trong tình yêu đầu bằng cách sử dụng từ ngữ tượng hình, ca khúc “Lần đầu” đã được Bảo Anh yêu thích ngay từ khi nghe bản demo. Sau khi quyết định lựa chọn bài hát này cho single mới, Bảo Anh đã phải vất vả thu âm nhiều lần mới có được bản audio ưng ý nhất, ngay khi trở về từ Mĩ sau 1 tháng lưu diễn, cô đã vào phòng thu để hoàn tất những công đoạn cuối cùng gửi đến khán giả.\r\n \r\nNgoài phần âm nhạc được chú trọng hàng đầu, single “Lần đầu” cũng đánh dấu hình ảnh của một Bảo Anh hiện đại, gợi cảm và đầy sức sống.",
               "PR": false,
               "artists": [
                 {
-                  "id": "IWZ9ZED8",
-                  "name": "OnlyC",
-                  "link": "/nghe-si/OnlyC",
-                  "spotlight": true,
-                  "alias": "OnlyC",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "isOA": false,
+                  "id": "IWZ99B00",
+                  "name": "Bảo Anh",
+                  "link": "/nghe-si/Bao-Anh",
+                  "spotlight": false,
+                  "alias": "Bao-Anh",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 167552
-                },
-                {
-                  "id": "IWZAZUU7",
-                  "name": "Lou Hoàng",
-                  "link": "/nghe-si/Lou-Hoang",
-                  "spotlight": true,
-                  "alias": "Lou-Hoang",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/3/1/d/0/31d0f0e35548bd22f2f0e962eabf3c48.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/3/1/d/0/31d0f0e35548bd22f2f0e962eabf3c48.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 141564
+                  "totalFollow": 288836
                 }
               ],
-              "artistsNames": "OnlyC,Lou Hoàng",
+              "artistsNames": "Bảo Anh",
               "playItemMode": 2,
               "subType": 1,
               "uid": 0,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/covers/b/6/b6802ebfdba3a9ee7d72fa3dd649549e_1448008185.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/covers/d/2/d2cb26e345420bc65edf47a9bd9f182a_1450262970.jpg",
               "isShuffle": false,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -794,46 +674,106 @@ const data = {
               "isSingle": false
             },
             {
-              "encodeId": "ZWZB9A96",
-              "title": "Không Nói Được OST",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/covers/7/5/75bb9f0f27f05cf7f686e5b27451e9ca_1415354642.jpg",
+              "encodeId": "6969W687",
+              "title": "Moodshow 2",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/2/5/8/2/25821ec8b5431da81e20a23df45c93a5.jpg",
               "isoffical": true,
-              "link": "/album/Khong-Noi-Duoc-OST-OnlyC-Avatar-Boys/ZWZB9A96.html",
+              "link": "/album/Moodshow-2-Bao-Anh/6969W687.html",
               "isIndie": false,
-              "releaseDate": "2014",
-              "sortDescription": "Bất ngờ ghi danh vào \"đường đua\" mùa phim cuối năm nhưng phim điện ảnh hài có cái tên rất lạ: Không Nói Được hứa hẹn sẽ là một ứng cử viên sáng giá cho chức vô địch phòng vé. Bộ phim sở hữu dàn diễn viên toàn những gương mặt đẹp trai - xinh gái và hot với giới trẻ hiện nay như: Khổng Tú Quỳnh, Huỳnh Anh, Phở Đặc Biệt, Trịnh Thăng Bình, OnlyC, Khắc Việt, Dưa Leo,..\r\n\r\nTrong phim, Khổng Tú Quỳnh vào vai Quỳnh, nickname bé Dâu - hoàn toàn trùng khớp với tên và nickname ngoài đời của cô nàng. Bé Dâu thuở bé là một cô nhóc mũm mĩm hâm mộ anh hàng xóm - Huy (Huỳnh Anh) và thường bị anh chàng đùa cợt. Điều đó khiến cô bé quyết tâm trở thành một cô gái xinh đẹp. Tình cảm thơ ngây thuở bé theo cô lớn lên, cô luôn chờ anh hàng xóm nói lời yêu mình. Nhưng anh chàng ấy - Huy đã mắc phải một lời nguyền: không thể nói yêu ai.\r\n\r\nKhông Nói Được dự kiến sẽ được công chiếu từ ngày 7/11/2014.",
+              "releaseDate": "20/10/2021",
+              "sortDescription": "",
               "PR": false,
               "artists": [
                 {
-                  "id": "IWZ9ZED8",
-                  "name": "OnlyC",
-                  "link": "/nghe-si/OnlyC",
-                  "spotlight": true,
-                  "alias": "OnlyC",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 167552
-                },
-                {
-                  "id": "IWZAID9O",
-                  "name": "Avatar Boys",
-                  "link": "/nghe-si/Avatar-Boys",
+                  "id": "IWZ99B00",
+                  "name": "Bảo Anh",
+                  "link": "/nghe-si/Bao-Anh",
                   "spotlight": false,
-                  "alias": "Avatar-Boys",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/9/e/9e12205c8ff0e6caf047db390daeb1aa_1479788985.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/9/e/9e12205c8ff0e6caf047db390daeb1aa_1479788985.jpg",
-                  "isOA": false,
+                  "alias": "Bao-Anh",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 316
+                  "totalFollow": 288836
                 }
               ],
-              "artistsNames": "OnlyC,Avatar Boys",
+              "artistsNames": "Bảo Anh",
+              "playItemMode": 0,
+              "subType": 1,
+              "uid": 456,
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/2/5/8/2/25821ec8b5431da81e20a23df45c93a5.jpg",
+              "isShuffle": false,
+              "isPrivate": false,
+              "userName": "Zing MP3",
+              "isAlbum": true,
+              "textType": "Album",
+              "isSingle": false
+            },
+            {
+              "encodeId": "ZWZCWFEF",
+              "title": "Lần Đầu (The Remix Version)",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/covers/f/f/ffaa21f0110ad661fe0741b5acb2bf10_1456730709.jpg",
+              "isoffical": true,
+              "link": "/album/Lan-Dau-The-Remix-Version-Bao-Anh/ZWZCWFEF.html",
+              "isIndie": false,
+              "releaseDate": "2016",
+              "sortDescription": "Là khách mời trong đêm Liveshow thứ 7 Bảo Anh đã mang đến ca khúc HOT nhất của mình hiện giờ là Lần đầu với một bản phối mới của Dương Khắc Linh.",
+              "PR": false,
+              "artists": [
+                {
+                  "id": "IWZ99B00",
+                  "name": "Bảo Anh",
+                  "link": "/nghe-si/Bao-Anh",
+                  "spotlight": false,
+                  "alias": "Bao-Anh",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "isOA": true,
+                  "isOABrand": false,
+                  "totalFollow": 288836
+                }
+              ],
+              "artistsNames": "Bảo Anh",
               "playItemMode": 2,
               "subType": 1,
               "uid": 0,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/covers/7/5/75bb9f0f27f05cf7f686e5b27451e9ca_1415354642.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/covers/f/f/ffaa21f0110ad661fe0741b5acb2bf10_1456730709.jpg",
+              "isShuffle": false,
+              "isPrivate": false,
+              "userName": "Zing MP3",
+              "isAlbum": true,
+              "textType": "Album",
+              "isSingle": false
+            },
+            {
+              "encodeId": "68BOUIEB",
+              "title": "Moodshow - Tập 1.1",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/c/5/7/a/c57a9b19f086aa402fc872d5c83f1eb6.jpg",
+              "isoffical": true,
+              "link": "/album/Moodshow-Tap-1-1-Bao-Anh/68BOUIEB.html",
+              "isIndie": false,
+              "releaseDate": "13/07/2021",
+              "sortDescription": "",
+              "PR": false,
+              "artists": [
+                {
+                  "id": "IWZ99B00",
+                  "name": "Bảo Anh",
+                  "link": "/nghe-si/Bao-Anh",
+                  "spotlight": false,
+                  "alias": "Bao-Anh",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "isOA": true,
+                  "isOABrand": false,
+                  "totalFollow": 288836
+                }
+              ],
+              "artistsNames": "Bảo Anh",
+              "playItemMode": 0,
+              "subType": 1,
+              "uid": 456,
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/c/5/7/a/c57a9b19f086aa402fc872d5c83f1eb6.jpg",
               "isShuffle": false,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -843,16 +783,16 @@ const data = {
             }
           ],
           "subTitle": {
-            "id": "IWZ9ZED8",
-            "name": "OnlyC",
-            "link": "/nghe-si/OnlyC",
-            "spotlight": true,
-            "alias": "OnlyC",
-            "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-            "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-            "isOA": false,
+            "id": "IWZ99B00",
+            "name": "Bảo Anh",
+            "link": "/nghe-si/Bao-Anh",
+            "spotlight": false,
+            "alias": "Bao-Anh",
+            "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+            "isOA": true,
             "isOABrand": false,
-            "title": "OnlyC"
+            "title": "Bảo Anh"
           }
         },
         {
@@ -865,68 +805,68 @@ const data = {
             {
               "encodeId": "69I8CU7C",
               "title": "V-Pop Tháng 12/2021",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/7/2/2/0/7220274aa41e5e4fc5df3e9dce1c2159.jpg",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/b/a/5/a/ba5a15b18176f2d32ef8246e7404c334.jpg",
               "isoffical": true,
-              "link": "/album/V-Pop-Thang-12-2021-SOOBIN-Binz-Rhymastic-Touliver/69I8CU7C.html",
+              "link": "/album/V-Pop-Thang-12-2021-Bao-Anh-Quan-A-P-Tang-Phuc-Ngo-Kien-Huy/69I8CU7C.html",
               "isIndie": false,
               "releaseDate": "2021",
               "sortDescription": "Tháng 12 với những lựa chọn V-Pop muôn màu",
               "PR": false,
               "artists": [
                 {
-                  "id": "IWZ997CU",
-                  "name": "SOOBIN",
-                  "link": "/nghe-si/SOOBIN",
-                  "spotlight": true,
-                  "alias": "SOOBIN",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/f/1/d/d/f1ddeb86e263f0d67f835f1b60539a34.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/f/1/d/d/f1ddeb86e263f0d67f835f1b60539a34.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 459378
-                },
-                {
-                  "id": "IWZ96FEI",
-                  "name": "Binz",
-                  "link": "/nghe-si/Binz",
+                  "id": "IWZ99B00",
+                  "name": "Bảo Anh",
+                  "link": "/nghe-si/Bao-Anh",
                   "spotlight": false,
-                  "alias": "Binz",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/4/8/9/1/4891c7eef87e3ac85a50a2fba2674f5a.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/4/8/9/1/4891c7eef87e3ac85a50a2fba2674f5a.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 308176
-                },
-                {
-                  "id": "IWZ97U7U",
-                  "name": "Rhymastic",
-                  "link": "/nghe-si/Rhymastic",
-                  "spotlight": false,
-                  "alias": "Rhymastic",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/e/7e74ded5ae4a0fb04014b8f348a782fb_1487382154.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/7/e/7e74ded5ae4a0fb04014b8f348a782fb_1487382154.jpg",
+                  "alias": "Bao-Anh",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/9/e/c/e9ecc606b51e67135c57ffb101925376.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 138205
+                  "totalFollow": 288836
                 },
                 {
-                  "id": "IWZ986AE",
-                  "name": "Touliver",
-                  "link": "/nghe-si/Touliver",
+                  "id": "IW6ZUZI8",
+                  "name": "Quân A.P",
+                  "link": "/nghe-si/Quan-A-P",
                   "spotlight": false,
-                  "alias": "Touliver",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/f/b/fbda1ad619ecc4717a99a23eea7f4b5f_1510287266.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/f/b/fbda1ad619ecc4717a99a23eea7f4b5f_1510287266.jpg",
+                  "alias": "Quan-A-P",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/3/d/9/13d91c5df0cc3c5ff6536b611cd00b83.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/1/3/d/9/13d91c5df0cc3c5ff6536b611cd00b83.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 77810
+                  "totalFollow": 367347
+                },
+                {
+                  "id": "IWZAEC86",
+                  "name": "Tăng Phúc",
+                  "link": "/nghe-si/Tang-Phuc",
+                  "spotlight": false,
+                  "alias": "Tang-Phuc",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/0/7/2/e072efa112863082ef4a46d5ca2e6ebd.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/0/7/2/e072efa112863082ef4a46d5ca2e6ebd.jpg",
+                  "isOA": true,
+                  "isOABrand": false,
+                  "totalFollow": 81205
+                },
+                {
+                  "id": "IWZ9ZBBF",
+                  "name": "Ngô Kiến Huy",
+                  "link": "/nghe-si/NgoKienHuy",
+                  "spotlight": false,
+                  "alias": "NgoKienHuy",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/0/0/2/d/002d7bc760a3eabf5725e70797e8ac9f.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/0/0/2/d/002d7bc760a3eabf5725e70797e8ac9f.jpg",
+                  "isOA": true,
+                  "isOABrand": false,
+                  "totalFollow": 168874
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
               "playItemMode": 0,
               "subType": 1,
               "uid": 457,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/7/2/2/0/7220274aa41e5e4fc5df3e9dce1c2159.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/b/a/5/a/ba5a15b18176f2d32ef8246e7404c334.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -937,38 +877,14 @@ const data = {
             {
               "encodeId": "69I8CZFB",
               "title": "US-UK Tháng 12/2021",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/a/6/1/e/a61e9381e01774548f4b8f632260cb5a.jpg",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/8/3/4/9/834941c054b4d7becc40812d20844b56.jpg",
               "isoffical": true,
-              "link": "/album/US-UK-Thang-12-2021-Adele-Taylor-Swift-Shawn-Mendes-Little-Mix/69I8CZFB.html",
+              "link": "/album/US-UK-Thang-12-2021-Shawn-Mendes-Alicia-Keys-The-Weeknd-Aaliyah/69I8CZFB.html",
               "isIndie": false,
               "releaseDate": "2021",
               "sortDescription": "Nhạc US-UK tháng 12 này có gì mới?",
               "PR": false,
               "artists": [
-                {
-                  "id": "IWZ9Z09U",
-                  "name": "Adele",
-                  "link": "/nghe-si/Adele",
-                  "spotlight": false,
-                  "alias": "Adele",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/5/f/f/25ff82ca8d3b5ddb3e411e4f6fe83ed8.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/2/5/f/f/25ff82ca8d3b5ddb3e411e4f6fe83ed8.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 20372
-                },
-                {
-                  "id": "IWZ9ZOA8",
-                  "name": "Taylor Swift",
-                  "link": "/nghe-si/Taylor-Swift",
-                  "spotlight": false,
-                  "alias": "Taylor-Swift",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/b/8/51b83f6216d3752b5251159c930dcb8d.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/5/1/b/8/51b83f6216d3752b5251159c930dcb8d.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 190418
-                },
                 {
                   "id": "IWZAW68W",
                   "name": "Shawn Mendes",
@@ -979,26 +895,50 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/d/edfd6c984c63ef12a47dcf8f18c8910a_1422932535.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 27428
+                  "totalFollow": 27555
                 },
                 {
-                  "id": "IWZ98OB9",
-                  "name": "Little Mix",
-                  "link": "/nghe-si/Little-Mix",
+                  "id": "IWZ9ZIEO",
+                  "name": "Alicia Keys",
+                  "link": "/nghe-si/Alicia-Keys",
                   "spotlight": false,
-                  "alias": "Little-Mix",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/9/d/8/0/9d80b2d01da67783b00f267206531f65.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/9/d/8/0/9d80b2d01da67783b00f267206531f65.jpg",
+                  "alias": "Alicia-Keys",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/d/1/d170e3fda75ec7afe19b1e01df3fce8a_1462351915.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/d/1/d170e3fda75ec7afe19b1e01df3fce8a_1462351915.jpg",
+                  "isOA": true,
+                  "isOABrand": false,
+                  "totalFollow": 4021
+                },
+                {
+                  "id": "IWZ98796",
+                  "name": "The Weeknd",
+                  "link": "/nghe-si/The-Weeknd",
+                  "spotlight": false,
+                  "alias": "The-Weeknd",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/1/6/3/2163928412f08e472f98e8eabd3ec046.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/2/1/6/3/2163928412f08e472f98e8eabd3ec046.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 5262
+                  "totalFollow": 7704
+                },
+                {
+                  "id": "IWZ9Z098",
+                  "name": "Aaliyah",
+                  "link": "/nghe-si/Aaliyah",
+                  "spotlight": false,
+                  "alias": "Aaliyah",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/e/2e9956f2ad67c1924ad02e05070f7bb4_1285248709.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/2/e/2e9956f2ad67c1924ad02e05070f7bb4_1285248709.jpg",
+                  "isOA": false,
+                  "isOABrand": false,
+                  "totalFollow": 346
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
               "playItemMode": 0,
               "subType": 1,
               "uid": 457,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/a/6/1/e/a61e9381e01774548f4b8f632260cb5a.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/8/3/4/9/834941c054b4d7becc40812d20844b56.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -1009,9 +949,9 @@ const data = {
             {
               "encodeId": "69I8C799",
               "title": "K-Pop Tháng 12/2021",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/c/0/1/6/c016ee0f7f36f6adda3504da0cc39037.jpg",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/1/7/8/d/178d018fc73392a3ca9e0bc51d27d3ec.jpg",
               "isoffical": true,
-              "link": "/album/K-Pop-Thang-12-2021-IVE-Kai-Hwa-Sa-Weki-Meki/69I8C799.html",
+              "link": "/album/K-Pop-Thang-12-2021-IVE-Kai-ATEEZ-Hwa-Sa/69I8C799.html",
               "isIndie": false,
               "releaseDate": "2021",
               "sortDescription": "Những ca khúc mới tinh của K-Pop Tháng 12",
@@ -1027,7 +967,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/4/f/1/c/4f1c6667ebbc4fa1a91ab152902817e0.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 197
+                  "totalFollow": 984
                 },
                 {
                   "id": "IWZCOZ97",
@@ -1039,7 +979,19 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/0/2/0220f492c95a2995c9e28980f66fa9f2_1482825413.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 1189
+                  "totalFollow": 1443
+                },
+                {
+                  "id": "IW6WB9D9",
+                  "name": "ATEEZ",
+                  "link": "/nghe-si/ATEEZ",
+                  "spotlight": false,
+                  "alias": "ATEEZ",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/c/5/0/6c5016546170474ec8280297f300df75.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/6/c/5/0/6c5016546170474ec8280297f300df75.jpg",
+                  "isOA": false,
+                  "isOABrand": false,
+                  "totalFollow": 7577
                 },
                 {
                   "id": "IWZAEB7F",
@@ -1051,26 +1003,14 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/8/6/5/1/86515e73ae70d33ee803942d39a11c47.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 8268
-                },
-                {
-                  "id": "IWZFEZ7A",
-                  "name": "Weki Meki",
-                  "link": "/nghe-si/Weki-Meki",
-                  "spotlight": false,
-                  "alias": "Weki-Meki",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/4/d/f/1/4df1411199d41bb579519cbe77036a88.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/4/d/f/1/4df1411199d41bb579519cbe77036a88.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 10368
+                  "totalFollow": 8915
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
               "playItemMode": 0,
               "subType": 1,
               "uid": 457,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/c/0/1/6/c016ee0f7f36f6adda3504da0cc39037.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/1/7/8/d/178d018fc73392a3ca9e0bc51d27d3ec.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -1081,12 +1021,12 @@ const data = {
             {
               "encodeId": "69I8C87B",
               "title": "C-Pop Tháng 12/2021",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/b/d/6/2/bd626e46332097fa5e15eba53fa94b3e.jpg",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/f/1/b/d/f1bd9d69130afb0513624431d07399e4.jpg",
               "isoffical": true,
-              "link": "/album/C-Pop-Thang-12-2021-To-Tinh-Tiep-Lo-Phi-Van-yihuik/69I8C87B.html",
+              "link": "/album/C-Pop-Thang-12-2021-To-Tinh-Tiep-Eason-Chan-Luu-My-Lan-Lo-Phi-Van/69I8C87B.html",
               "isIndie": false,
               "releaseDate": "2021",
-              "sortDescription": "Những lựa chọn nổi bật của C-Pop tháng 11",
+              "sortDescription": "Những lựa chọn nổi bật của C-Pop tháng 12",
               "PR": false,
               "artists": [
                 {
@@ -1099,7 +1039,31 @@ const data = {
                   "thumbnailM": "https://photo-zmp3.zadn.vn/artist_default_2.png",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 6
+                  "totalFollow": 20
+                },
+                {
+                  "id": "IW7670D9",
+                  "name": "陳奕迅 Eason Chan",
+                  "link": "/nghe-si/IW7670D9",
+                  "spotlight": false,
+                  "alias": "IW7670D9",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/e/0/2/7e02c24650eddbd689278d52232a3621.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/7/e/0/2/7e02c24650eddbd689278d52232a3621.jpg",
+                  "isOA": false,
+                  "isOABrand": false,
+                  "totalFollow": 17
+                },
+                {
+                  "id": "IW6BOZOD",
+                  "name": "Lưu Mỹ Lân",
+                  "link": "/nghe-si/IW6BOZOD",
+                  "spotlight": false,
+                  "alias": "IW6BOZOD",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/4/3/4/a/434ae4b363eb1bf53f0fc097423ba8a4.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/4/3/4/a/434ae4b363eb1bf53f0fc097423ba8a4.jpg",
+                  "isOA": false,
+                  "isOABrand": false,
+                  "totalFollow": 31
                 },
                 {
                   "id": "IW76AOAC",
@@ -1111,38 +1075,14 @@ const data = {
                   "thumbnailM": "https://photo-zmp3.zadn.vn/artist_default_2.png",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 0
-                },
-                {
-                  "id": "IW76W0OF",
-                  "name": "李俊佑",
-                  "link": "/nghe-si/IW76W0OF",
-                  "spotlight": false,
-                  "alias": "IW76W0OF",
-                  "thumbnail": "https://photo-zmp3.zadn.vn/artist_default_2.png",
-                  "thumbnailM": "https://photo-zmp3.zadn.vn/artist_default_2.png",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 3
-                },
-                {
-                  "id": "IW760FAC",
-                  "name": "yihuik苡慧",
-                  "link": "/nghe-si/yihuik.IW760FAC",
-                  "spotlight": false,
-                  "alias": "yihuik.IW760FAC",
-                  "thumbnail": "https://photo-zmp3.zadn.vn/artist_default_2.png",
-                  "thumbnailM": "https://photo-zmp3.zadn.vn/artist_default_2.png",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 5
+                  "totalFollow": 12
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
               "playItemMode": 0,
               "subType": 1,
               "uid": 457,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/b/d/6/2/bd626e46332097fa5e15eba53fa94b3e.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/f/1/b/d/f1bd9d69130afb0513624431d07399e4.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -1153,9 +1093,9 @@ const data = {
             {
               "encodeId": "68FB8W8O",
               "title": "Indie Việt Tháng 12/2021",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/b/f/4/2/bf42bdd99c8c714a42959b46b388076e.jpg",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/3/c/9/4/3c94bc7cdf611f23b55fb5b70b28ab1e.jpg",
               "isoffical": true,
-              "link": "/album/Indie-Viet-Thang-12-2021-W-N-Nau-Pixel-Neko-CZEE/68FB8W8O.html",
+              "link": "/album/Indie-Viet-Thang-12-2021-W-N-T-R-I-14-Casper-Reddy/68FB8W8O.html",
               "isIndie": false,
               "releaseDate": "2021",
               "sortDescription": "Những lựa chọn tiềm năng của Indie Việt trong tháng 12",
@@ -1171,50 +1111,50 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/0/8/4/e084d1d3ad1c7ee845ed849bc983b062.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 8086
+                  "totalFollow": 8524
                 },
                 {
-                  "id": "IW6Z70DU",
-                  "name": "Nâu",
-                  "link": "/nghe-si/Le-Hoang-Vuong",
+                  "id": "IW6W88E8",
+                  "name": "T.R.I",
+                  "link": "/nghe-si/T-R-I",
                   "spotlight": false,
-                  "alias": "Le-Hoang-Vuong",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/c/0/f/9/c0f9746c8ad5d65e4ce8c35f8dfa17bb.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/c/0/f/9/c0f9746c8ad5d65e4ce8c35f8dfa17bb.jpg",
+                  "alias": "T-R-I",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/2/c/0/12c02d64f3d96f03dad5258004fb1adf.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/1/2/c/0/12c02d64f3d96f03dad5258004fb1adf.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 1228
+                  "totalFollow": 20284
                 },
                 {
-                  "id": "IW6WAF97",
-                  "name": "Pixel Neko",
-                  "link": "/nghe-si/Pixel-Neko",
+                  "id": "IW6UZWOW",
+                  "name": "14 Casper",
+                  "link": "/nghe-si/14-Casper",
                   "spotlight": false,
-                  "alias": "Pixel-Neko",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/8/d/5/78d508f09c52e401f45e09b98f51b51f.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/7/8/d/5/78d508f09c52e401f45e09b98f51b51f.jpg",
+                  "alias": "14-Casper",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/c/c/6dcc0033ea47f22ede4ffa9f845bf55a.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/6/d/c/c/6dcc0033ea47f22ede4ffa9f845bf55a.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 273
+                  "totalFollow": 1894
                 },
                 {
-                  "id": "IW6Z8AIF",
-                  "name": "CZEE",
-                  "link": "/nghe-si/CZEE",
+                  "id": "IW6W8U67",
+                  "name": "Reddy",
+                  "link": "/nghe-si/Reddy-Huu-Duy",
                   "spotlight": false,
-                  "alias": "CZEE",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/9/2/9/d/929d6f53680389897af6277ffc29b4fc.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/9/2/9/d/929d6f53680389897af6277ffc29b4fc.jpg",
+                  "alias": "Reddy-Huu-Duy",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/a/8/1/6/a816e6868d12e65ae1eb63ddf80a9f45.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/a/8/1/6/a816e6868d12e65ae1eb63ddf80a9f45.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 2836
+                  "totalFollow": 13050
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
               "playItemMode": 0,
               "subType": 1,
               "uid": 457,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/b/f/4/2/bf42bdd99c8c714a42959b46b388076e.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/3/c/9/4/3c94bc7cdf611f23b55fb5b70b28ab1e.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -1228,7 +1168,7 @@ const data = {
       "hasMore": false,
       "total": 25
     },
-    "timestamp": 1638619231958
+    "timestamp": 1639990282635
   }
 
 export const radio = {

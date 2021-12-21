@@ -19,7 +19,7 @@ const welcome = () => {
     .then((result) => {
         storage.setUsername(result.value);
         return Swal.fire({
-            html: 'Trang web này được xây dựng bằng <span class="font-bold text-blue-500">React</span> và lấy nguyên mẫu từ <span class="font-bold text-red-500">zingmp3.vn</span> , dữ liệu được update ngày 04/12/2021',
+            html: 'Trang web này được xây dựng bằng <span class="font-bold text-blue-500">React</span> và lấy nguyên mẫu từ <span class="font-bold text-red-500">zingmp3.vn</span> , dữ liệu được update ngày 20/12/2021',
             confirmButtonText: 'Tiếp tục',
         })
     })

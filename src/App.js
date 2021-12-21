@@ -39,10 +39,11 @@ const Main = styled.div`
         padding-left: 30px;
         padding-right: 30px;
     }
+
     @media (max-width: 767px) {
-        margin-left: 0;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: var(--sidebar-width--mobile);
+        padding-left: 10px;
+        padding-right: 10px;
     }
 `;
 

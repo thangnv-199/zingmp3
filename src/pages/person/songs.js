@@ -1,9 +1,9 @@
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
 
 import EmptyBox from '../../components/emptyBox';
 import Song from '../../components/song';
 import PlaylistButton from '../../components/button/playListButton';
-import storage from '../../utils/storage';
 
 const SongList = styled.div`
     flex: 1;
@@ -11,7 +11,7 @@ const SongList = styled.div`
 
 const Songs = () => {
 
-    const playlist = storage.getLibrary();
+    const playlist = useSelector(state => state.playlist.library);
 
     const renderSongs = (playlist) => {
         return playlist.songs.map((song, index) => (

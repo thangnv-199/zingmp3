@@ -5,7 +5,6 @@ import EmptyBox from '../../components/emptyBox';
 import Song from '../../components/song';
 import PlaylistButton from '../../components/button/playListButton';
 import PlaylistCard from '../../components/card/playlistCard';
-import storage from '../../utils/storage';
 import useDispatchs from '../../hooks/useDispatchs';
 
 const SongList = styled.div`
@@ -17,12 +16,14 @@ const SongList = styled.div`
 const Playlist = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin: 0 -10px;
-    & > * {
-        padding: 0 10px;
-    }
+    gap: 20px;
+    
     @media (max-width: 1200px) {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 `;
 
@@ -47,7 +48,7 @@ const Person = () => {
 
     const { openCreatePlaylistModal } = useDispatchs();
     const playlists = useSelector(state => state.playlist.list);
-    const playlist = storage.getLibrary();
+    const playlist = useSelector(state => state.playlist.library);
 
 
     const renderSongs = (playlist) => {
@@ -92,7 +93,7 @@ const Person = () => {
                         imageSrc="/zingmp3/images/icons/dics-music-icon.3925fc01.svg"
                     />
                     : <div className="flex">
-                        <img className="w-60 h-60" src="/zingmp3/images/album_default.png" alt="" />
+                        <img className="w-60 h-60 hidden md:block" src="/zingmp3/images/album_default.png" alt="" />
                         <SongList className="scrollbar pb-0">
                             {renderSongs(playlist)}
                         </SongList>

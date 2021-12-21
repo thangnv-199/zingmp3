@@ -27,9 +27,9 @@ const Radio = () => {
 
     return (
         <div className="mt-10">
-            <Carousel col={6} col_lg={5} col_md={4}>
-                {renderCardRadio(data.livestream.items)}
-            </Carousel>
+            <Carousel col={6} col_lg={5} col_md={4} col_sm={3} arrowStyle={2}>
+                    {renderCardRadio(data.livestream.items)}
+                </Carousel>
 
             <Carousel 
                 headerStyle={1} 

@@ -14,19 +14,20 @@ const Dispatchs = () => {
         toggleRandomPlay: () => dispatch(action.toggleRandomPlay()),
 
         deletePlaylist: id => dispatch(action.deletePlaylist(id)),
-        addPlaylist: (data) => dispatch(action.addPlaylist(data)),
-        updatePlaylist: (data) => dispatch(action.updatePlaylist(data)),
+        addPlaylist: data => dispatch(action.addPlaylist(data)),
+        updatePlaylist: data => dispatch(action.updatePlaylist(data)),
         
         toggleThemeModal: () => dispatch(action.toggleThemeModal()),
-        openLyricModal: (data) => dispatch(action.openLyricModal(data)),
-        openSongTooltip: (data) => dispatch(action.openSongTooltip(data)),
-        openMvModal: (data) => dispatch(action.openMvModal(data)),
+        openLyricModal: data => dispatch(action.openLyricModal(data)),
+        openSongTooltip: data => dispatch(action.openSongTooltip(data)),
+        openMvModal: data => dispatch(action.openMvModal(data)),
         togglePlayerQueue: () => dispatch(action.togglePlayerQueue()),
         openCreatePlaylistModal: () => dispatch(action.openCreatePlaylistModal()),
         closeCreatePlaylistModal: () => dispatch(action.closeCreatePlaylistModal()),
         closeLyricModal: () => dispatch(action.closeLyricModal()),
         closeMvModal: () => dispatch(action.closeMvModal()),
         closeSongTooltip: () => dispatch(action.closeSongTooltip()),
+        addToLibrary: data => dispatch(action.addToLibrary(data)),
     }
 }
 

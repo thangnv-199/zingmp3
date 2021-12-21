@@ -4,57 +4,108 @@ const data = {
     "data": {
       "items": [
         {
-          "promote": {
-            "encodeId": "ZUAU9W6E",
-            "title": "Đọc Đúng Sách, Yêu Đúng Cách",
-            "alias": "Doc-Dung-Sach-Yeu-Dung-Cach-G5R-Squad-Anh-Rong",
-            "isOffical": true,
-            "username": "",
-            "artistsNames": "G5R Squad, Anh Rồng",
-            "artists": [
-              {
-                "id": "IW6ZU880",
-                "name": "G5R Squad",
-                "link": "/nghe-si/G5R-Squad",
-                "spotlight": false,
-                "alias": "G5R-Squad",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/3/2/c/132c6b8869a6d3696abe5bf69d80b585.jpg",
-                "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/1/3/2/c/132c6b8869a6d3696abe5bf69d80b585.jpg",
-                "isOA": true,
-                "isOABrand": false
-              },
-              {
-                "id": "IW6AC6UD",
-                "name": "Anh Rồng",
-                "link": "/nghe-si/Anh-Rong",
-                "spotlight": false,
-                "alias": "Anh-Rong",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/7/6/e/176eaef136dd8298a21d2b6089b6679e.jpg",
-                "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/1/7/6/e/176eaef136dd8298a21d2b6089b6679e.jpg",
-                "isOA": false,
-                "isOABrand": false
-              }
-            ],
-            "isWorldWide": true,
-            "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/3/1/8/3/31838ae40ca565c1a3c7d44856d871a3.jpg",
-            "link": "/bai-hat/Doc-Dung-Sach-Yeu-Dung-Cach-G5R-Squad-Anh-Rong/ZUAU9W6E.html",
-            "thumbnail": "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/1/8/3/31838ae40ca565c1a3c7d44856d871a3.jpg",
-            "duration": 271,
-            "isZMA": false,
-            "zingChoise": false,
-            "isPrivate": false,
-            "preRelease": false,
-            "releaseDate": 1635766200,
-            "indicators": [
-              
-            ],
-            "radioId": 1462832225,
-            "isIndie": false,
-            "streamingStatus": 1,
-            "allowAudioAds": true,
-            "hasLyric": true
-          },
           "items": [
+            {
+              "encodeId": "ZUDCZU89",
+              "title": "Sau Này Nếu Có Yêu Ai",
+              "alias": "Sau-Nay-Neu-Co-Yeu-Ai-Tang-Phuc-Ngo-Kien-Huy",
+              "isOffical": true,
+              "username": "",
+              "artistsNames": "Tăng Phúc, Ngô Kiến Huy",
+              "artists": [
+                {
+                  "id": "IWZAEC86",
+                  "name": "Tăng Phúc",
+                  "link": "/nghe-si/Tang-Phuc",
+                  "spotlight": false,
+                  "alias": "Tang-Phuc",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/0/7/2/e072efa112863082ef4a46d5ca2e6ebd.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/0/7/2/e072efa112863082ef4a46d5ca2e6ebd.jpg",
+                  "isOA": true,
+                  "isOABrand": false
+                },
+                {
+                  "id": "IWZ9ZBBF",
+                  "name": "Ngô Kiến Huy",
+                  "link": "/nghe-si/NgoKienHuy",
+                  "spotlight": false,
+                  "alias": "NgoKienHuy",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/0/0/2/d/002d7bc760a3eabf5725e70797e8ac9f.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/0/0/2/d/002d7bc760a3eabf5725e70797e8ac9f.jpg",
+                  "isOA": true,
+                  "isOABrand": false
+                }
+              ],
+              "isWorldWide": true,
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/a/f/2/a/af2a52d9784647085f1466075e96c009.jpg",
+              "link": "/bai-hat/Sau-Nay-Neu-Co-Yeu-Ai-Tang-Phuc-Ngo-Kien-Huy/ZUDCZU89.html",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/a/f/2/a/af2a52d9784647085f1466075e96c009.jpg",
+              "duration": 193,
+              "isZMA": false,
+              "zingChoise": false,
+              "isPrivate": false,
+              "preRelease": false,
+              "releaseDate": 1639314000,
+              "album": {
+                "encodeId": "69CB6U8B",
+                "title": "Sau Này Nếu Có Yêu Ai (Single)",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/a/f/2/a/af2a52d9784647085f1466075e96c009.jpg",
+                "isoffical": true,
+                "link": "/album/Sau-Nay-Neu-Co-Yeu-Ai-Single-Tang-Phuc-Ngo-Kien-Huy/69CB6U8B.html",
+                "isIndie": false,
+                "releaseDate": "12/12/2021",
+                "sortDescription": "",
+                "PR": false,
+                "artists": [
+                  {
+                    "id": "IWZAEC86",
+                    "name": "Tăng Phúc",
+                    "link": "/nghe-si/Tang-Phuc",
+                    "spotlight": false,
+                    "alias": "Tang-Phuc",
+                    "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/0/7/2/e072efa112863082ef4a46d5ca2e6ebd.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/0/7/2/e072efa112863082ef4a46d5ca2e6ebd.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "totalFollow": 81205
+                  },
+                  {
+                    "id": "IWZ9ZBBF",
+                    "name": "Ngô Kiến Huy",
+                    "link": "/nghe-si/NgoKienHuy",
+                    "spotlight": false,
+                    "alias": "NgoKienHuy",
+                    "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/0/0/2/d/002d7bc760a3eabf5725e70797e8ac9f.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/0/0/2/d/002d7bc760a3eabf5725e70797e8ac9f.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "totalFollow": 168874
+                  }
+                ],
+                "artistsNames": "Tăng Phúc, Ngô Kiến Huy"
+              },
+              "indicators": [
+                
+              ],
+              "radioId": 1468039773,
+              "isIndie": false,
+              "streamingStatus": 1,
+              "allowAudioAds": true,
+              "hasLyric": true,
+              "rakingStatus": 0,
+              "score": 7122,
+              "totalTopZing": 0,
+              "artist": {
+                "id": "IWZAEC86",
+                "name": "Tăng Phúc",
+                "link": "/nghe-si/Tang-Phuc",
+                "spotlight": false,
+                "alias": "Tang-Phuc",
+                "playlistId": "Z6BU0UDI",
+                "cover": "https://photo-zmp3.zadn.vn/cover_artist/e/6/0/a/e60a3734b717f4632bcc335fe0a93155.jpg",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/0/7/2/e072efa112863082ef4a46d5ca2e6ebd.jpg"
+              }
+            },
             {
               "encodeId": "ZUC089AE",
               "title": "Là Ai Từ Bỏ, Là Ai Vô Tình",
@@ -117,7 +168,7 @@ const data = {
                     "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/e/f/8/4/ef84f25bebe0bb917735de836a3e417f.jpg",
                     "isOA": true,
                     "isOABrand": false,
-                    "totalFollow": 593216
+                    "totalFollow": 603634
                   },
                   {
                     "id": "IWZ9DFA6",
@@ -129,7 +180,7 @@ const data = {
                     "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/d/8/d/6/d8d61f4e27a6def35d31e91a3ec35f34.jpg",
                     "isOA": false,
                     "isOABrand": false,
-                    "totalFollow": 39752
+                    "totalFollow": 42177
                   }
                 ],
                 "artistsNames": "Hương Ly, Jombie"
@@ -144,7 +195,7 @@ const data = {
               "allowAudioAds": true,
               "hasLyric": true,
               "rakingStatus": 0,
-              "score": 6913,
+              "score": 4143,
               "totalTopZing": 0,
               "artist": {
                 "id": "IW6ZO9UB",
@@ -230,7 +281,7 @@ const data = {
                     "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/5/6/5/3/5653c00f7093a17d3f20f232d3189822.jpg",
                     "isOA": false,
                     "isOABrand": false,
-                    "totalFollow": 25654
+                    "totalFollow": 28017
                   },
                   {
                     "id": "IW6ZC0DZ",
@@ -242,7 +293,7 @@ const data = {
                     "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/a/6/b/ba6bb92da2cc15b7904d52ea938e6c86.jpg",
                     "isOA": false,
                     "isOABrand": false,
-                    "totalFollow": 1565
+                    "totalFollow": 2181
                   },
                   {
                     "id": "IW67EI9E",
@@ -254,7 +305,7 @@ const data = {
                     "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/c/f/e/0/cfe0984b0e447dd79bff55c866304586.jpg",
                     "isOA": false,
                     "isOABrand": false,
-                    "totalFollow": 1240
+                    "totalFollow": 1638
                   }
                 ],
                 "artistsNames": "DIMZ, TVk, NH4T"
@@ -268,7 +319,7 @@ const data = {
               "allowAudioAds": true,
               "hasLyric": true,
               "rakingStatus": 0,
-              "score": 6175,
+              "score": 3981,
               "totalTopZing": 0,
               "artist": {
                 "id": "IW689UCI",
@@ -279,106 +330,6 @@ const data = {
                 "playlistId": "67D7C8ZW",
                 "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
                 "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/6/5/3/5653c00f7093a17d3f20f232d3189822.jpg"
-              }
-            },
-            {
-              "encodeId": "ZU6IEI66",
-              "title": "Yêu Là Cưới",
-              "alias": "Yeu-La-Cuoi-Phat-Ho-X2X",
-              "isOffical": true,
-              "username": "",
-              "artistsNames": "Phát Hồ, X2X",
-              "artists": [
-                {
-                  "id": "IW67D9EI",
-                  "name": "Phát Hồ",
-                  "link": "/nghe-si/Phat-Ho",
-                  "spotlight": false,
-                  "alias": "Phat-Ho",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
-                  "isOA": false,
-                  "isOABrand": false
-                },
-                {
-                  "id": "IW6Z6EU7",
-                  "name": "X2X",
-                  "link": "/nghe-si/X2X",
-                  "spotlight": false,
-                  "alias": "X2X",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/0/6/1/5061a5aff3176a16867d6dda9a189bda.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/5/0/6/1/5061a5aff3176a16867d6dda9a189bda.jpg",
-                  "isOA": true,
-                  "isOABrand": false
-                }
-              ],
-              "isWorldWide": true,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/4/9/d/a/49da6a1d6cf13a42e77bc3a945d9dd6b.jpg",
-              "link": "/bai-hat/Yeu-La-Cuoi-Phat-Ho-X2X/ZU6IEI66.html",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/9/d/a/49da6a1d6cf13a42e77bc3a945d9dd6b.jpg",
-              "duration": 179,
-              "isZMA": false,
-              "zingChoise": false,
-              "isPrivate": false,
-              "preRelease": false,
-              "releaseDate": 1630929600,
-              "album": {
-                "encodeId": "690Z8F6C",
-                "title": "Yêu Là Cưới (Single)",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/4/9/d/a/49da6a1d6cf13a42e77bc3a945d9dd6b.jpg",
-                "isoffical": true,
-                "link": "/album/Yeu-La-Cuoi-Single-Phat-Ho-X2X/690Z8F6C.html",
-                "isIndie": false,
-                "releaseDate": "06/09/2021",
-                "sortDescription": "",
-                "PR": false,
-                "artists": [
-                  {
-                    "id": "IW67D9EI",
-                    "name": "Phát Hồ",
-                    "link": "/nghe-si/Phat-Ho",
-                    "spotlight": false,
-                    "alias": "Phat-Ho",
-                    "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
-                    "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
-                    "isOA": false,
-                    "isOABrand": false,
-                    "totalFollow": 31133
-                  },
-                  {
-                    "id": "IW6Z6EU7",
-                    "name": "X2X",
-                    "link": "/nghe-si/X2X",
-                    "spotlight": false,
-                    "alias": "X2X",
-                    "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/0/6/1/5061a5aff3176a16867d6dda9a189bda.jpg",
-                    "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/5/0/6/1/5061a5aff3176a16867d6dda9a189bda.jpg",
-                    "isOA": true,
-                    "isOABrand": false,
-                    "totalFollow": 102812
-                  }
-                ],
-                "artistsNames": "Phát Hồ, X2X"
-              },
-              "indicators": [
-                
-              ],
-              "radioId": 1460645161,
-              "isIndie": false,
-              "streamingStatus": 1,
-              "allowAudioAds": true,
-              "hasLyric": true,
-              "rakingStatus": 0,
-              "score": 4402,
-              "totalTopZing": 0,
-              "artist": {
-                "id": "IW67D9EI",
-                "name": "Phát Hồ",
-                "link": "/nghe-si/Phat-Ho",
-                "spotlight": false,
-                "alias": "Phat-Ho",
-                "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg"
               }
             },
             {
@@ -443,7 +394,7 @@ const data = {
                     "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
                     "isOA": false,
                     "isOABrand": false,
-                    "totalFollow": 31133
+                    "totalFollow": 36871
                   },
                   {
                     "id": "IW6Z6EU7",
@@ -455,7 +406,7 @@ const data = {
                     "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/5/0/6/1/5061a5aff3176a16867d6dda9a189bda.jpg",
                     "isOA": true,
                     "isOABrand": false,
-                    "totalFollow": 102812
+                    "totalFollow": 106823
                   }
                 ],
                 "artistsNames": "Phát Hồ, X2X"
@@ -469,7 +420,7 @@ const data = {
               "allowAudioAds": true,
               "hasLyric": true,
               "rakingStatus": 0,
-              "score": 3584,
+              "score": 3666,
               "totalTopZing": 0,
               "artist": {
                 "id": "IW67D9EI",
@@ -482,109 +433,120 @@ const data = {
               }
             },
             {
-              "encodeId": "ZU68E97U",
-              "title": "Cưới Luôn Được Không?",
-              "alias": "Cuoi-Luon-Duoc-Khong-YuniBoo-Goctoi-Mixer",
+              "encodeId": "ZU6IEI66",
+              "title": "Yêu Là Cưới",
+              "alias": "Yeu-La-Cuoi-Phat-Ho-X2X",
               "isOffical": true,
               "username": "",
-              "artistsNames": "YuniBoo, Goctoi Mixer",
+              "artistsNames": "Phát Hồ, X2X",
               "artists": [
                 {
-                  "id": "IW6ZZ98C",
-                  "name": "YuniBoo",
-                  "link": "/nghe-si/YuniBoo",
+                  "id": "IW67D9EI",
+                  "name": "Phát Hồ",
+                  "link": "/nghe-si/Phat-Ho",
                   "spotlight": false,
-                  "alias": "YuniBoo",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/d/7/0/bd7086436519b0fcb59b91a6b2fb6f61.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/d/7/0/bd7086436519b0fcb59b91a6b2fb6f61.jpg",
-                  "isOA": true,
+                  "alias": "Phat-Ho",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
+                  "isOA": false,
                   "isOABrand": false
                 },
                 {
-                  "id": "IW6Z7DUB",
-                  "name": "Goctoi Mixer",
-                  "link": "/nghe-si/Goctoi-Mixer",
+                  "id": "IW6Z6EU7",
+                  "name": "X2X",
+                  "link": "/nghe-si/X2X",
                   "spotlight": false,
-                  "alias": "Goctoi-Mixer",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/4/7/6/e/476e701eca754f415e0be540b3548ec5.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/4/7/6/e/476e701eca754f415e0be540b3548ec5.jpg",
-                  "isOA": false,
+                  "alias": "X2X",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/0/6/1/5061a5aff3176a16867d6dda9a189bda.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/5/0/6/1/5061a5aff3176a16867d6dda9a189bda.jpg",
+                  "isOA": true,
                   "isOABrand": false
                 }
               ],
               "isWorldWide": true,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/5/f/2/d/5f2d9c8e7e39c0776a254980a26ec63d.jpg",
-              "link": "/bai-hat/Cuoi-Luon-Duoc-Khong-YuniBoo-Goctoi-Mixer/ZU68E97U.html",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/5/f/2/d/5f2d9c8e7e39c0776a254980a26ec63d.jpg",
-              "duration": 242,
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/4/9/d/a/49da6a1d6cf13a42e77bc3a945d9dd6b.jpg",
+              "link": "/bai-hat/Yeu-La-Cuoi-Phat-Ho-X2X/ZU6IEI66.html",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/9/d/a/49da6a1d6cf13a42e77bc3a945d9dd6b.jpg",
+              "duration": 179,
               "isZMA": false,
               "zingChoise": false,
               "isPrivate": false,
               "preRelease": false,
-              "releaseDate": 1632052800,
+              "releaseDate": 1630929600,
               "album": {
-                "encodeId": "690BECIF",
-                "title": "Cưới Luôn Được Không? (Single)",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/5/f/2/d/5f2d9c8e7e39c0776a254980a26ec63d.jpg",
+                "encodeId": "690Z8F6C",
+                "title": "Yêu Là Cưới (Single)",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/4/9/d/a/49da6a1d6cf13a42e77bc3a945d9dd6b.jpg",
                 "isoffical": true,
-                "link": "/album/Cuoi-Luon-Duoc-Khong-Single-YuniBoo-Goctoi-Mixer/690BECIF.html",
+                "link": "/album/Yeu-La-Cuoi-Single-Phat-Ho-X2X/690Z8F6C.html",
                 "isIndie": false,
-                "releaseDate": "19/09/2021",
+                "releaseDate": "06/09/2021",
                 "sortDescription": "",
                 "PR": false,
                 "artists": [
                   {
-                    "id": "IW6ZZ98C",
-                    "name": "YuniBoo",
-                    "link": "/nghe-si/YuniBoo",
+                    "id": "IW67D9EI",
+                    "name": "Phát Hồ",
+                    "link": "/nghe-si/Phat-Ho",
                     "spotlight": false,
-                    "alias": "YuniBoo",
-                    "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/d/7/0/bd7086436519b0fcb59b91a6b2fb6f61.jpg",
-                    "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/d/7/0/bd7086436519b0fcb59b91a6b2fb6f61.jpg",
-                    "isOA": true,
-                    "isOABrand": false,
-                    "totalFollow": 20314
-                  },
-                  {
-                    "id": "IW6Z7DUB",
-                    "name": "Goctoi Mixer",
-                    "link": "/nghe-si/Goctoi-Mixer",
-                    "spotlight": false,
-                    "alias": "Goctoi-Mixer",
-                    "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/4/7/6/e/476e701eca754f415e0be540b3548ec5.jpg",
-                    "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/4/7/6/e/476e701eca754f415e0be540b3548ec5.jpg",
+                    "alias": "Phat-Ho",
+                    "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
                     "isOA": false,
                     "isOABrand": false,
-                    "totalFollow": 2359
+                    "totalFollow": 36871
+                  },
+                  {
+                    "id": "IW6Z6EU7",
+                    "name": "X2X",
+                    "link": "/nghe-si/X2X",
+                    "spotlight": false,
+                    "alias": "X2X",
+                    "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/0/6/1/5061a5aff3176a16867d6dda9a189bda.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/5/0/6/1/5061a5aff3176a16867d6dda9a189bda.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "totalFollow": 106823
                   }
                 ],
-                "artistsNames": "YuniBoo, Goctoi Mixer"
+                "artistsNames": "Phát Hồ, X2X"
               },
               "indicators": [
                 
               ],
-              "radioId": 1461793109,
+              "radioId": 1460645161,
               "isIndie": false,
               "streamingStatus": 1,
               "allowAudioAds": true,
               "hasLyric": true,
-              "rakingStatus": 0,
-              "score": 3030,
+              "rakingStatus": 1,
+              "score": 3152,
               "totalTopZing": 0,
               "artist": {
-                "id": "IW6ZZ98C",
-                "name": "YuniBoo",
-                "link": "/nghe-si/YuniBoo",
+                "id": "IW67D9EI",
+                "name": "Phát Hồ",
+                "link": "/nghe-si/Phat-Ho",
                 "spotlight": false,
-                "alias": "YuniBoo",
-                "playlistId": "60U6WUCU",
-                "cover": "https://photo-zmp3.zadn.vn/cover_rect/a/b/f/4/abf4c288c25dd50f5723360d8d70914d.jpg",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/d/7/0/bd7086436519b0fcb59b91a6b2fb6f61.jpg"
+                "alias": "Phat-Ho",
+                "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg"
               }
             }
           ],
           "chart": {
             "times": [
+              {
+                "hour": "16"
+              },
+              {
+                "hour": "17"
+              },
+              {
+                "hour": "18"
+              },
+              {
+                "hour": "19"
+              },
               {
                 "hour": "20"
               },
@@ -644,391 +606,379 @@ const data = {
               },
               {
                 "hour": "15"
-              },
-              {
-                "hour": "16"
-              },
-              {
-                "hour": "17"
-              },
-              {
-                "hour": "18"
-              },
-              {
-                "hour": "19"
               }
             ],
             "minScore": 0,
-            "maxScore": 11344.8,
+            "maxScore": 11306.4,
             "items": {
+              "ZUDCZU89": [
+                {
+                  "time": 1639904400000,
+                  "hour": "16",
+                  "counter": 7482
+                },
+                {
+                  "time": 1639908000000,
+                  "hour": "17",
+                  "counter": 7793
+                },
+                {
+                  "time": 1639911600000,
+                  "hour": "18",
+                  "counter": 7568
+                },
+                {
+                  "time": 1639915200000,
+                  "hour": "19",
+                  "counter": 6839
+                },
+                {
+                  "time": 1639918800000,
+                  "hour": "20",
+                  "counter": 5736
+                },
+                {
+                  "time": 1639922400000,
+                  "hour": "21",
+                  "counter": 5363
+                },
+                {
+                  "time": 1639926000000,
+                  "hour": "22",
+                  "counter": 6569
+                },
+                {
+                  "time": 1639929600000,
+                  "hour": "23",
+                  "counter": 7622
+                },
+                {
+                  "time": 1639933200000,
+                  "hour": "00",
+                  "counter": 6861
+                },
+                {
+                  "time": 1639936800000,
+                  "hour": "01",
+                  "counter": 4848
+                },
+                {
+                  "time": 1639940400000,
+                  "hour": "02",
+                  "counter": 3310
+                },
+                {
+                  "time": 1639944000000,
+                  "hour": "03",
+                  "counter": 2158
+                },
+                {
+                  "time": 1639947600000,
+                  "hour": "04",
+                  "counter": 1684
+                },
+                {
+                  "time": 1639951200000,
+                  "hour": "05",
+                  "counter": 1772
+                },
+                {
+                  "time": 1639954800000,
+                  "hour": "06",
+                  "counter": 2867
+                },
+                {
+                  "time": 1639958400000,
+                  "hour": "07",
+                  "counter": 6444
+                },
+                {
+                  "time": 1639962000000,
+                  "hour": "08",
+                  "counter": 8070
+                },
+                {
+                  "time": 1639965600000,
+                  "hour": "09",
+                  "counter": 7818
+                },
+                {
+                  "time": 1639969200000,
+                  "hour": "10",
+                  "counter": 8119
+                },
+                {
+                  "time": 1639972800000,
+                  "hour": "11",
+                  "counter": 7716
+                },
+                {
+                  "time": 1639976400000,
+                  "hour": "12",
+                  "counter": 6807
+                },
+                {
+                  "time": 1639980000000,
+                  "hour": "13",
+                  "counter": 9422
+                },
+                {
+                  "time": 1639983600000,
+                  "hour": "14",
+                  "counter": 8474
+                },
+                {
+                  "time": 1639987200000,
+                  "hour": "15",
+                  "counter": 7991
+                }
+              ],
               "ZUC089AE": [
                 {
-                  "time": 1638536400000,
-                  "hour": "20",
-                  "counter": 7514
-                },
-                {
-                  "time": 1638540000000,
-                  "hour": "21",
-                  "counter": 7168
-                },
-                {
-                  "time": 1638543600000,
-                  "hour": "22",
-                  "counter": 7919
-                },
-                {
-                  "time": 1638547200000,
-                  "hour": "23",
-                  "counter": 8118
-                },
-                {
-                  "time": 1638550800000,
-                  "hour": "00",
-                  "counter": 7976
-                },
-                {
-                  "time": 1638554400000,
-                  "hour": "01",
-                  "counter": 5644
-                },
-                {
-                  "time": 1638558000000,
-                  "hour": "02",
-                  "counter": 4031
-                },
-                {
-                  "time": 1638561600000,
-                  "hour": "03",
-                  "counter": 2951
-                },
-                {
-                  "time": 1638565200000,
-                  "hour": "04",
-                  "counter": 2796
-                },
-                {
-                  "time": 1638568800000,
-                  "hour": "05",
-                  "counter": 2718
-                },
-                {
-                  "time": 1638572400000,
-                  "hour": "06",
-                  "counter": 3547
-                },
-                {
-                  "time": 1638576000000,
-                  "hour": "07",
-                  "counter": 5977
-                },
-                {
-                  "time": 1638579600000,
-                  "hour": "08",
-                  "counter": 7516
-                },
-                {
-                  "time": 1638583200000,
-                  "hour": "09",
-                  "counter": 8415
-                },
-                {
-                  "time": 1638586800000,
-                  "hour": "10",
-                  "counter": 8873
-                },
-                {
-                  "time": 1638590400000,
-                  "hour": "11",
-                  "counter": 8563
-                },
-                {
-                  "time": 1638594000000,
-                  "hour": "12",
-                  "counter": 7497
-                },
-                {
-                  "time": 1638597600000,
-                  "hour": "13",
-                  "counter": 8877
-                },
-                {
-                  "time": 1638601200000,
-                  "hour": "14",
-                  "counter": 9454
-                },
-                {
-                  "time": 1638604800000,
-                  "hour": "15",
-                  "counter": 8359
-                },
-                {
-                  "time": 1638608400000,
+                  "time": 1639904400000,
                   "hour": "16",
-                  "counter": 7904
+                  "counter": 4318
                 },
                 {
-                  "time": 1638612000000,
+                  "time": 1639908000000,
                   "hour": "17",
-                  "counter": 7608
+                  "counter": 4224
                 },
                 {
-                  "time": 1638615600000,
+                  "time": 1639911600000,
                   "hour": "18",
-                  "counter": 8037
+                  "counter": 4292
                 },
                 {
-                  "time": 1638619200000,
+                  "time": 1639915200000,
                   "hour": "19",
-                  "counter": 7135
+                  "counter": 3735
+                },
+                {
+                  "time": 1639918800000,
+                  "hour": "20",
+                  "counter": 3274
+                },
+                {
+                  "time": 1639922400000,
+                  "hour": "21",
+                  "counter": 3145
+                },
+                {
+                  "time": 1639926000000,
+                  "hour": "22",
+                  "counter": 3739
+                },
+                {
+                  "time": 1639929600000,
+                  "hour": "23",
+                  "counter": 4374
+                },
+                {
+                  "time": 1639933200000,
+                  "hour": "00",
+                  "counter": 4153
+                },
+                {
+                  "time": 1639936800000,
+                  "hour": "01",
+                  "counter": 3004
+                },
+                {
+                  "time": 1639940400000,
+                  "hour": "02",
+                  "counter": 2143
+                },
+                {
+                  "time": 1639944000000,
+                  "hour": "03",
+                  "counter": 1481
+                },
+                {
+                  "time": 1639947600000,
+                  "hour": "04",
+                  "counter": 1180
+                },
+                {
+                  "time": 1639951200000,
+                  "hour": "05",
+                  "counter": 1138
+                },
+                {
+                  "time": 1639954800000,
+                  "hour": "06",
+                  "counter": 1571
+                },
+                {
+                  "time": 1639958400000,
+                  "hour": "07",
+                  "counter": 3154
+                },
+                {
+                  "time": 1639962000000,
+                  "hour": "08",
+                  "counter": 4015
+                },
+                {
+                  "time": 1639965600000,
+                  "hour": "09",
+                  "counter": 4386
+                },
+                {
+                  "time": 1639969200000,
+                  "hour": "10",
+                  "counter": 4645
+                },
+                {
+                  "time": 1639972800000,
+                  "hour": "11",
+                  "counter": 4360
+                },
+                {
+                  "time": 1639976400000,
+                  "hour": "12",
+                  "counter": 3939
+                },
+                {
+                  "time": 1639980000000,
+                  "hour": "13",
+                  "counter": 5120
+                },
+                {
+                  "time": 1639983600000,
+                  "hour": "14",
+                  "counter": 5173
+                },
+                {
+                  "time": 1639987200000,
+                  "hour": "15",
+                  "counter": 4504
                 }
               ],
               "ZU7C8FDU": [
                 {
-                  "time": 1638536400000,
-                  "hour": "20",
-                  "counter": 6534
-                },
-                {
-                  "time": 1638540000000,
-                  "hour": "21",
-                  "counter": 6593
-                },
-                {
-                  "time": 1638543600000,
-                  "hour": "22",
-                  "counter": 7098
-                },
-                {
-                  "time": 1638547200000,
-                  "hour": "23",
-                  "counter": 7523
-                },
-                {
-                  "time": 1638550800000,
-                  "hour": "00",
-                  "counter": 7343
-                },
-                {
-                  "time": 1638554400000,
-                  "hour": "01",
-                  "counter": 5525
-                },
-                {
-                  "time": 1638558000000,
-                  "hour": "02",
-                  "counter": 3945
-                },
-                {
-                  "time": 1638561600000,
-                  "hour": "03",
-                  "counter": 2781
-                },
-                {
-                  "time": 1638565200000,
-                  "hour": "04",
-                  "counter": 2246
-                },
-                {
-                  "time": 1638568800000,
-                  "hour": "05",
-                  "counter": 2135
-                },
-                {
-                  "time": 1638572400000,
-                  "hour": "06",
-                  "counter": 2681
-                },
-                {
-                  "time": 1638576000000,
-                  "hour": "07",
-                  "counter": 4969
-                },
-                {
-                  "time": 1638579600000,
-                  "hour": "08",
-                  "counter": 6506
-                },
-                {
-                  "time": 1638583200000,
-                  "hour": "09",
-                  "counter": 7687
-                },
-                {
-                  "time": 1638586800000,
-                  "hour": "10",
-                  "counter": 8160
-                },
-                {
-                  "time": 1638590400000,
-                  "hour": "11",
-                  "counter": 7844
-                },
-                {
-                  "time": 1638594000000,
-                  "hour": "12",
-                  "counter": 6720
-                },
-                {
-                  "time": 1638597600000,
-                  "hour": "13",
-                  "counter": 8332
-                },
-                {
-                  "time": 1638601200000,
-                  "hour": "14",
-                  "counter": 8718
-                },
-                {
-                  "time": 1638604800000,
-                  "hour": "15",
-                  "counter": 7759
-                },
-                {
-                  "time": 1638608400000,
+                  "time": 1639904400000,
                   "hour": "16",
-                  "counter": 7292
+                  "counter": 4096
                 },
                 {
-                  "time": 1638612000000,
+                  "time": 1639908000000,
                   "hour": "17",
-                  "counter": 6822
+                  "counter": 3717
                 },
                 {
-                  "time": 1638615600000,
+                  "time": 1639911600000,
                   "hour": "18",
-                  "counter": 6852
+                  "counter": 3705
                 },
                 {
-                  "time": 1638619200000,
+                  "time": 1639915200000,
                   "hour": "19",
-                  "counter": 6235
-                }
-              ],
-              "ZU6IEI66": [
+                  "counter": 3153
+                },
                 {
-                  "time": 1638536400000,
+                  "time": 1639918800000,
                   "hour": "20",
-                  "counter": 4593
+                  "counter": 2799
                 },
                 {
-                  "time": 1638540000000,
+                  "time": 1639922400000,
                   "hour": "21",
-                  "counter": 4474
+                  "counter": 2744
                 },
                 {
-                  "time": 1638543600000,
+                  "time": 1639926000000,
                   "hour": "22",
-                  "counter": 4704
+                  "counter": 3092
                 },
                 {
-                  "time": 1638547200000,
+                  "time": 1639929600000,
                   "hour": "23",
-                  "counter": 5197
+                  "counter": 3963
                 },
                 {
-                  "time": 1638550800000,
+                  "time": 1639933200000,
                   "hour": "00",
-                  "counter": 5243
+                  "counter": 4086
                 },
                 {
-                  "time": 1638554400000,
+                  "time": 1639936800000,
                   "hour": "01",
-                  "counter": 4274
+                  "counter": 3155
                 },
                 {
-                  "time": 1638558000000,
+                  "time": 1639940400000,
                   "hour": "02",
-                  "counter": 3237
+                  "counter": 2452
                 },
                 {
-                  "time": 1638561600000,
+                  "time": 1639944000000,
                   "hour": "03",
-                  "counter": 2805
+                  "counter": 1832
                 },
                 {
-                  "time": 1638565200000,
+                  "time": 1639947600000,
                   "hour": "04",
-                  "counter": 2497
+                  "counter": 1379
                 },
                 {
-                  "time": 1638568800000,
+                  "time": 1639951200000,
                   "hour": "05",
-                  "counter": 2406
+                  "counter": 1369
                 },
                 {
-                  "time": 1638572400000,
+                  "time": 1639954800000,
                   "hour": "06",
-                  "counter": 2834
+                  "counter": 1714
                 },
                 {
-                  "time": 1638576000000,
+                  "time": 1639958400000,
                   "hour": "07",
-                  "counter": 3843
+                  "counter": 2634
                 },
                 {
-                  "time": 1638579600000,
+                  "time": 1639962000000,
                   "hour": "08",
-                  "counter": 4553
+                  "counter": 3342
                 },
                 {
-                  "time": 1638583200000,
+                  "time": 1639965600000,
                   "hour": "09",
-                  "counter": 5470
+                  "counter": 3947
                 },
                 {
-                  "time": 1638586800000,
+                  "time": 1639969200000,
                   "hour": "10",
-                  "counter": 6296
+                  "counter": 4509
                 },
                 {
-                  "time": 1638590400000,
+                  "time": 1639972800000,
                   "hour": "11",
-                  "counter": 6197
+                  "counter": 4253
                 },
                 {
-                  "time": 1638594000000,
+                  "time": 1639976400000,
                   "hour": "12",
-                  "counter": 5187
+                  "counter": 3650
                 },
                 {
-                  "time": 1638597600000,
+                  "time": 1639980000000,
                   "hour": "13",
-                  "counter": 5668
+                  "counter": 4748
                 },
                 {
-                  "time": 1638601200000,
+                  "time": 1639983600000,
                   "hour": "14",
-                  "counter": 6471
+                  "counter": 4797
                 },
                 {
-                  "time": 1638604800000,
+                  "time": 1639987200000,
                   "hour": "15",
-                  "counter": 5940
-                },
-                {
-                  "time": 1638608400000,
-                  "hour": "16",
-                  "counter": 5634
-                },
-                {
-                  "time": 1638612000000,
-                  "hour": "17",
-                  "counter": 5354
-                },
-                {
-                  "time": 1638615600000,
-                  "hour": "18",
-                  "counter": 5021
-                },
-                {
-                  "time": 1638619200000,
-                  "hour": "19",
-                  "counter": 4451
+                  "counter": 4315
                 }
               ]
             },
-            "totalScore": 17490
+            "totalScore": 15246
           },
           "chartType": "song",
           "sectionType": "RTChart",
@@ -1124,7 +1074,7 @@ const data = {
               "playlistId": "Z6BOE7WA",
               "cover": "https://photo-zmp3.zadn.vn/cover_artist/9/c/e/c/9cecbaa75361c784803d216f99508cf8.jpg",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/f/b/9/bfb9522fe78758e81dfcb4b70d3f8f52.jpg",
-              "totalFollow": 268648
+              "totalFollow": 270422
             },
             {
               "id": "IWZA0OWC",
@@ -1135,7 +1085,7 @@ const data = {
               "playlistId": "Z6BU0966",
               "cover": "https://photo-zmp3.zadn.vn/cover_artist/1/0/2/0/1020498451fdd8bf855cf2c8ec2184b8.jpg",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/8/c/6/78c685396dedfb3c6aef19588ea584c4.jpg",
-              "totalFollow": 333102
+              "totalFollow": 338988
             },
             {
               "id": "IWZ9ZED8",
@@ -1146,7 +1096,7 @@ const data = {
               "playlistId": "Z6BOEOB6",
               "cover": "https://photo-zmp3.zadn.vn/cover_artist/7/0/f/b/70fbc83564745cdea6f27515f750fe19.jpg",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/d/d/a/6dda1e6d7690c4c43ed97d6150619495.jpg",
-              "totalFollow": 167552
+              "totalFollow": 169623
             },
             {
               "id": "IWZ98609",
@@ -1156,8 +1106,8 @@ const data = {
               "alias": "Mr-Siro",
               "playlistId": "Z6BUID88",
               "cover": "https://photo-zmp3.zadn.vn/cover_artist/a/6/2/1/a62188a5db16a4ce31c80fd5420edb92.jpg",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/1/1/2/e1120261421cfec7513423222b0ca94c.jpg",
-              "totalFollow": 752808
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/1/3/0/2130334d4358f2727fbd721274791421.jpg",
+              "totalFollow": 756871
             },
             {
               "id": "IWZ99099",
@@ -1168,18 +1118,18 @@ const data = {
               "playlistId": "Z6BU0OFF",
               "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/0/8/8/708804f76ef03cbbf4b138aed910d45e.jpg",
-              "totalFollow": 528705
+              "totalFollow": 530969
             },
             {
               "id": "IWZ9ZD8A",
               "name": "Trịnh Thăng Bình",
               "link": "/trinhthangbinh",
               "spotlight": true,
-              "alias": "Trinh-Thang-Binh",
+              "alias": "trinhthangbinh",
               "playlistId": "Z6BOEOCW",
-              "cover": "https://photo-zmp3.zadn.vn/cover_artist/6/5/5/d/655d298805d7793f86126aeadf5b86e5.jpg",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/4/0/7/6/407680e058b4c770a6bbcb5507516e82.jpg",
-              "totalFollow": 237272
+              "cover": "https://photo-zmp3.zadn.vn/cover_rect/4/d/4/4/4d44907e0c1e9143f1d3a6e602e91f81.jpg",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/c/5/9/ec596f154df0104402f8213f3195cf5f.jpg",
+              "totalFollow": 238623
             },
             {
               "id": "IWZ997CU",
@@ -1190,7 +1140,7 @@ const data = {
               "playlistId": "Z6BUI9B8",
               "cover": "https://photo-zmp3.zadn.vn/cover_artist/8/7/6/0/8760cfebd33eca3affaf2d71f988701e.jpg",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/f/1/d/d/f1ddeb86e263f0d67f835f1b60539a34.jpg",
-              "totalFollow": 459378
+              "totalFollow": 465846
             },
             {
               "id": "IWZ96FZE",
@@ -1201,7 +1151,7 @@ const data = {
               "playlistId": "Z6BU0IBB",
               "cover": "https://photo-zmp3.zadn.vn/cover3_artist/b/a/ba47eed79d379a6ba43d881ad8c7a575_1411587751.png",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/3/a/6/d/3a6de9f068f10fcee2c50cdf9772ebaa.jpg",
-              "totalFollow": 194294
+              "totalFollow": 201620
             },
             {
               "id": "IWZ9CC9Z",
@@ -1210,9 +1160,9 @@ const data = {
               "spotlight": true,
               "alias": "Will-365DaBand",
               "playlistId": "Z6BU00BW",
-              "cover": "https://photo-zmp3.zadn.vn/cover_artist/d/f/2/c/df2c125cc9b3f93fd683ab527abc5853.jpg",
+              "cover": "https://photo-zmp3.zadn.vn/cover_rect/5/2/6/2/5262ff3800f94cb8dca347708d3bdbfb.jpg",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/0/e/c/d/0ecdb1dcda7c80241efaeda1ac44fabe.jpg",
-              "totalFollow": 50130
+              "totalFollow": 50547
             }
           ],
           "isShuffle": true
@@ -1227,7 +1177,7 @@ const data = {
             {
               "encodeId": "Z6CZO0F6",
               "title": "Top 100 Nhạc V-Pop Hay Nhất",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/d/3/8/7/d3873c4c5bc6804bf1e49693ef3e614b.jpg",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/f/d/b/2/fdb2c05fb76cb4e4cfbdfca3236fda5e.jpg",
               "isoffical": true,
               "link": "/album/Top-100-Nhac-V-Pop-Hay-Nhat-NH4T-DIMZ-TVk-Phat-Ho/Z6CZO0F6.html",
               "isIndie": false,
@@ -1245,7 +1195,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/c/f/e/0/cfe0984b0e447dd79bff55c866304586.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 1240
+                  "totalFollow": 1638
                 },
                 {
                   "id": "IW689UCI",
@@ -1257,7 +1207,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/5/6/5/3/5653c00f7093a17d3f20f232d3189822.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 25654
+                  "totalFollow": 28017
                 },
                 {
                   "id": "IW6ZC0DZ",
@@ -1269,7 +1219,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/a/6/b/ba6bb92da2cc15b7904d52ea938e6c86.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 1565
+                  "totalFollow": 2181
                 },
                 {
                   "id": "IW67D9EI",
@@ -1281,14 +1231,14 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 31133
+                  "totalFollow": 36871
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
               "playItemMode": 0,
               "subType": 24,
               "uid": 309,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/d/3/8/7/d3873c4c5bc6804bf1e49693ef3e614b.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/f/d/b/2/fdb2c05fb76cb4e4cfbdfca3236fda5e.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -1317,7 +1267,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/1/0/a/9/10a9a536eb062f6adc1f717740cd4155.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 37369
+                  "totalFollow": 38575
                 },
                 {
                   "id": "IW7ZAFAB",
@@ -1329,7 +1279,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/0/a/1/e/0a1e22cf186bad33ccfd8604685c5ee7.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 1131
+                  "totalFollow": 1175
                 },
                 {
                   "id": "IW6W967U",
@@ -1341,7 +1291,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/c/4/a/1/c4a119c644faa378d05e0b78914004fe.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 660
+                  "totalFollow": 669
                 },
                 {
                   "id": "IWZ9ZFA7",
@@ -1353,7 +1303,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/8/1/8142308a12a798886cc342e51b436fec_1511496189.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 175164
+                  "totalFollow": 178564
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
@@ -1361,78 +1311,6 @@ const data = {
               "subType": 24,
               "uid": 0,
               "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/8/7/9/a/879a40c85476ae73602a33eb158d1d5a.jpg",
-              "isShuffle": true,
-              "isPrivate": false,
-              "userName": "Zing MP3",
-              "isAlbum": false,
-              "textType": "Playlist",
-              "isSingle": false
-            },
-            {
-              "encodeId": "ZWZB96AW",
-              "title": "Top 100 Nhạc Dance Việt Nam Hay Nhất",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/b/8/0/0/b800a8b039fd00210f54e58b3309b46f.jpg",
-              "isoffical": true,
-              "link": "/album/Top-100-Nhac-Dance-Viet-Nam-Hay-Nhat-BMZ-Nguyen-Huu-Kha-CUKAK-Phat-Ho/ZWZB96AW.html",
-              "isIndie": false,
-              "releaseDate": "",
-              "sortDescription": "Top 100 Nhạc Dance Việt Nam Hay Nhất là danh sách 100 ca khúc hot nhất hiện tại của thể loại nhạc Dance Việt Nam, được Zing MP3 tự động tổng hợp dựa trên thông tin số liệu lượt nghe và lượt chia sẻ của từng bài hát trên phiên bản web và phiên bản Mobile. Dữ liệu sẽ được lấy trong 30 ngày gần nhất và được cập nhật liên tục.",
-              "PR": false,
-              "artists": [
-                {
-                  "id": "IW68U68B",
-                  "name": "BMZ",
-                  "link": "/nghe-si/BMZ",
-                  "spotlight": false,
-                  "alias": "BMZ",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/8/8/4/b88485d0d49af6cca4731c58eab9f515.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/8/8/4/b88485d0d49af6cca4731c58eab9f515.jpg",
-                  "isOA": true,
-                  "isOABrand": false,
-                  "totalFollow": 8747
-                },
-                {
-                  "id": "IW7I7A78",
-                  "name": "Nguyễn Hữu Kha",
-                  "link": "/nghe-si/Nguyen-Huu-Kha",
-                  "spotlight": false,
-                  "alias": "Nguyen-Huu-Kha",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/6/9/9/26998f45dc9d1f23141feef6080d5e56.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/2/6/9/9/26998f45dc9d1f23141feef6080d5e56.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 968
-                },
-                {
-                  "id": "IW7O8E7F",
-                  "name": "CUKAK",
-                  "link": "/nghe-si/CUKAK",
-                  "spotlight": false,
-                  "alias": "CUKAK",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/f/a/b/c/fabcffe864c90a33221b4809a6d1eb2e.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/f/a/b/c/fabcffe864c90a33221b4809a6d1eb2e.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 4816
-                },
-                {
-                  "id": "IW67D9EI",
-                  "name": "Phát Hồ",
-                  "link": "/nghe-si/Phat-Ho",
-                  "spotlight": false,
-                  "alias": "Phat-Ho",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 31133
-                }
-              ],
-              "artistsNames": "Nhiều nghệ sĩ",
-              "playItemMode": 0,
-              "subType": 1,
-              "uid": 0,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/b/8/0/0/b800a8b039fd00210f54e58b3309b46f.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -1461,7 +1339,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/1/3/2/c/132c6b8869a6d3696abe5bf69d80b585.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 140996
+                  "totalFollow": 144895
                 },
                 {
                   "id": "IWZA77AI",
@@ -1473,7 +1351,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/4/3/9/2/439256aae3281336ec43cc1b17409eb9.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 2501
+                  "totalFollow": 3171
                 },
                 {
                   "id": "IW7660EI",
@@ -1485,7 +1363,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/7/c/3/9/7c39d02c63e486008da6b7decd7c16e9.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 378
+                  "totalFollow": 498
                 },
                 {
                   "id": "IW7660E0",
@@ -1497,7 +1375,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/0/4/9/2/0492edd7ced708df01f2500f6eec158a.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 795
+                  "totalFollow": 1070
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
@@ -1505,6 +1383,78 @@ const data = {
               "subType": 24,
               "uid": 0,
               "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/8/e/f/4/8ef45dd9a76426895bc8117a10136f4b.jpg",
+              "isShuffle": true,
+              "isPrivate": false,
+              "userName": "Zing MP3",
+              "isAlbum": false,
+              "textType": "Playlist",
+              "isSingle": false
+            },
+            {
+              "encodeId": "ZWZB96AW",
+              "title": "Top 100 Nhạc Dance Việt Nam Hay Nhất",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/b/8/0/0/b800a8b039fd00210f54e58b3309b46f.jpg",
+              "isoffical": true,
+              "link": "/album/Top-100-Nhac-Dance-Viet-Nam-Hay-Nhat-BMZ-Nguyen-Huu-Kha-CUKAK-Phat-Ho/ZWZB96AW.html",
+              "isIndie": false,
+              "releaseDate": "",
+              "sortDescription": "Top 100 Nhạc Dance Việt Nam Hay Nhất là danh sách 100 ca khúc hot nhất hiện tại của thể loại nhạc Dance Việt Nam, được Zing MP3 tự động tổng hợp dựa trên thông tin số liệu lượt nghe và lượt chia sẻ của từng bài hát trên phiên bản web và phiên bản Mobile. Dữ liệu sẽ được lấy trong 30 ngày gần nhất và được cập nhật liên tục.",
+              "PR": false,
+              "artists": [
+                {
+                  "id": "IW68U68B",
+                  "name": "BMZ",
+                  "link": "/nghe-si/BMZ",
+                  "spotlight": false,
+                  "alias": "BMZ",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/4/a/7/a/4a7a8f06bff808bb0cf9792fc72c589c.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/cover/4/a/7/a/4a7a8f06bff808bb0cf9792fc72c589c.jpg",
+                  "isOA": true,
+                  "isOABrand": false,
+                  "totalFollow": 9262
+                },
+                {
+                  "id": "IW7I7A78",
+                  "name": "Nguyễn Hữu Kha",
+                  "link": "/nghe-si/Nguyen-Huu-Kha",
+                  "spotlight": false,
+                  "alias": "Nguyen-Huu-Kha",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/6/9/9/26998f45dc9d1f23141feef6080d5e56.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/2/6/9/9/26998f45dc9d1f23141feef6080d5e56.jpg",
+                  "isOA": false,
+                  "isOABrand": false,
+                  "totalFollow": 1258
+                },
+                {
+                  "id": "IW7O8E7F",
+                  "name": "CUKAK",
+                  "link": "/nghe-si/CUKAK",
+                  "spotlight": false,
+                  "alias": "CUKAK",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/f/a/b/c/fabcffe864c90a33221b4809a6d1eb2e.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/f/a/b/c/fabcffe864c90a33221b4809a6d1eb2e.jpg",
+                  "isOA": false,
+                  "isOABrand": false,
+                  "totalFollow": 5592
+                },
+                {
+                  "id": "IW67D9EI",
+                  "name": "Phát Hồ",
+                  "link": "/nghe-si/Phat-Ho",
+                  "spotlight": false,
+                  "alias": "Phat-Ho",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/b/5/3/4/b5346be537d347c3938920657d61ff60.jpg",
+                  "isOA": false,
+                  "isOABrand": false,
+                  "totalFollow": 36871
+                }
+              ],
+              "artistsNames": "Nhiều nghệ sĩ",
+              "playItemMode": 0,
+              "subType": 1,
+              "uid": 0,
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/b/8/0/0/b800a8b039fd00210f54e58b3309b46f.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -1533,7 +1483,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/7/a/c/0/7ac0ae75ea8c5484c8dbd27591853079.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 6635
+                  "totalFollow": 6948
                 },
                 {
                   "id": "IW67C60F",
@@ -1545,7 +1495,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/1/2/3/5/12358eabe806af65178e625d01c1dfb3.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 5950
+                  "totalFollow": 6278
                 },
                 {
                   "id": "IWZFD77I",
@@ -1557,7 +1507,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/2/d/6/1/2d61242d058a36761db4b60c563a410d.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 332796
+                  "totalFollow": 342359
                 },
                 {
                   "id": "IW6Z87FU",
@@ -1569,7 +1519,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/c/3/5/b/c35bdf095089891beef186830dd6a3e7.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 45651
+                  "totalFollow": 46989
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
@@ -1587,7 +1537,7 @@ const data = {
             {
               "encodeId": "ZWZB969E",
               "title": "Top 100 Bài Hát Nhạc Trẻ Hay Nhất",
-              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/4/6/a/0/46a0e185af14dbbeede4466b1ac9239a.jpg",
+              "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/e/8/4/e/e84ed28458ca745f2a8df9f2dc375c1a.jpg",
               "isoffical": true,
               "link": "/album/Top-100-Bai-Hat-Nhac-Tre-Hay-Nhat-Chi-Dan-Great-Bao-Yen-Rosie-NH4T/ZWZB969E.html",
               "isIndie": false,
@@ -1605,7 +1555,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/7/0/8/8/708804f76ef03cbbf4b138aed910d45e.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 528705
+                  "totalFollow": 530969
                 },
                 {
                   "id": "IW6ZBEAB",
@@ -1617,7 +1567,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/7/a/c/0/7ac0ae75ea8c5484c8dbd27591853079.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 6635
+                  "totalFollow": 6948
                 },
                 {
                   "id": "IWZA797U",
@@ -1629,7 +1579,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/5/7/c/8/57c815f92075ef49d684e1b3e9ca5f77.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 4986
+                  "totalFollow": 5113
                 },
                 {
                   "id": "IW67EI9E",
@@ -1641,14 +1591,14 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/c/f/e/0/cfe0984b0e447dd79bff55c866304586.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 1240
+                  "totalFollow": 1638
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
               "playItemMode": 0,
               "subType": 24,
               "uid": 0,
-              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/4/6/a/0/46a0e185af14dbbeede4466b1ac9239a.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/e/8/4/e/e84ed28458ca745f2a8df9f2dc375c1a.jpg",
               "isShuffle": true,
               "isPrivate": false,
               "userName": "Zing MP3",
@@ -1677,7 +1627,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/2/5/f/f/25ff82ca8d3b5ddb3e411e4f6fe83ed8.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 20372
+                  "totalFollow": 20938
                 },
                 {
                   "id": "IW6ZZFCF",
@@ -1689,7 +1639,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/d/c/f/9/dcf9fb1df89a69b86f1a5d1d2be7688b.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 3742
+                  "totalFollow": 4206
                 },
                 {
                   "id": "IWZ9ZOCZ",
@@ -1701,7 +1651,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/d/b/c/2/dbc2256e873048550e1410a7f65b51d2.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 138009
+                  "totalFollow": 140468
                 },
                 {
                   "id": "IWZ9EFBB",
@@ -1713,7 +1663,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/9/5/95f7df8c3d8c28b37283623b72aa8a09_1480480620.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 6079
+                  "totalFollow": 6190
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
@@ -1749,7 +1699,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/a/8/e/7/a8e71a9b5efdb53549e1cd52f5697e61.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 931041
+                  "totalFollow": 965913
                 },
                 {
                   "id": "IWZA7OIA",
@@ -1761,7 +1711,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/4/9/493e761d37d31c5cdef4281c0c0ef6d4_1458805399.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 136763
+                  "totalFollow": 144354
                 },
                 {
                   "id": "IWZD7OZ0",
@@ -1773,7 +1723,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/f/c/0/e/fc0e92bde3249a6252297a11374418a5.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 27485
+                  "totalFollow": 29273
                 },
                 {
                   "id": "IWZ9CUB9",
@@ -1785,7 +1735,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/d/a/da3ccbcb25264d23e8b45c055769ac96_1359360031.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 39856
+                  "totalFollow": 42541
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
@@ -1805,7 +1755,7 @@ const data = {
               "title": "Top 100 Nhạc Trữ Tình Hay Nhất",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/f/2/5/2/f2527ceaab79370a6bacec6f667fe1c1.jpg",
               "isoffical": true,
-              "link": "/album/Top-100-Nhac-Tru-Tinh-Hay-Nhat-Luu-Anh-Loan-Phi-Nhung-Nal-Nhu-Quynh/ZWZB969F.html",
+              "link": "/album/Top-100-Nhac-Tru-Tinh-Hay-Nhat-Luu-Anh-Loan-Phi-Nhung-Nhu-Quynh-Manh-Quynh/ZWZB969F.html",
               "isIndie": false,
               "releaseDate": "",
               "sortDescription": "Top 100 Nhạc Trữ Tình là danh sách 100 ca khúc hot nhất hiện tại của thể loại Nhạc Trữ Tình, được Zing MP3 tự động tổng hợp dựa trên thông tin số liệu lượt nghe và lượt chia sẻ của từng bài hát trên phiên bản web và phiên bản Mobile. Dữ liệu sẽ được lấy trong 30 ngày gần nhất và được cập nhật liên tục.",
@@ -1821,7 +1771,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/3/4/1/c/341ca164b5e680fc624cd7b22d857c4d.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 168698
+                  "totalFollow": 174097
                 },
                 {
                   "id": "IWZ9ZIF6",
@@ -1833,19 +1783,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/c/2/a/2/c2a2c84f7109701ca46abfb2ea9015d7.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 329388
-                },
-                {
-                  "id": "IW6A7CEE",
-                  "name": "Nal",
-                  "link": "/nghe-si/Nal",
-                  "spotlight": false,
-                  "alias": "Nal",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/d/9/6/c/d96c82a1bfdd470c7960c75224a9edcd.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/d/9/6/c/d96c82a1bfdd470c7960c75224a9edcd.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 41014
+                  "totalFollow": 355810
                 },
                 {
                   "id": "IWZ9ZWA7",
@@ -1857,7 +1795,19 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/8/b/6/4/8b64df964f463610f8065fc5509dc20f.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 218315
+                  "totalFollow": 229380
+                },
+                {
+                  "id": "IWZ9ZWUO",
+                  "name": "Mạnh Quỳnh",
+                  "link": "/nghe-si/Manh-Quynh",
+                  "spotlight": false,
+                  "alias": "Manh-Quynh",
+                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/d/d/4/8/dd480f10893eb35ade277cbe1bd2bd8a.jpg",
+                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/d/d/4/8/dd480f10893eb35ade277cbe1bd2bd8a.jpg",
+                  "isOA": true,
+                  "isOABrand": false,
+                  "totalFollow": 224686
                 }
               ],
               "artistsNames": "Nhiều nghệ sĩ",
@@ -1877,7 +1827,7 @@ const data = {
               "title": "Top 100 Nhạc Hàn Quốc Hay Nhất",
               "thumbnail": "https://photo-resize-zmp3.zadn.vn/w165_r1x1_jpeg/cover/5/9/2/7/592779751b612bb501b4534fb27b1a39.jpg",
               "isoffical": true,
-              "link": "/album/Top-100-Nhac-Han-Quoc-Hay-Nhat-LISA-LiSA-JEON-SOMI-BLACKPINK/ZWZB96DC.html",
+              "link": "/album/Top-100-Nhac-Han-Quoc-Hay-Nhat-LISA-JEON-SOMI-BLACKPINK/ZWZB96DC.html",
               "isIndie": false,
               "releaseDate": "",
               "sortDescription": "Top 100 Nhạc Hàn Quốc Hay Nhất là danh sách 100 ca khúc hot nhất hiện tại của thể loại Nhạc Hàn Quốc, được Zing MP3 tự động tổng hợp dựa trên thông tin số liệu lượt nghe và lượt chia sẻ của từng bài hát trên phiên bản web và phiên bản Mobile. Dữ liệu sẽ được lấy trong 30 ngày gần nhất và được cập nhật liên tục.",
@@ -1893,19 +1843,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/3/3/b/a/33ba07ad9051daaa1037d00a4e32f1d1.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 56581
-                },
-                {
-                  "id": "IWZ9FZ7E",
-                  "name": "LiSA",
-                  "link": "/nghe-si/LiSA-Love-is-Same-All",
-                  "spotlight": false,
-                  "alias": "LiSA-Love-is-Same-All",
-                  "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/4/14cd8faf65c5776bba791084aefdacca_1380703509.jpg",
-                  "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/1/4/14cd8faf65c5776bba791084aefdacca_1380703509.jpg",
-                  "isOA": false,
-                  "isOABrand": false,
-                  "totalFollow": 8175
+                  "totalFollow": 62410
                 },
                 {
                   "id": "IWZA7AAF",
@@ -1917,7 +1855,7 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/8/6/0/0/8600e27bc2d4876f10e8724802d4850e.jpg",
                   "isOA": true,
                   "isOABrand": false,
-                  "totalFollow": 25493
+                  "totalFollow": 26479
                 },
                 {
                   "id": "IWZA7DE0",
@@ -1929,10 +1867,10 @@ const data = {
                   "thumbnailM": "https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/f/1/1/1/f1113df32e09c1c5c6fe7069b0107c13.jpg",
                   "isOA": false,
                   "isOABrand": false,
-                  "totalFollow": 640251
+                  "totalFollow": 658371
                 }
               ],
-              "artistsNames": "Nhiều nghệ sĩ",
+              "artistsNames": "LISA, JEON SOMI, BLACKPINK",
               "playItemMode": 0,
               "subType": 24,
               "uid": 0,
@@ -1954,242 +1892,114 @@ const data = {
           "sectionId": "hSlider",
           "items": [
             {
-              "encodeId": "IWZ97BE8",
-              "description": "YuniBoo, H2K sẽ phát hành bài hát 'Thanh Xuân Cùng Em' vào lúc 19:00 ngày 04.12.2021 trên ứng dụng Zing MP3.",
-              "address": "Phát hành trên Zing MP3",
-              "link": "/event/IWZ97BE8.html",
-              "coverV": "https://photo-zmp3.zadn.vn/event/8/3/b/5/83b514fd74574bc60ad53bcd2c48d926.jpg",
-              "coverVM": "https://photo-resize-zmp3.zadn.vn/w350_r7x12_jpeg/event/8/3/b/5/83b514fd74574bc60ad53bcd2c48d926.jpg",
-              "coverH": "https://photo-zmp3.zadn.vn/event/b/6/f/9/b6f96431b3a721e0f25864f9977ade22.jpg",
-              "coverHM": "https://photo-resize-zmp3.zadn.vn/w600_r12x7_jpeg/event/b/6/f/9/b6f96431b3a721e0f25864f9977ade22.jpg",
-              "startTime": 1638619200,
-              "endTime": 1638619200,
-              "publishTime": 1638518340,
-              "place": "Zing MP3",
-              "status": 1,
-              "label": "PHÁT HÀNH BÀI HÁT",
-              "shortTitle": "Thanh Xuân Cùng Em",
-              "title": "Thanh Xuân Cùng Em - YuniBoo, H2K",
-              "titleFormat": "Thanh Xuân Cùng Em \r\n- YuniBoo, H2K -",
-              "subscribeText": "Quan tâm",
-              "unsubscribeText": "Đã quan tâm",
-              "totalFollow": 787,
-              "followers": [
-                {
-                  "id": "IUWOC9EB",
-                  "avatar": "https://s240-ava-talk.zadn.vn/d/e/1/1/37/240/6319e054d6ed8fcff4067e2b6fa59a9a.jpg"
-                },
-                {
-                  "id": "I6EI7AEA",
-                  "avatar": "https://s240-ava-talk.zadn.vn/5/e/4/4/152/240/bc03ede952ab784690e2d2688177ff24.jpg"
-                },
-                {
-                  "id": "IOOWOWOC",
-                  "avatar": "https://s240-ava-talk.zadn.vn/e/c/a/0/20/240/e9352c45c509ea1e08b87925adc7401a.jpg"
-                },
-                {
-                  "id": "IWDFF8IC",
-                  "avatar": "https://s240-ava-talk.zadn.vn/9/4/7/4/20/240/3da45449fa237b50c4edf191d285287f.jpg"
-                },
-                {
-                  "id": "IUUI6AWW",
-                  "avatar": "https://s240-ava-talk.zadn.vn/7/b/4/2/121/240/ba8320f62b7d7945c86770cf22d7947b.jpg"
-                },
-                {
-                  "id": "IU0OC9D6",
-                  "avatar": "https://s240-ava-talk.zadn.vn/a/c/5/e/48/240/7b963f3159bb2cc10ff79e5523297d0a.jpg"
-                }
-              ],
-              "startUrl": "",
-              "startUrlText": "PHÁT BÀI HÁT",
-              "startText": "ĐÃ PHÁT HÀNH",
-              "endText": "ĐÃ PHÁT HÀNH",
-              "videoUrl": "",
-              "host": {
-                "id": "IW6ZZ98C",
-                "name": "YuniBoo",
-                "link": "/nghe-si/YuniBoo",
-                "spotlight": false,
-                "alias": "YuniBoo",
-                "playlistId": "60U6WUCU",
-                "cover": "https://photo-zmp3.zadn.vn/cover_rect/a/b/f/4/abf4c288c25dd50f5723360d8d70914d.jpg",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/d/7/0/bd7086436519b0fcb59b91a6b2fb6f61.jpg"
-              },
-              "followed": false
-            },
-            {
-              "encodeId": "IWZ97BEZ",
-              "description": "Họp fan không khó, đã có Zing MP3 lo! Các bạn chỉ cần sẵn sàng bung lụa tại ngày hội họp fan online JEON SOMI  vào lúc 00:00 - 23:59 ngày 05.12.2021 tại ứng dụng Zing MP3!",
+              "encodeId": "IWZ97CIA",
+              "description": "Nếu bạn là fans của Phạm Việt Thắng thì đừng bỏ lỡ bữa tiệc sinh nhật online của nam ca sĩ tại Zing MP3 nhé! Gửi thật nhiều lời chúc và yêu thương mừng sinh nhật của Phạm Việt tại đây!",
               "address": "",
-              "link": "/event/IWZ97BEZ.html",
-              "coverV": "https://photo-zmp3.zadn.vn/event/7/6/4/c/764c6ac2cb063399e36b8558bfa06994.jpg",
-              "coverVM": "https://photo-resize-zmp3.zadn.vn/w350_r7x12_jpeg/event/7/6/4/c/764c6ac2cb063399e36b8558bfa06994.jpg",
-              "coverH": "https://photo-zmp3.zadn.vn/event/5/c/4/6/5c467660d59da39278416b62ed26e99c.jpg",
-              "coverHM": "https://photo-resize-zmp3.zadn.vn/w600_r12x7_jpeg/event/5/c/4/6/5c467660d59da39278416b62ed26e99c.jpg",
-              "startTime": 1638637200,
-              "endTime": 1638723540,
-              "publishTime": 1638444000,
+              "link": "/event/IWZ97CIA.html",
+              "coverV": "https://photo-zmp3.zadn.vn/event/3/b/5/2/3b5254722a20d28af8bdce6fd4cc207c.jpg",
+              "coverVM": "https://photo-resize-zmp3.zadn.vn/w350_r7x12_jpeg/event/3/b/5/2/3b5254722a20d28af8bdce6fd4cc207c.jpg",
+              "coverH": "https://photo-zmp3.zadn.vn/event/3/9/e/a/39ea4a1b9a68501a887e09dad3b9f858.jpg",
+              "coverHM": "https://photo-resize-zmp3.zadn.vn/w600_r12x7_jpeg/event/3/9/e/a/39ea4a1b9a68501a887e09dad3b9f858.jpg",
+              "startTime": 1639933200,
+              "endTime": 1640019540,
+              "publishTime": 1639734540,
               "place": "Zing MP3",
               "status": 1,
               "label": "SỰ KIỆN",
-              "shortTitle": "A Day With JEON SOMI",
-              "title": "A Day With JEON SOMI",
-              "titleFormat": "A Day With JEON SOMI",
-              "subscribeText": "Quan tâm",
-              "unsubscribeText": "Đã quan tâm",
-              "totalFollow": 461,
+              "shortTitle": "Sinh Nhật Sao",
+              "title": "Sinh Nhật Sao x Phạm Việt Thắng",
+              "titleFormat": "Sinh Nhật Sao \r\n- Phạm Việt Thắng -",
+              "subscribeText": "Chúc mừng",
+              "unsubscribeText": "Đã Chúc mừng",
+              "totalFollow": 243,
               "followers": [
                 {
-                  "id": "IODF07AI",
-                  "avatar": "https://s240-ava-talk.zadn.vn/5/3/b/7/5/240/a43934624b59afa3393129d3acd0fe6c.jpg"
+                  "id": "UEIO9WDE",
+                  "avatar": "https://s240-ava-talk.zadn.vn/6/0/c/b/3/240/f075431618c34d2243c1504c5a88a7b3.jpg"
                 },
                 {
-                  "id": "IWZEZOZ0",
-                  "avatar": "https://s240-ava-talk.zadn.vn/4/8/f/c/34/240/2b21665ec535f6f13d423381aed6a5d9.jpg"
+                  "id": "UE68W0CA",
+                  "avatar": "https://s240-ava-talk.zadn.vn/2/4/f/b/190/240/b35d5f1d37cd45b73dc5054bc8077fb0.jpg"
                 },
                 {
-                  "id": "W7A9BO66",
-                  "avatar": "https://s240-ava-talk.zadn.vn/6/f/1/7/3/240/e7ade7f67aa6a4c88ba006c5c387f338.jpg"
+                  "id": "UEW8CBWA",
+                  "avatar": "https://s240-ava-talk.zadn.vn/7/f/6/e/484/240/1b1367971d29e4779c3d360e747e5b9e.jpg"
                 },
                 {
-                  "id": "W0A0WIDI",
-                  "avatar": "https://s240-ava-talk.zadn.vn/7/3/8/e/12/240/61fc84451b45e570df6f006e5e202d02.jpg"
+                  "id": "UEIA80W9",
+                  "avatar": "https://s240-ava-talk.zadn.vn/2/b/4/0/49/240/110985689233afff5f69c4f9dbb62a21.jpg"
                 },
                 {
-                  "id": "IUZ09AOE",
-                  "avatar": "https://s240-ava-talk.zadn.vn/7/8/b/c/19/240/01972a5d521398198b4379f45cb7e9ee.jpg"
+                  "id": "UEWCUA6B",
+                  "avatar": "https://s240-ava-talk.zadn.vn/2/4/0/f/141/240/6fc5a32a19d69c02b1b50eff450ad7a5.jpg"
                 },
                 {
-                  "id": "I6CZA9IO",
-                  "avatar": "https://s240-ava-talk.zadn.vn/d/9/d/7/42/240/e27545b0748b62066dfa7b497cc3d715.jpg"
+                  "id": "UEZ8D7OI",
+                  "avatar": "https://s240-ava-talk.zadn.vn/a/7/c/7/153/240/d85ec81a385c662dbf1ea1b2ec169edb.jpg"
                 }
               ],
-              "startUrl": "https://zingmp3.vn/liveradio/IWZ97BOB.html",
+              "startUrl": "https://zingmp3.vn/liveradio/IWZ97BUO.html",
               "startUrlText": "MỞ RADIO",
               "startText": "ĐANG DIỄN RA",
               "endText": "ĐÃ DIỄN RA",
               "videoUrl": "",
               "host": {
-                "id": "IWZA7AAF",
-                "name": "JEON SOMI",
-                "link": "/nghe-si/JEON-SOMI",
+                "id": "IWZAEEE8",
+                "name": "Phạm Việt Thắng",
+                "link": "/nghe-si/Pham-Viet-Thang-VN-Idol",
                 "spotlight": false,
-                "alias": "JEON-SOMI",
-                "playlistId": "Z6BUI9F6",
-                "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/8/6/0/0/8600e27bc2d4876f10e8724802d4850e.jpg"
+                "alias": "Pham-Viet-Thang-VN-Idol",
+                "playlistId": "Z6BOEUB7",
+                "cover": "https://photo-zmp3.zadn.vn/cover_artist/2/0/e/a/20ea288e79d789fe6fb031c6a88fc9c7.jpg",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/d/4/8/ed48618356049ac448f124bb3d2cf7d9.jpg"
               },
               "followed": false
             },
             {
-              "encodeId": "IWZ97BDF",
-              "description": "Vào ngày sinh nhật MIN, 1.000 fans nhanh tay nhất nhập mã MINxZingMP3 tại trang đổi mã sẽ nhận được tài khoản Zing VIP trải nghiệm âm nhạc không giới hạn trên Zing MP3 đấy! \r\n\r\nChần chừ gì nữa, đặt lịch và gửi ngay lời chúc đến MIN ngay tại đây!",
-              "address": "",
-              "link": "/event/IWZ97BDF.html",
-              "coverV": "https://photo-zmp3.zadn.vn/event/f/0/9/6/f096483087e7c712e509d608f67d511f.jpg",
-              "coverVM": "https://photo-resize-zmp3.zadn.vn/w350_r7x12_jpeg/event/f/0/9/6/f096483087e7c712e509d608f67d511f.jpg",
-              "coverH": "https://photo-zmp3.zadn.vn/event/5/6/6/c/566c73b6d177d71f483a7ed5f65d6dc4.jpg",
-              "coverHM": "https://photo-resize-zmp3.zadn.vn/w600_r12x7_jpeg/event/5/6/6/c/566c73b6d177d71f483a7ed5f65d6dc4.jpg",
-              "startTime": 1638810000,
-              "endTime": 1638896340,
-              "publishTime": 1638345240,
+              "encodeId": "IWZ97CIF",
+              "description": "Rtee sẽ phát hành bài hát 'Chọn Bạn Mà Chơi' vào lúc 20:00 ngày 21.12.2021 trên ứng dụng Zing MP3.",
+              "address": "Phát hành trên Zing MP3",
+              "link": "/event/IWZ97CIF.html",
+              "coverV": "https://photo-zmp3.zadn.vn/event/2/d/b/8/2db861c691ec769b21937e6f10636dde.jpg",
+              "coverVM": "https://photo-resize-zmp3.zadn.vn/w350_r7x12_jpeg/event/2/d/b/8/2db861c691ec769b21937e6f10636dde.jpg",
+              "coverH": "https://photo-zmp3.zadn.vn/event/e/2/e/4/e2e42ccd7720a007443230f6b7d4a893.jpg",
+              "coverHM": "https://photo-resize-zmp3.zadn.vn/w600_r12x7_jpeg/event/e/2/e/4/e2e42ccd7720a007443230f6b7d4a893.jpg",
+              "startTime": 1640091600,
+              "endTime": 1640091600,
+              "publishTime": 1639983240,
               "place": "Zing MP3",
               "status": 1,
-              "label": "SỰ KIỆN",
-              "shortTitle": "Sinh Nhật Sao",
-              "title": "Sinh Nhật Sao x MIN",
-              "titleFormat": "Sinh Nhật Sao \r\n- MIN -",
-              "subscribeText": "Chúc mừng",
-              "unsubscribeText": "Đã Chúc mừng",
-              "totalFollow": 928,
-              "followers": [
-                {
-                  "id": "IWZAW6UI",
-                  "avatar": "https://s240-ava-talk.zadn.vn/8/7/0/4/30/240/d5f5406e375ea9bb0948bd4990ea6765.jpg"
-                },
-                {
-                  "id": "I70AAAIO",
-                  "avatar": "https://s240-ava-talk.zadn.vn/f/0/6/f/40/240/328b70ee69d546bde0939fa3bcd1d5cd.jpg"
-                },
-                {
-                  "id": "IUDUA7ZF",
-                  "avatar": "https://s240-ava-talk.zadn.vn/3/7/a/4/30/240/611c2df363e46f29405e74b826db6416.jpg"
-                },
-                {
-                  "id": "IU8CI7DU",
-                  "avatar": "https://s240-ava-talk.zadn.vn/a/c/5/f/335/240/fd591e21f70d26954cfd349a6bee9d00.jpg"
-                },
-                {
-                  "id": "IW6D7OD9",
-                  "avatar": "https://s240-ava-talk.zadn.vn/0/2/b/f/27/240/d0798c2667fe55737ae1803c1d64d90c.jpg"
-                },
-                {
-                  "id": "IOBE7OC8",
-                  "avatar": "https://s240-ava-talk.zadn.vn/1/8/c/b/166/240/dbe25ace64c2e65a2f2be75fc740ae2f.jpg"
-                }
-              ],
-              "startUrl": "",
-              "startUrlText": "PHÁT BÀI HÁT",
-              "startText": "ĐANG DIỄN RA",
-              "endText": "ĐÃ DIỄN RA",
-              "videoUrl": "",
-              "host": {
-                "id": "IWZA0OWC",
-                "name": "MIN",
-                "link": "/nghe-si/Min",
-                "spotlight": true,
-                "alias": "Min",
-                "playlistId": "Z6BU0966",
-                "cover": "https://photo-zmp3.zadn.vn/cover_artist/1/0/2/0/1020498451fdd8bf855cf2c8ec2184b8.jpg",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/8/c/6/78c685396dedfb3c6aef19588ea584c4.jpg"
-              },
-              "followed": false
-            },
-            {
-              "encodeId": "IWZ97BE0",
-              "description": "Vào ngày sinh nhật Hoàng Yến Chibi, 300 fans nhanh tay nhất nhập mã HoangYenChibixZingMP3 tại trang đổi mã sẽ nhận được tài khoản Zing VIP trải nghiệm âm nhạc không giới hạn trên Zing MP3 đấy! \r\n\r\nChần chừ gì nữa, đặt lịch và gửi ngay lời chúc đến Hoàng Yến Chibi ngay tại đây!",
-              "address": "",
-              "link": "/event/IWZ97BE0.html",
-              "coverV": "https://photo-zmp3.zadn.vn/event/f/e/1/c/fe1c9df05c682bfbc8b880934b21b79f.jpg",
-              "coverVM": "https://photo-resize-zmp3.zadn.vn/w350_r7x12_jpeg/event/f/e/1/c/fe1c9df05c682bfbc8b880934b21b79f.jpg",
-              "coverH": "https://photo-zmp3.zadn.vn/event/0/b/1/7/0b1719c6a987f8ff4bd375ffa2a14fb5.jpg",
-              "coverHM": "https://photo-resize-zmp3.zadn.vn/w600_r12x7_jpeg/event/0/b/1/7/0b1719c6a987f8ff4bd375ffa2a14fb5.jpg",
-              "startTime": 1638896400,
-              "endTime": 1638982740,
-              "publishTime": 1638346020,
-              "place": "Zing MP3",
-              "status": 1,
-              "label": "SỰ KIỆN",
-              "shortTitle": "Sinh Nhật Sao",
-              "title": "Sinh Nhật Sao x Hoàng Yến Chibi",
-              "titleFormat": "Sinh Nhật Sao \r\n- Hoàng Yến Chibi -",
+              "label": "PHÁT HÀNH BÀI HÁT",
+              "shortTitle": "Chọn Bạn Mà Chơi",
+              "title": "Chọn Bạn Mà Chơi - Rtee",
+              "titleFormat": "Chọn Bạn Mà Chơi \r\n- Rtee -",
               "subscribeText": "Quan tâm",
               "unsubscribeText": "Đã quan tâm",
-              "totalFollow": 488,
+              "totalFollow": 16,
               "followers": [
                 {
-                  "id": "I70AAAIO",
-                  "avatar": "https://s240-ava-talk.zadn.vn/f/0/6/f/40/240/328b70ee69d546bde0939fa3bcd1d5cd.jpg"
+                  "id": "UFUFC0W6",
+                  "avatar": "https://s240-ava-talk.zadn.vn/5/0/0/0/13/240/58fddc3e9444dae6eb6e23003288fd3e.jpg"
                 },
                 {
-                  "id": "WUUB90D6",
-                  "avatar": "https://s240-ava-talk.zadn.vn/e/0/f/2/16/240/8c8bf001ec8e1a8f600adc6996260683.jpg"
+                  "id": "ZI8UBCZB",
+                  "avatar": "https://s240-ava-talk.zadn.vn/2/0/f/1/6/240/a1c2f23fc99652f5d50adc7cc4633c5a.jpg"
                 },
                 {
-                  "id": "UE0IZC8D",
-                  "avatar": "https://s240-ava-talk.zadn.vn/5/4/6/b/4/240/944fa91c894a294e5d3fda6f71e4d551.jpg"
+                  "id": "Z0ZC7ZAB",
+                  "avatar": "https://s240-ava-talk.zadn.vn/e/a/d/c/1/240/0bc368fc2aa1a22e0e1a39ef95720cc0.jpg"
                 },
                 {
-                  "id": "IUO8WOC9",
-                  "avatar": "https://s240-ava-talk.zadn.vn/5/b/8/8/1/240/33e6f663460501679102cd4a7b987a55.jpg"
+                  "id": "ZI6FEF7F",
+                  "avatar": "https://s240-ava-talk.zadn.vn/9/f/a/6/2/240/61ec63821febc039191641b1250c5515.jpg"
                 },
                 {
-                  "id": "UE09IU88",
-                  "avatar": "https://s240-ava-talk.zadn.vn/5/8/f/6/79/240/fdbf7547227cfeb37ab221be0a5f4108.jpg"
+                  "id": "ZIEFZU7D",
+                  "avatar": "https://s240-ava-talk.zadn.vn/b/2/b/5/5/240/94cb93103bc5d4338430717c31815fe6.jpg"
                 },
                 {
-                  "id": "WI6CIWCB",
-                  "avatar": "https://s240-ava-talk.zadn.vn/f/3/6/3/54/240/141f3a756979a80910280bfe8745654c.jpg"
+                  "id": "Z0UOOWU6",
+                  "avatar": "https://s240-ava-talk.zadn.vn/f/4/d/3/26/240/8813fbad5ceaff9544ed81ef4b79c5b1.jpg"
                 }
               ],
               "startUrl": "",
@@ -2198,14 +2008,142 @@ const data = {
               "endText": "ĐÃ PHÁT HÀNH",
               "videoUrl": "",
               "host": {
-                "id": "IWZ9DUZ0",
-                "name": "Hoàng Yến Chibi",
-                "link": "/nghe-si/Hoang-Yen-Chibi",
+                "id": "IWZAWZOU",
+                "name": "Rtee",
+                "link": "/nghe-si/Rtee-Rap",
                 "spotlight": false,
-                "alias": "Hoang-Yen-Chibi",
-                "playlistId": "Z6BUI0OD",
-                "cover": "https://photo-zmp3.zadn.vn/cover_artist/8/0/2/8/80283c5201894addd8abfed8aa0152ef.jpg",
-                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/0/a/6/0/0a605180161b62e8481b2891bdd1e392.jpg"
+                "alias": "Rtee-Rap",
+                "playlistId": "Z6BUIW9D",
+                "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/9/2/e/b92e831d42d403a02e28e56e35cc7206.jpg"
+              },
+              "followed": false
+            },
+            {
+              "encodeId": "IWZ97CIE",
+              "description": "Vào ngày sinh nhật Minh Vương M4U, 300 fans nhanh tay nhất nhập mã MinhVuongM4UxZingMP3 tại trang đổi mã sẽ nhận được tài khoản Zing VIP trải nghiệm âm nhạc không giới hạn trên Zing MP3 đấy! \r\n\r\nChần chừ gì nữa, đặt lịch và gửi ngay lời chúc đến Minh Vương M4U ngay tại đây!",
+              "address": "",
+              "link": "/event/IWZ97CIE.html",
+              "coverV": "https://photo-zmp3.zadn.vn/event/8/2/d/d/82dd8232dcaf5ae18c291bef914bdea0.jpg",
+              "coverVM": "https://photo-resize-zmp3.zadn.vn/w350_r7x12_jpeg/event/8/2/d/d/82dd8232dcaf5ae18c291bef914bdea0.jpg",
+              "coverH": "https://photo-zmp3.zadn.vn/event/a/c/6/4/ac6413d9ae7070329e2a06282164bbd9.jpg",
+              "coverHM": "https://photo-resize-zmp3.zadn.vn/w600_r12x7_jpeg/event/a/c/6/4/ac6413d9ae7070329e2a06282164bbd9.jpg",
+              "startTime": 1640019600,
+              "endTime": 1640105940,
+              "publishTime": 1639880880,
+              "place": "Zing MP3",
+              "status": 1,
+              "label": "SỰ KIỆN",
+              "shortTitle": "Sinh Nhật Sao",
+              "title": "Sinh Nhật Sao x Minh Vương M4U",
+              "titleFormat": "Sinh Nhật Sao \r\n- Minh Vương M4U -",
+              "subscribeText": "Chúc mừng",
+              "unsubscribeText": "Đã Chúc mừng",
+              "totalFollow": 355,
+              "followers": [
+                {
+                  "id": "W68WZ9A9",
+                  "avatar": "https://s240-ava-talk.zadn.vn/b/8/7/6/54/240/bf9766d0361315e6b3dba0e61c50e69f.jpg"
+                },
+                {
+                  "id": "IWBU86WA",
+                  "avatar": "https://s240-ava-talk.zadn.vn/a/4/4/4/18/240/7824c59dd5977df9470c566902379cc5.jpg"
+                },
+                {
+                  "id": "IOZCAD9I",
+                  "avatar": "https://s240-ava-talk.zadn.vn/8/5/1/8/81/240/4396a0b3b348bddca7fa2f68e75ca9b5.jpg"
+                },
+                {
+                  "id": "I6UB69B6",
+                  "avatar": "https://s240-ava-talk.zadn.vn/1/2/3/e/9/240/e3e0ee9041fdc32d2404299a713b1b8f.jpg"
+                },
+                {
+                  "id": "UDFABU6B",
+                  "avatar": "https://s240-ava-talk.zadn.vn/1/c/6/1/34/240/3d67f67f533a01118ac4d2dee23d2eea.jpg"
+                },
+                {
+                  "id": "I6ID7I78",
+                  "avatar": "https://s240-ava-talk.zadn.vn/6/c/c/1/86/240/c226c7bc631a2a054b149ca1aa787472.jpg"
+                }
+              ],
+              "startUrl": "",
+              "startUrlText": "PHÁT BÀI HÁT",
+              "startText": "ĐANG DIỄN RA",
+              "endText": "ĐÃ DIỄN RA",
+              "videoUrl": "",
+              "host": {
+                "id": "IWZ9ZFA7",
+                "name": "Minh Vương M4U",
+                "link": "/nghe-si/Minh-Vuong-M4U",
+                "spotlight": false,
+                "alias": "Minh-Vuong-M4U",
+                "playlistId": "Z6BU0AFZ",
+                "cover": "https://photo-zmp3.zadn.vn/cover_artist/7/e/7eed58849cf99b365e17b3f9aec5e64b_1511496236.jpg",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/8/1/8142308a12a798886cc342e51b436fec_1511496189.jpg"
+              },
+              "followed": false
+            },
+            {
+              "encodeId": "IWZ97CIB",
+              "description": "Vào ngày sinh nhật T.R.I, 300 fans nhanh tay nhất nhập mã TRIxZingMP3 tại trang đổi mã sẽ nhận được tài khoản Zing VIP trải nghiệm âm nhạc không giới hạn trên Zing MP3 đấy! \r\n\r\nChần chừ gì nữa, đặt lịch và gửi ngay lời chúc đến T.R.I ngay tại đây!",
+              "address": "",
+              "link": "/event/IWZ97CIB.html",
+              "coverV": "https://photo-zmp3.zadn.vn/event/9/f/3/1/9f31afaebd35d621fbca79a487179e3e.jpg",
+              "coverVM": "https://photo-resize-zmp3.zadn.vn/w350_r7x12_jpeg/event/9/f/3/1/9f31afaebd35d621fbca79a487179e3e.jpg",
+              "coverH": "https://photo-zmp3.zadn.vn/event/0/9/9/7/09971f5bccc2955b81a25b44a1eb03de.jpg",
+              "coverHM": "https://photo-resize-zmp3.zadn.vn/w600_r12x7_jpeg/event/0/9/9/7/09971f5bccc2955b81a25b44a1eb03de.jpg",
+              "startTime": 1640019600,
+              "endTime": 1640105940,
+              "publishTime": 1639734720,
+              "place": "Zing MP3",
+              "status": 1,
+              "label": "SỰ KIỆN",
+              "shortTitle": "Sinh Nhật Sao x T.R.I",
+              "title": "Sinh Nhật Sao x T.R.I",
+              "titleFormat": "Sinh Nhật Sao \r\n- T.R.I -",
+              "subscribeText": "Chúc mừng",
+              "unsubscribeText": "Đã Chúc mừng",
+              "totalFollow": 337,
+              "followers": [
+                {
+                  "id": "IUZDDW6Z",
+                  "avatar": "https://s240-ava-talk.zadn.vn/2/b/2/c/8/240/9692634e7a7dfddc549bc45c89ef3b6f.jpg"
+                },
+                {
+                  "id": "UEIO9WDE",
+                  "avatar": "https://s240-ava-talk.zadn.vn/6/0/c/b/3/240/f075431618c34d2243c1504c5a88a7b3.jpg"
+                },
+                {
+                  "id": "UEIA80W9",
+                  "avatar": "https://s240-ava-talk.zadn.vn/2/b/4/0/49/240/110985689233afff5f69c4f9dbb62a21.jpg"
+                },
+                {
+                  "id": "UEUU879O",
+                  "avatar": "https://s240-ava-talk.zadn.vn/6/7/3/7/335/240/e771b57edc38752538527020bb51ee76.jpg"
+                },
+                {
+                  "id": "IU6B6O9C",
+                  "avatar": "https://s240-ava-talk.zadn.vn/4/6/a/9/10/240/782a2d0f2114e5df6f3df4ad3fbc2c3a.jpg"
+                },
+                {
+                  "id": "UEZ8D7OI",
+                  "avatar": "https://s240-ava-talk.zadn.vn/a/7/c/7/153/240/d85ec81a385c662dbf1ea1b2ec169edb.jpg"
+                }
+              ],
+              "startUrl": "",
+              "startUrlText": "PHÁT BÀI HÁT",
+              "startText": "ĐANG DIỄN RA",
+              "endText": "ĐÃ DIỄN RA",
+              "videoUrl": "",
+              "host": {
+                "id": "IW6W88E8",
+                "name": "T.R.I",
+                "link": "/nghe-si/T-R-I",
+                "spotlight": false,
+                "alias": "T-R-I",
+                "playlistId": "Z6BU00U7",
+                "cover": "https://zmp3-static.zadn.vn/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/2/c/0/12c02d64f3d96f03dad5258004fb1adf.jpg"
               },
               "followed": false
             }
@@ -2215,7 +2153,7 @@ const data = {
       "hasMore": false,
       "total": 25
     },
-    "timestamp": 1638619253999
+    "timestamp": 1639990359842
   }
 
 export const weekChartBanner = data.data.items[1].items.map((item) => item);
