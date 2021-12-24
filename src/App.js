@@ -29,7 +29,7 @@ const Main = styled.div`
     margin-left: var(--sidebar-width);
     padding: 85px 40px 40px;
     height: calc(100vh - var(--control-height));
-    overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
     transition: all 0.4s linear;
     background-color: var(--layout-bg);

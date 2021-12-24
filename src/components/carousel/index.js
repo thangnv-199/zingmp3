@@ -42,7 +42,7 @@ const ButtonGroupStyled = styled.div`
 
     .nvt-arrow {
         cursor: pointer;
-        padding: 8px;
+        padding: 8px 12px;
         
         &.--disabled {
             opacity 0.5;
@@ -66,6 +66,10 @@ const ButtonGroupStyled = styled.div`
         justify-content: center;
         align-items: center;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+
+        &.--disabled {
+            display: none;
+        }
     }
     .arrow-prev {
         left: 0;
@@ -74,7 +78,15 @@ const ButtonGroupStyled = styled.div`
     .arrow-next {
         right: 0;
         transform: translateX(33%);
-    }` : ''}
+    }
+    
+    @media (max-width: 767px) {
+        .nvt-arrow {
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+    ` : ''}
 `;
 
 const Carousel = ({ children, to, title, subTitle,
@@ -86,7 +98,8 @@ const Carousel = ({ children, to, title, subTitle,
     const arrowsRef = useRef();
 
     useEffect(() => {
-        createSlider(sliderRef.current, {
+
+        const slider = createSlider(sliderRef.current, {
             infinite: false,
             slidesToShow: col,
             slidesToScroll: col,
@@ -100,21 +113,21 @@ const Carousel = ({ children, to, title, subTitle,
                 settings: {
                     slidesToShow: col_lg || col,
                     slidesToScroll: col_lg || col,
-                    arrows: col_lg || col < children.length,
+                    arrows: (col_lg || col) < children.length,
                 }
             },{
                 breakpoint: 1023,
                 settings: {
                     slidesToShow: col_md || col_lg || col,
                     slidesToScroll: col_md || col_lg || col,
-                    arrows: col_md || col_lg || col < children.length,
+                    arrows: (col_md || col_lg || col) < children.length,
                 }
             },{
                 breakpoint: 767,
                 settings: {
                     slidesToShow: col_sm || col_md || col_lg || col,
                     slidesToScroll: col_sm || col_md || col_lg || col,
-                    arrows: col_sm || col_md || col_lg || col < children.length,
+                    arrows: (col_sm || col_md || col_lg || col) < children.length,
                 }
             },]
         })

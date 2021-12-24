@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useSelector } from 'react-redux';
-import { useRef, useEffect, useCallback } from 'react';
+import { useRef, useCallback } from 'react';
 
 import BarAnimation from '../barAnimatiton';
 import MvButton from '../iconsButton/mv';
@@ -65,6 +65,11 @@ const ContainerStyled = styled.div`
         .more-icon {
             display: block;
         }
+        &:hover {
+            .song-duration {
+                display: block;
+            }
+        }
     }
     @media (max-width: 767px) {
         display: flex;
@@ -127,11 +132,9 @@ const ArtistsStyled = styled.div`
 const TopLabelStyled = styled.div`
     font-size: 32px;
     font-weight: bold;
-    width: 60px;
+    min-width: 40px;
+    text-align: center;
     white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: rgba(74,144,226,0);
     -webkit-text-stroke: 1px ${props => props.color > 3
         ? 'var(--text-primary)'
@@ -141,11 +144,6 @@ const TopLabelStyled = styled.div`
                 ? '#50e3c2'
                 : '#e35050'
     };
-
-    @media (max-width: 767px) {
-        width: 40px;
-        margin-right: 5px;
-    }
 `;
 
 const Song = ({ data, playlist, index }) => {
@@ -167,13 +165,13 @@ const Song = ({ data, playlist, index }) => {
         : changeSong(data, playlist)
     }
 
-    useEffect(() => {
-        checkSongPlaying() && songRef.current.scrollIntoView({
-            behavior: "smooth",
-            block: "center",
-            inline: "nearest"
-        })
-    }, [checkSongPlaying])
+    // useEffect(() => {
+    //     checkSongPlaying() && songRef.current.scrollIntoView({
+    //         behavior: "smooth",
+    //         block: "center",
+    //         inline: "nearest"
+    //     })
+    // }, [checkSongPlaying])
 
     return (
         <ContainerStyled ref={songRef}

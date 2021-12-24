@@ -2,39 +2,39 @@ import styled from 'styled-components';
 import { useState, useRef, useEffect } from 'react';
 import storage from '../../utils/storage';
 
-const UserAction = styled.nav`
-    position: absolute;
-    right: 0;
-    top: 0;
+// const UserAction = styled.nav`
+//     position: absolute;
+//     right: 0;
+//     top: 0;
 
-    i {
-        color: var(--text-primary);
-        padding: 10px;
-        background-color: var(--alpha-bg);
-        border-radius: 100%;
-        cursor: pointer;
-    }
+//     i {
+//         color: var(--text-primary);
+//         padding: 10px;
+//         background-color: var(--alpha-bg);
+//         border-radius: 100%;
+//         cursor: pointer;
+//     }
 
-    a {
-        display: inline-block;
-        padding: 6px 20px;
-        color: white;
-        background-color: var(--alpha-bg);
-        border-radius: 20px;
-        margin-right: 10px;
-        font-size: 12px;
-        text-transform: uppercase;
-        transition: all 0.2s linear;
+//     a {
+//         display: inline-block;
+//         padding: 6px 20px;
+//         color: white;
+//         background-color: var(--alpha-bg);
+//         border-radius: 20px;
+//         margin-right: 10px;
+//         font-size: 12px;
+//         text-transform: uppercase;
+//         transition: all 0.2s linear;
 
-        &.--yellow {
-            background-color: var(--yellow);
-            color: var(--black);
-        }
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-`;
+//         &.--yellow {
+//             background-color: var(--yellow);
+//             color: var(--black);
+//         }
+//         &:hover {
+//             opacity: 0.8;
+//         }
+//     }
+// `;
 
 const InputName = styled.input`
     font-weight: bold;
@@ -84,7 +84,7 @@ const UserProfile = () => {
         storage.setUsername(value);
     }
     return (
-        <div className="flex relative mb-10 pt-8">
+        <div className="flex relative mb-10">
             <div className="m-auto text-center">
                 <img className="rounded-full mb-3 mx-auto w-30 h-30" src="/zingmp3/images/icon_zing_mp3_60.f6b51045.svg" alt="" />
                 <div className="relative">
@@ -109,11 +109,11 @@ const UserProfile = () => {
                     </div>
                 </div>
             </div>
-            <UserAction>
+            {/* <UserAction>
                 <a href="#!" className="--yellow">Nâng cấp vip</a>
                 <a href="#!">Nhập code víp</a>
                 <i className="fas fa-ellipsis-h"></i>
-            </UserAction>
+            </UserAction> */}
         </div>
     )
 }

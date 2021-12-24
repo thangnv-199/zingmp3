@@ -209,6 +209,7 @@ const ContainerStyled = styled.aside`
             width: var(--sidebar-width);
             justify-content: flex-start;
             padding: 0 25px;
+
             &.plus {
                 display: flex;
             }
@@ -228,11 +229,29 @@ const ContainerStyled = styled.aside`
 
         .sidebar-logo {
             width: var(--sidebar-width--mobile);
-            padding: 0;
+            padding: 0 5px;
+        }
+
+        .sidebar-item {
+            a {
+                svg, img {
+                    width: 20px;
+                    height: 20px;
+                }
+                i{
+                    font-size: 16px;
+                }
+            }
         }
 
         .sidebar-button {
             width: var(--sidebar-width--mobile);
+            &.arrow {
+                i{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
         }
     }
 `;

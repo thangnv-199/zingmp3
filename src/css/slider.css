@@ -1,9 +1,9 @@
-.nvt {
+.nvt-slider {
   position: relative;
 }
 
 .nvt-track {
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .nvt-track::-webkit-scrollbar {

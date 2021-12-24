@@ -2,7 +2,6 @@ function createSlider(slider, options) {
     class Slider {
         constructor(slider, options) {
             this.optionsDefault = {
-                resize: false,
                 infinite: false,
                 dots: false,
                 dotsColor: null,
@@ -35,9 +34,9 @@ function createSlider(slider, options) {
                 ...initialOptions
             } = this.optionsDefault;
 
-            this.initialOptions = initialOptions;
-            this.options = initialOptions;
-            this.checkOptions();
+            this.initialOptions = { ...initialOptions };
+            this.options = { ...initialOptions };
+            this.settedOptions = {};
             this.responsive = responsive;
 
             this.slider = slider;
@@ -59,21 +58,14 @@ function createSlider(slider, options) {
             this.auto = null;
             this.scrollDefaults = 0;
 
+            this.checkOptions();
             this.checkResponsive();
             this.init();
             this.start();
-            // this.windowEvents();
+            this.resizeObservers();
         }
 
         //private
-        checkOptions() {
-            if (this.options.autoplay) {
-                this.options.infinite = true;
-            }
-            if (this.options.slidesToScroll > this.options.slidesToShow) {
-                this.options.slidesToScroll = this.options.slidesToShow
-            }
-        }
 
         init() {
             this.slider.classList.add('nvt-slider');
@@ -120,7 +112,6 @@ function createSlider(slider, options) {
         }
 
         cloneItems() {
-            console.log(this.sliderItems)
             for (let i = 0; i < this.options.slidesToShow; i++) {
                 const itemClone = this.sliderItems[i].cloneNode(true);
                 itemClone.classList.add('item-clone');
@@ -132,20 +123,9 @@ function createSlider(slider, options) {
             }
         }
 
-        resize() {
-            let timeout;
-            window.addEventListener('resize', () => {
-                clearTimeout(timeout);
-                timeout = setTimeout(() => {
-                    if (!this.checkResponsive()) {
-                        this.options = this.initialOptions;
-                    };
-                    this.reset();
-                }, 1000);
-            });
-        }
-
         dots() {
+            if (!this.options.dots) return;
+
             this.dotsGroup = document.createElement('div');
             this.dotsGroup.className = 'nvt-dots';
             this.options.dotsClass && this.dotsGroup.classList.add(...this.options.dotsClass.trim().replace(/\s+/g, " ").split(' '));
@@ -177,6 +157,8 @@ function createSlider(slider, options) {
         }
 
         arrows() {
+            if (!this.options.arrows) return;
+
             this.prevArrow = document.createElement('button');
             this.prevArrow.className = 'nvt-arrow arrow-prev';
             !this.options.infinite && this.currentIndex === 0 && this.prevArrow.classList.add('--disabled');
@@ -250,7 +232,8 @@ function createSlider(slider, options) {
                 setTimeout(() => {
                     this.sliderTrack.scrollLeft = this.scrollDefaults;
                 }, 1000)
-            } else if (this.currentIndex < 0) {
+            } 
+            else if (this.currentIndex < 0) {
                 this.sliderTrack.scroll({
                     left: this.scrollDefaults - (this.itemWidth * this.options.slidesToScroll),
                     behavior: this.options.fade ? 'auto' : 'smooth',
@@ -259,7 +242,8 @@ function createSlider(slider, options) {
                     this.sliderTrack.scrollLeft = this.move * this.length + (this.scrollDefaults - (this.itemWidth * this.options.slidesToScroll));
                 }, 1000)
                 this.currentIndex = this.length - 1;
-            } else {
+            } 
+            else {
                 this.sliderTrack.scroll({
                     left: this.move * this.currentIndex + this.scrollDefaults,
                     behavior: this.options.fade ? 'auto' : 'smooth',
@@ -268,7 +252,7 @@ function createSlider(slider, options) {
 
             this.handleDot(this.currentIndex);
             this.handleArrow();
-            this.options.fade && this.fade();
+            this.fade();
             this.options.callback && this.options.callback();
         }
 
@@ -278,6 +262,7 @@ function createSlider(slider, options) {
         }
 
         pauseOnHover() {
+            if (!this.options.pauseOnHover) return;
             this.slider.addEventListener('mouseenter', () => {
                 this.options.autoplay && this.pause();
             });
@@ -287,6 +272,9 @@ function createSlider(slider, options) {
         }
 
         draggable() {
+
+            if (!this.options.draggable) return;
+            
             const checkMobileAndTablet = this.checkMobileAndTablet();
             const event = {
                 down: checkMobileAndTablet ? 'touchstart' : 'mousedown',
@@ -352,6 +340,8 @@ function createSlider(slider, options) {
         }
 
         fade() {
+            if (!this.options.fade) return;
+
             this.sliderTrack.animate([{
                     opacity: 0.4,
                     visibility: 'hidden'
@@ -365,6 +355,39 @@ function createSlider(slider, options) {
             })
         }
 
+        resizeObservers() {
+            let timeout;
+            let widthRef = this.slider.offsetWidth;
+            new ResizeObserver((e) => {
+                const { width } = e[0].contentRect;
+
+                if (Math.abs(widthRef - width) > 1){
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => {
+                        if (!this.checkResponsive()) {
+                            this.options = {
+                                ...this.initialOptions,
+                                ...this.settedOptions,
+                            };
+                        }
+                        this.reset();
+                    }, 500);
+                }
+
+                widthRef = width;
+            }).observe(this.slider)
+        }
+
+        checkOptions() {
+            if (this.options.autoplay || this.settedOptions.autoplay) {
+                this.options.infinite = true;
+            }
+
+            if (this.options.slidesToScroll > this.options.slidesToShow) {
+                this.options.slidesToScroll = this.options.slidesToShow
+            }
+        }
+
         checkResponsive() {
             if (!this.responsive) return false;
 
@@ -373,8 +396,9 @@ function createSlider(slider, options) {
             for (let i = 0; i < this.responsive.length; i++) {
                 if (window.innerWidth < this.responsive[i].breakpoint) {
                     this.options = {
-                        ...this.options,
+                        ...this.initialOptions,
                         ...this.responsive[i].settings,
+                        ...this.settedOptions,
                     }
                     return true;
                 }
@@ -410,27 +434,33 @@ function createSlider(slider, options) {
             this.isSliderDraggable = false;
             this.move = null;
             this.sliderLinks = this.slider.querySelectorAll('a');
-            // this.auto = null;
             this.scrollDefaults = 0;
 
             !this.options.autoplay && this.pause();
-            this.options.appendArrows && (this.options.appendArrows.innerHTML = '');
-            this.options.appendDots && (this.options.appendDots.innerHTML = '');
+            if (this.options.appendArrows) {
+                this.options.appendArrows.querySelectorAll('.nvt-arrow').forEach(arrow => {
+                    arrow.remove();
+                });
+            }
+            if (this.options.appendDots) {
+                this.options.appendDots.querySelector('.nvt-dots').remove();
+            }
 
+            this.checkResponsive();
             this.init();
             this.currentIndex > this.length - 1 && (this.currentIndex = this.length - 1);
             this.start();
             this.sliderTrack.scrollLeft = this.move * this.currentIndex + this.scrollDefaults;
+            
         }
 
         start() {
-            this.options.dots && this.dots();
-            this.options.arrows && this.arrows();
-            this.options.draggable && this.draggable();
+            this.dots();
+            this.arrows();
+            this.draggable();
+            this.pauseOnHover();
+            this.fade();
             this.options.autoplay && this.autoplay();
-            this.options.pauseOnHover && this.pauseOnHover();
-            this.options.fade && this.fade();
-            this.options.resize && this.resize();
         }
 
         // public Method
@@ -466,11 +496,17 @@ function createSlider(slider, options) {
             return this.options[key];
         }
 
-        setOption(option) {
+        setOption(options) {
+            this.settedOptions = {
+                ...this.settedOptions,
+                ...options,
+            };
+
             this.options = {
                 ...this.options,
-                ...option,
-            }
+                ...this.settedOptions,
+            };
+
             this.reset();
         }
     }
@@ -488,6 +524,5 @@ function createSlider(slider, options) {
         getOption: key => mySlider.getOption(key),
     };
 };
-
 
 export default createSlider;
